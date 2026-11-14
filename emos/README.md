@@ -447,71 +447,71 @@ Apifox 导入：下载 [apifox.json](<apifox.json>)，在“项目设置 → 导
 | [封禁列表](<封禁相关/封禁列表.json>) | `GET` | `/api/ban/list` |
 | [更新状态](<封禁相关/更新状态.json>) | `PUT` | `/api/ban/change` |
 
-## 音乐相关
+## 音乐相关(于261114停用)
 
-目录 [音乐相关/](<音乐相关/>) · 20 个请求 · [README.md](<音乐相关/README.md>)
+目录 [音乐相关(于261114停用)/](<音乐相关(于261114停用)/>) · 20 个请求 · [README.md](<音乐相关(于261114停用)/README.md>)
 
 ### 其他
 
-目录 [音乐相关/其他/](<音乐相关/其他/>) · 4 个请求 · [README.md](<音乐相关/其他/README.md>)
+目录 [音乐相关(于261114停用)/其他/](<音乐相关(于261114停用)/其他/>) · 4 个请求 · [README.md](<音乐相关(于261114停用)/其他/README.md>)
 
 | 请求 | 方法 | 路径 |
 | --- | --- | --- |
-| [收藏/取消收藏](<音乐相关/其他/收藏_取消收藏.json>) | `PUT` | `/api/music/favorite` |
-| [评分](<音乐相关/其他/评分.json>) | `PUT` | `/api/music/rating` |
-| [从todb同步数据](<音乐相关/其他/从todb同步数据.json>) | `PATCH` | `/api/music/sync` |
-| [用spotify歌手去todb同步数据](<音乐相关/其他/用spotify歌手去todb同步数据.json>) | `PATCH` | `/api/music/syncSpotifyArtist` |
+| [收藏/取消收藏](<音乐相关(于261114停用)/其他/收藏_取消收藏.json>) | `PUT` | `/api/music/favorite` |
+| [评分](<音乐相关(于261114停用)/其他/评分.json>) | `PUT` | `/api/music/rating` |
+| [从todb同步数据](<音乐相关(于261114停用)/其他/从todb同步数据.json>) | `PATCH` | `/api/music/sync` |
+| [用spotify歌手去todb同步数据](<音乐相关(于261114停用)/其他/用spotify歌手去todb同步数据.json>) | `PATCH` | `/api/music/syncSpotifyArtist` |
 
 ### 歌手
 
-目录 [音乐相关/歌手/](<音乐相关/歌手/>) · 2 个请求 · [README.md](<音乐相关/歌手/README.md>)
+目录 [音乐相关(于261114停用)/歌手/](<音乐相关(于261114停用)/歌手/>) · 2 个请求 · [README.md](<音乐相关(于261114停用)/歌手/README.md>)
 
 | 请求 | 方法 | 路径 |
 | --- | --- | --- |
-| [歌手列表](<音乐相关/歌手/歌手列表.json>) | `GET` | `/api/music/person/list` |
-| [歌手详情](<音乐相关/歌手/歌手详情.json>) | `GET` | `—` |
+| [歌手列表](<音乐相关(于261114停用)/歌手/歌手列表.json>) | `GET` | `/api/music/person/list` |
+| [歌手详情](<音乐相关(于261114停用)/歌手/歌手详情.json>) | `GET` | `—` |
 
 ### 音乐
 
-目录 [音乐相关/音乐/](<音乐相关/音乐/>) · 12 个请求 · [README.md](<音乐相关/音乐/README.md>)
+目录 [音乐相关(于261114停用)/音乐/](<音乐相关(于261114停用)/音乐/>) · 12 个请求 · [README.md](<音乐相关(于261114停用)/音乐/README.md>)
 
 | 请求 | 方法 | 路径 |
 | --- | --- | --- |
-| [音乐搜索](<音乐相关/音乐/音乐搜索.json>) | `GET` | `/api/music/song/search` |
-| [音乐列表](<音乐相关/音乐/音乐列表.json>) | `GET` | `/api/music/song/list` |
-| [更新关联的视频ID](<音乐相关/音乐/更新关联的视频ID.json>) | `PUT` | `/api/music/song/{{music_song_id}}/updateVideoId` |
-| [删除音乐](<音乐相关/音乐/删除音乐.json>) | `DELETE` | `/api/music/song/{{music_song_id}}/delete` |
-| [通过hash批量判断资源是否存在](<音乐相关/音乐/通过hash批量判断资源是否存在.json>) | `POST` | `/api/music/song/batchHashExist` |
+| [音乐搜索](<音乐相关(于261114停用)/音乐/音乐搜索.json>) | `GET` | `/api/music/song/search` |
+| [音乐列表](<音乐相关(于261114停用)/音乐/音乐列表.json>) | `GET` | `/api/music/song/list` |
+| [更新关联的视频ID](<音乐相关(于261114停用)/音乐/更新关联的视频ID.json>) | `PUT` | `/api/music/song/{{music_song_id}}/updateVideoId` |
+| [删除音乐](<音乐相关(于261114停用)/音乐/删除音乐.json>) | `DELETE` | `/api/music/song/{{music_song_id}}/delete` |
+| [通过hash批量判断资源是否存在](<音乐相关(于261114停用)/音乐/通过hash批量判断资源是否存在.json>) | `POST` | `/api/music/song/batchHashExist` |
 
 #### 歌词
 
-目录 [音乐相关/音乐/歌词/](<音乐相关/音乐/歌词/>) · 3 个请求 · [README.md](<音乐相关/音乐/歌词/README.md>)
+目录 [音乐相关(于261114停用)/音乐/歌词/](<音乐相关(于261114停用)/音乐/歌词/>) · 3 个请求 · [README.md](<音乐相关(于261114停用)/音乐/歌词/README.md>)
 
 | 请求 | 方法 | 路径 |
 | --- | --- | --- |
-| [歌词列表](<音乐相关/音乐/歌词/歌词列表.json>) | `GET` | `/api/music/song/{{music_song_id}}/lyric/list` |
-| [创建歌词](<音乐相关/音乐/歌词/创建歌词.json>) | `POST` | `/api/music/song/{{music_song_id}}/lyric/create` |
-| [删除歌词](<音乐相关/音乐/歌词/删除歌词.json>) | `DELETE` | `/api/music/song/{{music_song_id}}/lyric/delete` |
+| [歌词列表](<音乐相关(于261114停用)/音乐/歌词/歌词列表.json>) | `GET` | `/api/music/song/{{music_song_id}}/lyric/list` |
+| [创建歌词](<音乐相关(于261114停用)/音乐/歌词/创建歌词.json>) | `POST` | `/api/music/song/{{music_song_id}}/lyric/create` |
+| [删除歌词](<音乐相关(于261114停用)/音乐/歌词/删除歌词.json>) | `DELETE` | `/api/music/song/{{music_song_id}}/lyric/delete` |
 
 #### 资源
 
-目录 [音乐相关/音乐/资源/](<音乐相关/音乐/资源/>) · 4 个请求 · [README.md](<音乐相关/音乐/资源/README.md>)
+目录 [音乐相关(于261114停用)/音乐/资源/](<音乐相关(于261114停用)/音乐/资源/>) · 4 个请求 · [README.md](<音乐相关(于261114停用)/音乐/资源/README.md>)
 
 | 请求 | 方法 | 路径 |
 | --- | --- | --- |
-| [资源列表](<音乐相关/音乐/资源/资源列表.json>) | `GET` | `/api/music/song/{{music_song_id}}/media/list` |
-| [删除资源](<音乐相关/音乐/资源/删除资源.json>) | `DELETE` | `/api/music/song/{{music_song_id}}/media/delete` |
-| [获取播放地址](<音乐相关/音乐/资源/获取播放地址.json>) | `GET` | `/api/music/song/{{music_song_id}}/media/playUrl` |
-| [移动资源](<音乐相关/音乐/资源/移动资源.json>) | `PUT` | `/api/music/song/{{music_song_id}}/media/move` |
+| [资源列表](<音乐相关(于261114停用)/音乐/资源/资源列表.json>) | `GET` | `/api/music/song/{{music_song_id}}/media/list` |
+| [删除资源](<音乐相关(于261114停用)/音乐/资源/删除资源.json>) | `DELETE` | `/api/music/song/{{music_song_id}}/media/delete` |
+| [获取播放地址](<音乐相关(于261114停用)/音乐/资源/获取播放地址.json>) | `GET` | `/api/music/song/{{music_song_id}}/media/playUrl` |
+| [移动资源](<音乐相关(于261114停用)/音乐/资源/移动资源.json>) | `PUT` | `/api/music/song/{{music_song_id}}/media/move` |
 
 ### 专辑
 
-目录 [音乐相关/专辑/](<音乐相关/专辑/>) · 2 个请求 · [README.md](<音乐相关/专辑/README.md>)
+目录 [音乐相关(于261114停用)/专辑/](<音乐相关(于261114停用)/专辑/>) · 2 个请求 · [README.md](<音乐相关(于261114停用)/专辑/README.md>)
 
 | 请求 | 方法 | 路径 |
 | --- | --- | --- |
-| [专辑列表](<音乐相关/专辑/专辑列表.json>) | `GET` | `/api/music/album/list` |
-| [更新关联的视频ID](<音乐相关/专辑/更新关联的视频ID.json>) | `PUT` | `/api/music/album/{{music_alumb_id}}/updateVideoId` |
+| [专辑列表](<音乐相关(于261114停用)/专辑/专辑列表.json>) | `GET` | `/api/music/album/list` |
+| [更新关联的视频ID](<音乐相关(于261114停用)/专辑/更新关联的视频ID.json>) | `PUT` | `/api/music/album/{{music_alumb_id}}/updateVideoId` |
 
 ## 影院相关
 
