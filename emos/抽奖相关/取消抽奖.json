@@ -1,0 +1,91 @@
+{
+  "name": "取消抽奖",
+  "id": "d7199615-7e37-46c7-a6e5-c2aa8927c277",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "PUT",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/lottery/cancel?lottery_id=4zwLEpq8P2r1",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "lottery",
+        "cancel"
+      ],
+      "query": [
+        {
+          "key": "lottery_id",
+          "value": "4zwLEpq8P2r1"
+        }
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "e6002c3d-8f4e-4bd8-a6ae-b818d3e3e97d",
+      "name": "取消抽奖",
+      "originalRequest": {
+        "method": "PUT",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/lottery/cancel?lottery_id=4zwLEpq8P2r1",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "lottery",
+            "cancel"
+          ],
+          "query": [
+            {
+              "key": "lottery_id",
+              "value": "4zwLEpq8P2r1"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.3"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Tue, 03 Mar 2026 14:57:14 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"is_success\": false\n}"
+    }
+  ]
+}

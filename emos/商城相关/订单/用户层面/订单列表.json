@@ -1,0 +1,140 @@
+{
+  "name": "订单列表",
+  "id": "7ecb833e-4f3f-4840-b053-6fcaa415dd51",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/shop/order/user/list?seller_id&product_id&order_title&order_no&is_pay&is_delivery",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "shop",
+        "order",
+        "user",
+        "list"
+      ],
+      "query": [
+        {
+          "key": "seller_id",
+          "value": null
+        },
+        {
+          "key": "product_id",
+          "value": null
+        },
+        {
+          "key": "order_title",
+          "value": null
+        },
+        {
+          "key": "order_no",
+          "value": null,
+          "description": "订单号"
+        },
+        {
+          "key": "is_pay",
+          "value": null,
+          "description": "是否支付 null为全部"
+        },
+        {
+          "key": "is_delivery",
+          "value": null,
+          "description": "是否发货 null为全部"
+        }
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "67557f5e-2e7b-4305-8dda-6ef5471e0744",
+      "name": "订单列表",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/shop/order/list?seller_id&product_id&order_title&order_no&is_pay&is_delivery",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "shop",
+            "order",
+            "list"
+          ],
+          "query": [
+            {
+              "key": "seller_id",
+              "value": null
+            },
+            {
+              "key": "product_id",
+              "value": null
+            },
+            {
+              "key": "order_title",
+              "value": null
+            },
+            {
+              "key": "order_no",
+              "value": null,
+              "description": "订单号"
+            },
+            {
+              "key": "is_pay",
+              "value": null,
+              "description": "是否支付 null为全部"
+            },
+            {
+              "key": "is_delivery",
+              "value": null,
+              "description": "是否发货 null为全部"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.3"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sat, 28 Feb 2026 14:20:51 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"page\": 1,\n    \"page_size\": 10,\n    \"total\": 2,\n    \"items\": [\n        {\n            \"seller\": {\n                \"seller_id\": 1000,\n                \"name\": \"我的小店\",\n                \"cover_url\": null\n            },\n            \"product\": {\n                \"id\": 1000,\n                \"description\": \"好吃又大的大苹果\",\n                \"exchange_way\": \"购买后自提\"\n            },\n            \"order_no\": \"20260228215154shopyLwcZ\",\n            \"product_id\": 1000,\n            \"price_order\": 100,\n            \"order_title\": \"苹果1\",\n            \"order_cover_url\": null,\n            \"status_pay\": \"paid\",\n            \"urge_number\": 7,\n            \"buy_number\": 2,\n            \"time_pay\": \"2026-02-28 21:51:58\",\n            \"time_delivery\": null,\n            \"time_urge\": \"2026-02-28 22:03:17\",\n            \"remark_shop\": null,\n            \"remark_user\": null,\n            \"created_at\": \"2026-02-28T13:51:54.000000Z\"\n        },\n        {\n            \"seller\": {\n                \"seller_id\": 1000,\n                \"name\": \"我的小店\",\n                \"cover_url\": null\n            },\n            \"product\": {\n                \"id\": 1000,\n                \"description\": \"好吃又大的大苹果\",\n                \"exchange_way\": \"购买后自提\"\n            },\n            \"order_no\": \"20260228212058shop0uOFb\",\n            \"product_id\": 1000,\n            \"price_order\": 100,\n            \"order_title\": \"苹果1\",\n            \"order_cover_url\": null,\n            \"status_pay\": \"unpaid\",\n            \"urge_number\": null,\n            \"buy_number\": 1,\n            \"time_pay\": null,\n            \"time_delivery\": null,\n            \"time_urge\": null,\n            \"remark_shop\": null,\n            \"remark_user\": null,\n            \"created_at\": \"2026-02-28T13:20:58.000000Z\"\n        }\n    ]\n}"
+    }
+  ]
+}

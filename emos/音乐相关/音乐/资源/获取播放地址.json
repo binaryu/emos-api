@@ -1,0 +1,97 @@
+{
+  "name": "获取播放地址",
+  "id": "25cc26fc-b77b-4eea-ad59-dbef2713c5b6",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/music/song/{{music_song_id}}/media/playUrl?media_id=ymqnzjo29z80",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "music",
+        "song",
+        "{{music_song_id}}",
+        "media",
+        "playUrl"
+      ],
+      "query": [
+        {
+          "key": "media_id",
+          "value": "ymqnzjo29z80"
+        }
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "346d0fde-781c-4090-961d-a79f63a56473",
+      "name": "获取播放地址",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/music/song/{{music_song_id}}/media/playUrl?media_id=ymqnzjo29z80",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "music",
+            "song",
+            "{{music_song_id}}",
+            "media",
+            "playUrl"
+          ],
+          "query": [
+            {
+              "key": "media_id",
+              "value": "ymqnzjo29z80"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.6"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sat, 23 May 2026 05:52:29 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"url\": \"https://music.emosstore.sbs/files/test/8a7560a3-ac1d-4abb-97f3-1fad2c0d37ce.mp3\"\n}"
+    }
+  ]
+}

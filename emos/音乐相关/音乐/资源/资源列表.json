@@ -1,0 +1,85 @@
+{
+  "name": "资源列表",
+  "id": "3b8a70bf-231d-49b2-8b70-cad257642514",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/music/song/{{music_song_id}}/media/list",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "music",
+        "song",
+        "{{music_song_id}}",
+        "media",
+        "list"
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "ba3f77a2-7650-4ea2-9b07-e74df115ccd2",
+      "name": "资源列表",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/music/song/{{music_song_id}}/media/list",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "music",
+            "song",
+            "{{music_song_id}}",
+            "media",
+            "list"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.6"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Tue, 09 Jun 2026 10:22:26 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "[\n    {\n        \"media_id\": \"2g598yxqwqzr\",\n        \"file_suffix\": \"mp3\",\n        \"file_type\": \"audio/mpeg\",\n        \"file_size\": 13767777,\n        \"file_hash\": \"9d052c2f54b48c48651ce5dd637dabf0a49844ef00a79fc631ca5af7e5869a55\",\n        \"file_duration\": 330,\n        \"file_metadata\": {\n            \"album\": \"千と千寻の神隠し~ジブリ・コレクション α波オルゴール\",\n            \"title\": \"いのちの名前\",\n            \"artist\": \"久石譲\",\n            \"year\": null\n        },\n        \"file_quality\": \"high\",\n        \"meta_rate_bit\": 320000,\n        \"meta_rate_sampling\": 44100,\n        \"meta_bit_depth\": 0,\n        \"meta_channel\": 2,\n        \"path_type\": \"local_music_storage\",\n        \"is_primary\": false,\n        \"name\": \"sorakand 上传\",\n        \"created_at\": \"2026-06-09T10:18:20.000000Z\",\n        \"user\": {\n            \"user_id\": \"eR3YJLQ3Ls\",\n            \"username\": \"sorakand\",\n            \"avatar\": null\n        }\n    }\n]"
+    }
+  ]
+}

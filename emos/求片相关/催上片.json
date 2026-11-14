@@ -1,0 +1,103 @@
+{
+  "name": "催上片",
+  "id": "5f8663f4-8001-45c1-bd27-2a9679d2c5c2",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "PUT",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\n    // 求片ID\n    \"seek_id\": 1,\n    // 本次悬赏的萝卜 1到5千之间\n    \"carrot\": 10\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    },
+    "url": {
+      "raw": "{{url}}/api/seek/urge",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "seek",
+        "urge"
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "89f11b26-6e45-427b-a9ec-32712263e8ec",
+      "name": "催上片",
+      "originalRequest": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    // 求片ID\n    \"seek_id\": 1,\n    // 本次悬赏的萝卜 1到5千之间\n    \"carrot\": 10\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/seek/urge",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "seek",
+            "urge"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": "",
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Thu, 22 Jan 2026 07:13:29 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [
+        {
+          "expires": "Invalid Date",
+          "domain": "",
+          "path": ""
+        }
+      ],
+      "responseTime": null,
+      "body": "{\n    // 此资源总共悬赏的萝卜\n    \"seek_carrot\": 0   \n}"
+    }
+  ]
+}

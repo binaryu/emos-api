@@ -1,0 +1,95 @@
+{
+  "name": "暂存区文件入库",
+  "id": "d4b64c81-0043-40b7-b819-b6ae055413f4",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "POST",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\n    \"item_type\": \"ve\",\n    \"item_id\": 1349,\n    \"path_type\": \"local_emos_1\",\n    // \"file_name\": \"长风渡.2023.S01E02.第2集.2160p.WEB-DL.EDR.H.265.mp4\",\n    \"file_name\": \"Smoking.Behind.the.Supermarket.With.You.2026.S01E03.1080p.NF.WEB-DL.x264.AAC-ADWeb.mkv\"\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    },
+    "url": {
+      "raw": "{{url}}/api/upload/store/archive",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "upload",
+        "store",
+        "archive"
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "2004b3b3-015b-4b1c-ab68-8a1e895fd258",
+      "name": "暂存区文件入库",
+      "originalRequest": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"item_type\": \"ve\",\n    \"item_id\": 1349,\n    \"path_type\": \"local_emos_1\",\n    // \"file_name\": \"长风渡.2023.S01E02.第2集.2160p.WEB-DL.EDR.H.265.mp4\",\n    \"file_name\": \"Smoking.Behind.the.Supermarket.With.You.2026.S01E03.1080p.NF.WEB-DL.x264.AAC-ADWeb.mkv\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/upload/store/archive",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "upload",
+            "store",
+            "archive"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sun, 18 Oct 2026 16:33:53 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"media_id\": \"34o70vj78pq7\",\n    \"carrot\": 2\n}"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "name": "同步视频信息",
+  "id": "dccc95bb-778e-427a-a2da-9f4521d48cfc",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "PATCH",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/video/sync?tmdb_id=&todb_id=1000",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "video",
+        "sync"
+      ],
+      "query": [
+        {
+          "key": "tmdb_id",
+          "value": "",
+          "description": "与 todb 二选一"
+        },
+        {
+          "key": "todb_id",
+          "value": "1000",
+          "description": "与 tmdb 二选一  都存在以这个为准"
+        }
+      ]
+    },
+    "description": "从 `todb` 平台同步视频信息\n异步执行 约一分钟同步完成\n\n返回的数组是查询到待同步的内容 如果为空 提示他在todb平台先添加数据"
+  },
+  "response": [
+    {
+      "id": "baa9bf45-2f60-47de-b433-0dd7c215143e",
+      "name": "重新同步视频信息",
+      "originalRequest": {
+        "method": "PATCH",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/video/sync?tmdb_id=&todb_id=1000",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "video",
+            "sync"
+          ],
+          "query": [
+            {
+              "key": "tmdb_id",
+              "value": "",
+              "description": "与 todb 二选一"
+            },
+            {
+              "key": "todb_id",
+              "value": "1000",
+              "description": "与 tmdb 二选一  都存在以这个为准"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sun, 18 Jan 2026 04:11:07 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "[\n    {\n        \"todb_id\": 1000,\n        \"video_type\": \"tv\",\n        \"video_title\": \"西部世界\",\n        \"date_air\": \"2016-10-02\",\n        \"is_adult\": false\n    }\n]"
+    }
+  ]
+}

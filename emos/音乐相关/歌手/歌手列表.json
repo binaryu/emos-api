@@ -1,0 +1,103 @@
+{
+  "name": "歌手列表",
+  "id": "4aeab46c-fbe0-469b-ad39-444f2cd6610f",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/music/person/list?person_id&name",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "music",
+        "person",
+        "list"
+      ],
+      "query": [
+        {
+          "key": "person_id",
+          "value": null,
+          "type": "text"
+        },
+        {
+          "key": "name",
+          "value": null,
+          "type": "text"
+        }
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "ecddedbb-d425-4d60-b7fd-56cbe330aedf",
+      "name": "歌手列表",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/music/person/list?person_id&name",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "music",
+            "person",
+            "list"
+          ],
+          "query": [
+            {
+              "key": "person_id",
+              "value": null
+            },
+            {
+              "key": "name",
+              "value": null
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.6"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sat, 06 Jun 2026 13:51:20 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"page\": 1,\n    \"page_size\": 5,\n    \"total\": 1,\n    \"items\": [\n        {\n            \"person_id\": 1000,\n            \"name\": \"a2\",\n            \"original_name\": null,\n            \"tagline\": null,\n            \"biography\": null,\n            \"birthday\": null,\n            \"gender\": null,\n            \"birthplace\": null,\n            \"is_virtual\": 1,\n            \"is_adult\": false,\n            \"image_profile\": null,\n            \"image_backdrop\": null\n        }\n    ]\n}"
+    }
+  ]
+}

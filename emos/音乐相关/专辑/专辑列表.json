@@ -1,0 +1,141 @@
+{
+  "name": "专辑列表",
+  "id": "f220b3b4-f019-4cfb-8460-fefb7916c905",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/music/album/list?album_id&name&has_media&is_favorite&is_rating&person_id_artist&person_name_artist",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "music",
+        "album",
+        "list"
+      ],
+      "query": [
+        {
+          "key": "album_id",
+          "value": null
+        },
+        {
+          "key": "name",
+          "value": null
+        },
+        {
+          "key": "has_media",
+          "value": null
+        },
+        {
+          "key": "is_favorite",
+          "value": null
+        },
+        {
+          "key": "is_rating",
+          "value": null
+        },
+        {
+          "key": "person_id_artist",
+          "value": null
+        },
+        {
+          "key": "person_name_artist",
+          "value": null
+        }
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "4a95fd36-91a8-46bf-bec2-78bc94e56c72",
+      "name": "专辑列表",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/music/album/list?album_id&name&has_media&is_favorite&is_rating&person_id_artist&person_name_artist",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "music",
+            "album",
+            "list"
+          ],
+          "query": [
+            {
+              "key": "album_id",
+              "value": null
+            },
+            {
+              "key": "name",
+              "value": null
+            },
+            {
+              "key": "has_media",
+              "value": null
+            },
+            {
+              "key": "is_favorite",
+              "value": null
+            },
+            {
+              "key": "is_rating",
+              "value": null
+            },
+            {
+              "key": "person_id_artist",
+              "value": null
+            },
+            {
+              "key": "person_name_artist",
+              "value": null
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.6"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sat, 06 Jun 2026 15:25:36 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"page\": 1,\n    \"page_size\": 5,\n    \"total\": 127,\n    \"items\": [\n        {\n            \"album_id\": 1000,\n            \"name\": \"太阳之子\",\n            \"description\": null,\n            \"image_poster_url\": null,\n            \"image_background_url\": null,\n            \"tagline\": null,\n            \"release_date\": \"2026-03-24\",\n            \"release_company\": null,\n            \"video_list_id\": null,\n            \"type\": \"album\",\n            \"rating\": null,\n            \"rating_user\": null,\n            \"has_media\": true,\n            \"person_artists\": [\n                {\n                    \"person_id\": 1000,\n                    \"name\": \"周杰伦\",\n                    \"original_name\": \"周杰倫\",\n                    \"image_profile_url\": \"https://image.theotherdb.org/original/4w9X5eR2x5WxylZG\",\n                    \"gender\": null,\n                    \"is_virtual\": null,\n                    \"is_adult\": null\n                }\n            ],\n            \"is_favorite\": false,\n            \"count_song\": 13\n        },\n        {\n            \"album_id\": 1193,\n            \"name\": \"散场电影\",\n            \"description\": null,\n            \"image_poster_url\": \"https://image.theotherdb.org/w300/b056AmKroNWEj18e\",\n            \"image_background_url\": null,\n            \"tagline\": null,\n            \"release_date\": \"2007-03-21\",\n            \"release_company\": null,\n            \"video_list_id\": null,\n            \"type\": \"album\",\n            \"rating\": null,\n            \"rating_user\": null,\n            \"has_media\": false,\n            \"person_artists\": [\n                {\n                    \"person_id\": 1001,\n                    \"name\": \"许嵩\",\n                    \"original_name\": \"許嵩\",\n                    \"image_profile_url\": \"https://image.theotherdb.org/original/EXQdp7KwBmRMjB8N\",\n                    \"gender\": null,\n                    \"is_virtual\": null,\n                    \"is_adult\": null\n                }\n            ],\n            \"is_favorite\": false,\n            \"count_song\": 1\n        },\n        {\n            \"album_id\": 1192,\n            \"name\": \"浅唱\",\n            \"description\": null,\n            \"image_poster_url\": \"https://image.theotherdb.org/w300/0rDGwpKMZpWVMyb4\",\n            \"image_background_url\": null,\n            \"tagline\": null,\n            \"release_date\": \"2007-03-21\",\n            \"release_company\": null,\n            \"video_list_id\": null,\n            \"type\": \"album\",\n            \"rating\": null,\n            \"rating_user\": null,\n            \"has_media\": false,\n            \"person_artists\": [\n                {\n                    \"person_id\": 1001,\n                    \"name\": \"许嵩\",\n                    \"original_name\": \"許嵩\",\n                    \"image_profile_url\": \"https://image.theotherdb.org/original/EXQdp7KwBmRMjB8N\",\n                    \"gender\": null,\n                    \"is_virtual\": null,\n                    \"is_adult\": null\n                }\n            ],\n            \"is_favorite\": false,\n            \"count_song\": 1\n        },\n        {\n            \"album_id\": 1195,\n            \"name\": \"七号公园\",\n            \"description\": null,\n            \"image_poster_url\": \"https://image.theotherdb.org/w300/qrwGxEKP4OK7Dl91\",\n            \"image_background_url\": null,\n            \"tagline\": null,\n            \"release_date\": \"2007-03-21\",\n            \"release_company\": null,\n            \"video_list_id\": null,\n            \"type\": \"album\",\n            \"rating\": null,\n            \"rating_user\": null,\n            \"has_media\": false,\n            \"person_artists\": [\n                {\n                    \"person_id\": 1000,\n                    \"name\": \"a2\",\n                    \"original_name\": \"許嵩\",\n                    \"image_profile_url\": \"https://image.theotherdb.org/original/EXQdp7KwBmRMjB8N\",\n                    \"gender\": null,\n                    \"is_virtual\": null,\n                    \"is_adult\": null\n                }\n            ],\n            \"is_favorite\": false,\n            \"count_song\": 1\n        },\n        {\n            \"album_id\": 1194,\n            \"name\": \"摇头玩\",\n            \"description\": null,\n            \"image_poster_url\": \"https://image.theotherdb.org/w300/25De6mKGLBWrEv1Q\",\n            \"image_background_url\": null,\n            \"tagline\": null,\n            \"release_date\": \"2007-03-21\",\n            \"release_company\": null,\n            \"video_list_id\": null,\n            \"type\": \"album\",\n            \"rating\": null,\n            \"rating_user\": null,\n            \"has_media\": false,\n            \"person_artists\": [\n                {\n                    \"person_id\": 1000,\n                    \"name\": \"a2\",\n                    \"original_name\": \"許嵩\",\n                    \"image_profile_url\": \"https://image.theotherdb.org/original/EXQdp7KwBmRMjB8N\",\n                    \"gender\": null,\n                    \"is_virtual\": null,\n                    \"is_adult\": null\n                }\n            ],\n            \"is_favorite\": false,\n            \"count_song\": 1\n        }\n    ]\n}"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "name": "评分",
+  "id": "56592282-c867-49fc-8b70-58a628ec1735",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "PUT",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/music/rating?type=mp&value=1000&rating=1",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "music",
+        "rating"
+      ],
+      "query": [
+        {
+          "key": "type",
+          "value": "mp",
+          "description": "类型"
+        },
+        {
+          "key": "value",
+          "value": "1000",
+          "description": "关联的id",
+          "type": "text"
+        },
+        {
+          "key": "rating",
+          "value": "1",
+          "description": "5分制 整数 传null则删除评分"
+        }
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "49a99a11-017b-4695-83cd-7d26acaacd42",
+      "name": "评分",
+      "originalRequest": {
+        "method": "PUT",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/music/rating?type=mp&value=1000&rating=",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "music",
+            "rating"
+          ],
+          "query": [
+            {
+              "key": "type",
+              "value": "mp",
+              "description": "类型"
+            },
+            {
+              "key": "value",
+              "value": "1000",
+              "description": "关联的id"
+            },
+            {
+              "key": "rating",
+              "value": "",
+              "description": "5分制 整数 传null则删除评分"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.6"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Thu, 21 May 2026 16:52:02 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"rating\": null\n}"
+    }
+  ]
+}

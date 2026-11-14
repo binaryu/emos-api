@@ -1,0 +1,99 @@
+{
+  "name": "申请成为商户",
+  "id": "40bc9ea8-944e-4a25-b8c9-bf9ce3e8b553",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "POST",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\n    // 店铺名称 30字内\n    \"name\": \"我的小店\",\n    // 店铺简介 200字内\n    \"description\": \"专卖啦啦啦\"\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    },
+    "url": {
+      "raw": "{{url}}/api/shop/seller/apply",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "shop",
+        "seller",
+        "apply"
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "a4b89464-5343-4c1b-bdef-b1d8274ad88b",
+      "name": "申请成功",
+      "originalRequest": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    // 店铺名称 30字内\n    \"name\": \"我的小店\",\n    // 店铺简介 200字内\n    \"description\": \"专卖啦啦啦\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/shop/seller/apply",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "shop",
+            "seller",
+            "apply"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.3"
+        },
+        {
+          "key": "Content-Type",
+          "value": "text/html; charset=utf-8"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sat, 28 Feb 2026 10:41:14 GMT"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": null
+    }
+  ]
+}

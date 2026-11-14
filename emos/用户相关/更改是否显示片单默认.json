@@ -1,0 +1,68 @@
+{
+  "name": "更改是否显示片单默认",
+  "id": "bd9bcfd3-0659-444b-af6b-c62197958f20",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": []
+  },
+  "response": [
+    {
+      "id": "428be3ec-8185-48f7-b2d5-298f21240079",
+      "name": "更改是否显示片单默认",
+      "originalRequest": {
+        "method": "PUT",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/user/watchDefault",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "user",
+            "watchDefault"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.6"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sat, 11 Jul 2026 18:04:29 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"is_show_watch_default\": true\n}"
+    }
+  ]
+}

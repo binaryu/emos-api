@@ -1,0 +1,100 @@
+{
+  "name": "获取播放地址",
+  "id": "a8df82ae-e886-4ebb-9e78-7c75cd4e67d9",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/video/media/playUrl?media_id=YLgw45W2Jk1V",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "video",
+        "media",
+        "playUrl"
+      ],
+      "query": [
+        {
+          "key": "media_id",
+          "value": "YLgw45W2Jk1V"
+        }
+      ]
+    },
+    "description": "第三方播放使用 每次`-1`萝卜\n获取后 可以缓存10分钟"
+  },
+  "response": [
+    {
+      "id": "780db936-7375-4b21-b99e-b4d4061ccfee",
+      "name": "获取播放地址",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/video/media/playUrl?media_id=YLgw45W2Jk1V",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "video",
+            "media",
+            "playUrl"
+          ],
+          "query": [
+            {
+              "key": "media_id",
+              "value": "YLgw45W2Jk1V"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": "",
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sun, 08 Feb 2026 07:11:56 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [
+        {
+          "expires": "Invalid Date",
+          "domain": "",
+          "path": ""
+        }
+      ],
+      "responseTime": null,
+      "body": "{\n    \"url\": \"http://emos.local/play\"\n}"
+    }
+  ]
+}

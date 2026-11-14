@@ -1,0 +1,93 @@
+{
+  "name": "修改邀请备注",
+  "id": "bce3713a-f6ef-4f21-bda4-e8b9b9af1273",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "PUT",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\r\n    \"user_id\": \"eR3YJLQ3Ls\",\r\n    \"remark\": \"是个好人\"\r\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    },
+    "url": {
+      "raw": "{{url}}/api/invite/remark",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "invite",
+        "remark"
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "1eb4130a-0eb3-4c36-9204-d89e6340797c",
+      "name": "修改邀请备注",
+      "originalRequest": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"user_id\": \"eR3YJLQ3Ls\",\r\n    \"remark\": \"是个好人\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/invite/remark",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "invite",
+            "remark"
+          ]
+        }
+      },
+      "status": "No Content",
+      "code": 204,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.6"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Tue, 23 Jun 2026 13:26:28 GMT"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": null
+    }
+  ]
+}

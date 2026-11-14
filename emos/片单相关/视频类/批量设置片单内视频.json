@@ -1,0 +1,102 @@
+{
+  "name": "批量设置片单内视频",
+  "id": "711e190a-914b-433b-912b-24d2b98271b8",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "POST",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "[\n    // 排序为此数组是顺序 单个片单最大视频为5000\n    {\n        // tmdb tv 的 id\n        \"type\": \"tmdb_tv\",\n        \"value\": \"223911\"\n    },\n    {\n        // tmdb movie 的 id\n        \"type\": \"tmdb_movie\",\n        \"value\": \"238\"\n    },\n    {\n        // todb 的 id\n        \"type\": \"todb\",\n        \"value\": \"1009\"\n    },\n    {\n        // 系统中 video 的 id\n        \"type\": \"video_id\",\n        \"value\": \"1011\"\n    }\n]",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    },
+    "url": {
+      "raw": "{{url}}/api/watch/{{watch_id}}/video/update",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "watch",
+        "{{watch_id}}",
+        "video",
+        "update"
+      ]
+    },
+    "description": "最大支持 `1000` 个视频\n每次提交时会重置当前片单的视频\n\n外部接口使用 一次性更新片单内视频\n请先联系官方确定您添加的内容是否与现有的动态片单产生冲突 \n\n返回值为设置成功的数据\n\n"
+  },
+  "response": [
+    {
+      "id": "4b66f7f8-1d99-41c9-9b14-5c329a69badb",
+      "name": "批量设置片单内视频",
+      "originalRequest": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\n    // 排序为此数组是顺序 单个片单最大视频为5000\n    {\n        // tmdb tv 的 id\n        \"type\": \"tmdb_tv\",\n        \"value\": \"223911\"\n    },\n    {\n        // tmdb movie 的 id\n        \"type\": \"tmdb_movie\",\n        \"value\": \"238\"\n    },\n    {\n        // todb 的 id\n        \"type\": \"todb\",\n        \"value\": \"1009\"\n    },\n    {\n        // 系统中 video 的 id\n        \"type\": \"video_id\",\n        \"value\": \"1011\"\n    }\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/watch/{{watch_id}}/video/update",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "watch",
+            "{{watch_id}}",
+            "video",
+            "update"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sun, 25 Jan 2026 07:13:52 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "[\n    {\n        \"id\": 1002,\n        \"todb_id\": 1002,\n        \"tmdb_id\": 238,\n        \"video_type\": \"movie\",\n        \"title\": \"教父\"\n    },\n    {\n        \"id\": 1005,\n        \"todb_id\": 1005,\n        \"tmdb_id\": 223911,\n        \"video_type\": \"tv\",\n        \"title\": \"仙逆\"\n    },\n    {\n        \"id\": 1009,\n        \"todb_id\": 1009,\n        \"tmdb_id\": 124003,\n        \"video_type\": \"tv\",\n        \"title\": \"完美世界\"\n    },\n    {\n        \"id\": 1011,\n        \"todb_id\": 1011,\n        \"tmdb_id\": 227980,\n        \"video_type\": \"tv\",\n        \"title\": \"华卫士基萨利斯\"\n    }\n]"
+    }
+  ]
+}

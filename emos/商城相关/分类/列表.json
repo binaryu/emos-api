@@ -1,0 +1,101 @@
+{
+  "name": "列表",
+  "id": "aba1953f-27af-449e-bf80-a26dadad00f8",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": ""
+    },
+    "url": {
+      "raw": "{{url}}/api/shop/category/list?seller_id=1000",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "shop",
+        "category",
+        "list"
+      ],
+      "query": [
+        {
+          "key": "seller_id",
+          "value": "1000"
+        }
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "ee44b57f-34cb-4414-84da-44e923382398",
+      "name": "列表",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "{{url}}/api/shop/category/list?seller_id=1000",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "shop",
+            "category",
+            "list"
+          ],
+          "query": [
+            {
+              "key": "seller_id",
+              "value": "1000"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.3"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sat, 28 Feb 2026 11:10:41 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "[\n    {\n        \"category_id\": 1000,\n        \"name\": \"分类1\",\n        \"sort\": 80\n    }\n]"
+    }
+  ]
+}

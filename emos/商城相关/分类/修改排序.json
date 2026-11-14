@@ -1,0 +1,99 @@
+{
+  "name": "修改排序",
+  "id": "8a817663-f208-46af-9430-6a484378b1ff",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "PUT",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\n    \"category_id\": 1000,\n    \"sort\": 80\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    },
+    "url": {
+      "raw": "{{url}}/api/shop/category/sort",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "shop",
+        "category",
+        "sort"
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "0e3b754c-77b0-4516-8655-de8f2f56dc46",
+      "name": "移动排序",
+      "originalRequest": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"category_id\": 1000,\n    \"sort\": 80\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/shop/category/sort",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "shop",
+            "category",
+            "sort"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.3"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sat, 28 Feb 2026 11:03:19 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"sort\": 80\n}"
+    }
+  ]
+}

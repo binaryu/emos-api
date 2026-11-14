@@ -1,0 +1,9 @@
+# 本地导出的压缩包
+*.zip
+
+# 同步脚本的临时生成目录
+.emos.staging.*
+
+# Python 自测缓存
+__pycache__/
+*.py[cod]

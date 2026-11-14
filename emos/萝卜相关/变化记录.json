@@ -1,0 +1,92 @@
+{
+  "name": "变化记录",
+  "id": "afc347ec-be9e-4f5d-ac93-9db8cb2b65a4",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/carrot/history?type=&user_id=",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "carrot",
+        "history"
+      ],
+      "query": [
+        {
+          "key": "type",
+          "value": "",
+          "description": "类型"
+        },
+        {
+          "key": "user_id",
+          "value": "",
+          "description": "对方用户id 传递的话则查对方"
+        }
+      ]
+    },
+    "description": "# `type` 类型\n- `earn` 获取\n- `cost` 使用\n\n# `expired_at` 过期时间"
+  },
+  "response": [
+    {
+      "id": "88bd0beb-c1a8-45f2-af76-93f148fb51f0",
+      "name": "变化记录",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/carrot/history",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "carrot",
+            "history"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sun, 25 Jan 2026 14:19:24 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"page\": 1,\n    \"page_size\": 15,\n    \"total\": 3,\n    \"items\": [\n        {\n            \"trigger_type\": \"system_interest\",\n            \"trigger_type_string\": \"系统手续费\",\n            \"type\": \"cost\",\n            \"point\": 2,\n            \"expired_at\": null,\n            \"created_at\": \"2026-01-25T14:16:27.000000Z\"\n        },\n        {\n            \"trigger_type\": \"transfer\",\n            \"trigger_type_string\": \"转增\",\n            \"type\": \"earn\",\n            \"point\": 1,\n            \"expired_at\": \"2027-01-25\",\n            \"created_at\": \"2026-01-25T14:00:37.000000Z\"\n        },\n        {\n            \"trigger_type\": \"request_speed_video\",\n            \"trigger_type_string\": \"加速求片\",\n            \"type\": \"cost\",\n            \"point\": 10,\n            \"expired_at\": null,\n            \"created_at\": \"2026-01-25T12:44:52.000000Z\"\n        }\n    ]\n}"
+    }
+  ]
+}

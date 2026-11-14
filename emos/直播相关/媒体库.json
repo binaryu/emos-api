@@ -1,0 +1,79 @@
+{
+  "name": "媒体库",
+  "id": "807b49a2-54a6-4781-8aec-102bd564b3fa",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/live/library",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "live",
+        "library"
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "f37ce063-52ca-45d1-ad72-aa6979540155",
+      "name": "媒体库",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/live/library",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "live",
+            "library"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Wed, 11 Feb 2026 11:35:35 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "[\n    {\n        \"id\": 100,\n        \"title\": \"央视\",\n        \"image_poster_url\": null\n    },\n    {\n        \"id\": 200,\n        \"title\": \"卫视\",\n        \"image_poster_url\": null\n    },\n    {\n        \"id\": 300,\n        \"title\": \"地方\",\n        \"image_poster_url\": null\n    },\n    {\n        \"id\": 900,\n        \"title\": \"未分类\",\n        \"image_poster_url\": null\n    }\n]"
+    }
+  ]
+}

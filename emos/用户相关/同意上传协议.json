@@ -1,0 +1,76 @@
+{
+  "name": "同意上传协议",
+  "id": "5803212b-8c95-49b4-8e76-4695ad7dfebe",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "PUT",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/user/agreeUploadAgreement",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "user",
+        "agreeUploadAgreement"
+      ]
+    },
+    "description": "建议让用户在官网手动同意"
+  },
+  "response": [
+    {
+      "id": "d769fc81-e6bb-4a1f-95b6-76f036e7a812",
+      "name": "同意上传协议",
+      "originalRequest": {
+        "method": "PUT",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/user/agreeUploadAgreement",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "user",
+            "agreeUploadAgreement"
+          ]
+        }
+      },
+      "status": "No Content",
+      "code": 204,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sat, 17 Jan 2026 04:51:01 GMT"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": null
+    }
+  ]
+}

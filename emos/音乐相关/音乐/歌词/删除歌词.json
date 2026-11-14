@@ -1,0 +1,97 @@
+{
+  "name": "删除歌词",
+  "id": "138a3434-c4c2-4e62-bdd3-a850720b0f33",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "DELETE",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/music/song/{{music_song_id}}/lyric/delete?lyric_id=1",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "music",
+        "song",
+        "{{music_song_id}}",
+        "lyric",
+        "delete"
+      ],
+      "query": [
+        {
+          "key": "lyric_id",
+          "value": "1"
+        }
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "5a4a88a8-880f-4344-b87c-55430770224e",
+      "name": "删除歌词",
+      "originalRequest": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/music/song/{{music_song_id}}/lyric/delete?lyric_id=1",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "music",
+            "song",
+            "{{music_song_id}}",
+            "lyric",
+            "delete"
+          ],
+          "query": [
+            {
+              "key": "lyric_id",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.6"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Fri, 22 May 2026 15:47:09 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"carrot\": -1\n}"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "name": "媒体列表",
+  "id": "ffcff1c0-21b7-4926-805d-1590a58f1312",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/live/media?live_list_id={{live_list_id}}",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "live",
+        "media"
+      ],
+      "query": [
+        {
+          "key": "live_list_id",
+          "value": "{{live_list_id}}",
+          "description": "直播的媒体库id"
+        }
+      ]
+    },
+    "description": "# `status` 值 系统内部用到 用户无法更改\n- `normal` 正常\n- `error` 错误\n\n# `path_type` 目前固定为 `m3u8`"
+  },
+  "response": [
+    {
+      "id": "625fe474-c1a3-4a70-a9e9-68a4f3370f76",
+      "name": "媒体列表",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/live/media?live_list_id={{live_list_id}}",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "live",
+            "media"
+          ],
+          "query": [
+            {
+              "key": "live_list_id",
+              "value": "{{live_list_id}}",
+              "description": "直播的媒体库id"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Wed, 11 Feb 2026 11:54:54 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"page\": 1,\n    \"page_size\": 15,\n    \"total\": 1,\n    \"items\": [\n        {\n            \"media_id\": \"ez6wnp4zjy1q\",\n            \"name\": \"1080p\",\n            \"path_type\": \"m3u8\",\n            \"path_url\": \"http://43.251.226.89:8080/play/1.m3u8\",\n            \"status\": \"normal\",\n            \"pseudonym\": \"best-fan\",\n            \"is_can_edit\": true,\n            \"created_at\": null\n        }\n    ]\n}"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "name": "更新备注",
+  "id": "915f160d-99cd-4818-8761-f3f35a7d390d",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "POST",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\n    \"order_no\": \"20260331002243shopwHRpa\",\n    // 订单备注 200字内\n    \"remark\": \"啦啦啦\"\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    },
+    "url": {
+      "raw": "{{url}}/api/shop/order/shop/remark",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "shop",
+        "order",
+        "shop",
+        "remark"
+      ]
+    }
+  },
+  "response": []
+}

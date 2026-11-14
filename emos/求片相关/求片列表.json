@@ -1,0 +1,158 @@
+{
+  "name": "求片列表",
+  "id": "f79bd196-de42-4e86-9eb0-63c86bd3f764",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "POST",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\n    // 视频类型\n    \"video_type\": null,\n    // 排序字段 count_request 求片总数 seek_carrot 萝卜数 upload_expired_at 上传过期时间 updated_at 更新时间\n    \"sort_by\": \"updated_at\",\n    // 排序方式 asc desc\n    \"sort_order\": \"desc\",\n    // 状态 default 默认 upload 已认领 complete 完成 cancel 取消 forget 遗忘\n    \"status\": [\n        \"default\",\n        \"upload\"\n    ],\n    // 是否自己上传\n    \"upload_self\": false,\n    // 搜索标题 前缀匹配模式\n    \"video_title\": null,\n    // 是否包含用户求片历史\n    \"with_user\": false\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    },
+    "url": {
+      "raw": "{{url}}/api/seek",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "seek"
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "a0ef6dd3-d88b-46b6-bb57-88f48e924c83",
+      "name": "求片列表",
+      "originalRequest": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    // 视频类型\n    \"video_type\": null,\n    // 排序字段 count_request 求片总数 seek_carrot 萝卜数 upload_expired_at 上传过期时间 updated_at 更新时间\n    \"sort_by\": \"updated_at\",\n    // 排序方式 asc desc\n    \"sort_order\": \"desc\",\n    // 状态 default 默认 upload 已认领 complete 完成 cancel 取消 forget 遗忘\n    \"status\": [\n        \"default\",\n        \"upload\"\n    ],\n    // 是否自己上传\n    \"upload_self\": false,\n    // 搜索标题 前缀匹配模式\n    \"video_title\": null\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/seek",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "seek"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Thu, 22 Jan 2026 07:22:42 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"page\": 1,\n    \"page_size\": 20,\n    \"total\": 3,\n    \"items\": [\n        {\n            \"id\": 1,\n            \"video_type\": \"movie\",\n            \"todb_id\": 7819,\n            \"tmdb_id\": 508935,\n            \"video_title_display\": \"八佰\",\n            \"video_list_id\": 7819,\n            \"video_season_id\": null,\n            \"video_season_number\": null,\n            \"video_episode_id\": null,\n            \"video_episode_number\": null,\n            \"count_request\": 1,\n            \"status\": \"default\",\n            \"upload_expired_at\": null,\n            \"updated_at\": \"2026-01-22T07:05:06.000000Z\",\n            \"video_title\": \"八佰\",\n            \"video_date_air\": \"2026-07-14\",\n            \"video_image_logo\": \"https://image.theotherdb.org/w154/x4YQvW1DwLVKXa0O\",\n            \"video_image_poster\": \"https://image.theotherdb.org/w185/N5ZAPKyMeeDKLwlg\",\n            \"video_image_backdrop\": \"https://image.theotherdb.org/w1280/gVAvkR7800VKjOJq\",\n            \"tmdb_url\": \"https://www.themoviedb.org/movie/508935\",\n            \"upload_username\": null,\n            \"is_can_claim\": true,\n            \"item_id\": \"vl-7819\",\n            \"seek_carrot\": 0\n        },\n        {\n            \"id\": 4,\n            \"video_type\": \"tv\",\n            \"todb_id\": 1009,\n            \"tmdb_id\": 124003,\n            \"video_title_display\": \"完美世界 # S00E02\",\n            \"video_list_id\": 1009,\n            \"video_season_id\": 1026,\n            \"video_season_number\": 0,\n            \"video_episode_id\": 1986,\n            \"video_episode_number\": 2,\n            \"count_request\": 1,\n            \"status\": \"default\",\n            \"upload_expired_at\": null,\n            \"updated_at\": \"2026-01-22T06:19:16.000000Z\",\n            \"video_title\": \"完美世界\",\n            \"video_date_air\": \"2026-07-14\",\n            \"video_image_logo\": \"https://image.theotherdb.org/w154/oBl1NKJoGqWjJDwa\",\n            \"video_image_poster\": \"https://image.theotherdb.org/w185/Oo3gmkRDNnWV15GA\",\n            \"video_image_backdrop\": \"https://image.theotherdb.org/w1280/O8pkdJz5obKMQyqx\",\n            \"tmdb_url\": \"https://www.themoviedb.org/tv/124003\",\n            \"upload_username\": null,\n            \"is_can_claim\": true,\n            \"item_id\": \"ve-1986\",\n            \"seek_carrot\": 0\n        },\n        {\n            \"id\": 3,\n            \"video_type\": \"movie\",\n            \"todb_id\": 7858,\n            \"tmdb_id\": 1093215,\n            \"video_title_display\": \"不亲密朋友\",\n            \"video_list_id\": 7858,\n            \"video_season_id\": null,\n            \"video_season_number\": null,\n            \"video_episode_id\": null,\n            \"video_episode_number\": null,\n            \"count_request\": 1,\n            \"status\": \"upload\",\n            \"upload_expired_at\": \"2026-01-23 14:18:38\",\n            \"updated_at\": \"2026-01-22T06:09:57.000000Z\",\n            \"video_title\": \"不亲密朋友\",\n            \"video_date_air\": \"2026-07-14\",\n            \"video_image_logo\": null,\n            \"video_image_poster\": \"https://image.theotherdb.org/w185/1XaJpKvBL8MK3lx9\",\n            \"video_image_backdrop\": \"https://image.theotherdb.org/w1280/NxmMPWjDrQpR964Q\",\n            \"tmdb_url\": \"https://www.themoviedb.org/movie/1093215\",\n            \"upload_username\": \"soa\",\n            \"is_can_claim\": true,\n            \"item_id\": \"vl-7858\",\n            \"seek_carrot\": 0\n        }\n    ]\n}"
+    },
+    {
+      "id": "e830d940-8d3f-4f63-aa65-dc8c0f6d1d56",
+      "name": "包含用户求片历史",
+      "originalRequest": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    // 视频类型\n    \"video_type\": null,\n    // 排序字段 count_request 求片总数 seek_carrot 萝卜数 upload_expired_at 上传过期时间 updated_at 更新时间\n    \"sort_by\": \"updated_at\",\n    // 排序方式 asc desc\n    \"sort_order\": \"desc\",\n    // 状态 default 默认 upload 已认领 complete 完成 cancel 取消 forget 遗忘\n    \"status\": [\n        \"default\",\n        \"upload\"\n    ],\n    // 是否自己上传\n    \"upload_self\": false,\n    // 搜索标题 前缀匹配模式\n    \"video_title\": null,\n    // 是否包含用户求片历史\n    \"with_user\": true\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/seek",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "seek"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sun, 25 Jan 2026 15:48:17 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"page\": 1,\n    \"page_size\": 20,\n    \"total\": 4,\n    \"items\": [\n        {\n            \"id\": 1,\n            \"video_type\": \"movie\",\n            \"todb_id\": 7819,\n            \"tmdb_id\": 508935,\n            \"video_title_display\": \"八佰\",\n            \"video_list_id\": 7819,\n            \"video_season_id\": null,\n            \"video_season_number\": null,\n            \"video_episode_id\": null,\n            \"video_episode_number\": null,\n            \"count_request\": 1,\n            \"status\": \"default\",\n            \"upload_expired_at\": null,\n            \"updated_at\": \"2026-01-25T12:44:52.000000Z\",\n            \"video_title\": \"八佰\",\n            \"video_image_logo\": \"https://image.theotherdb.org/w154/x4YQvW1DwLVKXa0O\",\n            \"video_image_poster\": \"https://image.theotherdb.org/w185/N5ZAPKyMeeDKLwlg\",\n            \"video_image_backdrop\": \"https://image.theotherdb.org/w1280/gVAvkR7800VKjOJq\",\n            \"tmdb_url\": \"https://www.themoviedb.org/movie/508935\",\n            \"upload_username\": null,\n            \"is_can_claim\": true,\n            \"item_id\": \"vl-7819\",\n            \"seek_carrot\": 50,\n            \"users\": [\n                {\n                    \"username\": \"soa\",\n                    \"avatar\": null,\n                    \"carrot\": 10,\n                    \"created_at\": \"2026-01-25T12:44:52.000000Z\"\n                },\n                {\n                    \"username\": \"soa\",\n                    \"avatar\": null,\n                    \"carrot\": 10,\n                    \"created_at\": \"2026-01-25T12:44:51.000000Z\"\n                }\n            ]\n        },\n        {\n            \"id\": 6,\n            \"video_type\": \"tv\",\n            \"todb_id\": 1001,\n            \"tmdb_id\": 1399,\n            \"video_title_display\": \"权力的游戏 # S00E01\",\n            \"video_list_id\": 1001,\n            \"video_season_id\": 1005,\n            \"video_season_number\": 0,\n            \"video_episode_id\": 1097,\n            \"video_episode_number\": 1,\n            \"count_request\": 1,\n            \"status\": \"default\",\n            \"upload_expired_at\": null,\n            \"updated_at\": \"2026-01-25T12:29:03.000000Z\",\n            \"video_title\": \"权力的游戏\",\n            \"video_image_logo\": \"https://image.theotherdb.org/w154/meLB0xzkLQRE846Z\",\n            \"video_image_poster\": \"https://image.theotherdb.org/w185/6N5ZAPKyG2zLwlgx\",\n            \"video_image_backdrop\": \"https://image.theotherdb.org/w1280/rgVAvkR7xJKjOJqQ\",\n            \"tmdb_url\": \"https://www.themoviedb.org/tv/1399\",\n            \"upload_username\": null,\n            \"is_can_claim\": true,\n            \"item_id\": \"ve-1097\",\n            \"seek_carrot\": 0,\n            \"users\": [\n                {\n                    \"username\": \"user_i\",\n                    \"avatar\": null,\n                    \"carrot\": 0,\n                    \"created_at\": \"2026-01-25T12:29:03.000000Z\"\n                }\n            ]\n        },\n        {\n            \"id\": 4,\n            \"video_type\": \"tv\",\n            \"todb_id\": 1009,\n            \"tmdb_id\": 124003,\n            \"video_title_display\": \"完美世界 # S00E02\",\n            \"video_list_id\": 1009,\n            \"video_season_id\": 1026,\n            \"video_season_number\": 0,\n            \"video_episode_id\": 1986,\n            \"video_episode_number\": 2,\n            \"count_request\": 1,\n            \"status\": \"default\",\n            \"upload_expired_at\": null,\n            \"updated_at\": \"2026-01-22T06:19:16.000000Z\",\n            \"video_title\": \"完美世界\",\n            \"video_image_logo\": \"https://image.theotherdb.org/w154/oBl1NKJoGqWjJDwa\",\n            \"video_image_poster\": \"https://image.theotherdb.org/w185/Oo3gmkRDNnWV15GA\",\n            \"video_image_backdrop\": \"https://image.theotherdb.org/w1280/O8pkdJz5obKMQyqx\",\n            \"tmdb_url\": \"https://www.themoviedb.org/tv/124003\",\n            \"upload_username\": null,\n            \"is_can_claim\": true,\n            \"item_id\": \"ve-1986\",\n            \"seek_carrot\": 0,\n            \"users\": [\n                {\n                    \"username\": \"user_i\",\n                    \"avatar\": null,\n                    \"carrot\": 0,\n                    \"created_at\": \"2026-01-22T06:19:16.000000Z\"\n                }\n            ]\n        },\n        {\n            \"id\": 3,\n            \"video_type\": \"movie\",\n            \"todb_id\": 7858,\n            \"tmdb_id\": 1093215,\n            \"video_title_display\": \"不亲密朋友\",\n            \"video_list_id\": 7858,\n            \"video_season_id\": null,\n            \"video_season_number\": null,\n            \"video_episode_id\": null,\n            \"video_episode_number\": null,\n            \"count_request\": 1,\n            \"status\": \"upload\",\n            \"upload_expired_at\": \"2026-01-23 14:18:38\",\n            \"updated_at\": \"2026-01-22T06:09:57.000000Z\",\n            \"video_title\": \"不亲密朋友\",\n            \"video_image_logo\": null,\n            \"video_image_poster\": \"https://image.theotherdb.org/w185/1XaJpKvBL8MK3lx9\",\n            \"video_image_backdrop\": \"https://image.theotherdb.org/w1280/NxmMPWjDrQpR964Q\",\n            \"tmdb_url\": \"https://www.themoviedb.org/movie/1093215\",\n            \"upload_username\": \"user_i\",\n            \"is_can_claim\": false,\n            \"item_id\": \"vl-7858\",\n            \"seek_carrot\": 0,\n            \"users\": [\n                {\n                    \"username\": \"user_i\",\n                    \"avatar\": null,\n                    \"carrot\": 0,\n                    \"created_at\": \"2026-01-22T06:09:57.000000Z\"\n                }\n            ]\n        }\n    ]\n}"
+    }
+  ]
+}

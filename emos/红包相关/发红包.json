@@ -1,0 +1,98 @@
+{
+  "name": "发红包",
+  "id": "873829c9-9d87-4b19-9b39-6fc59c4351bb",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "POST",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\n\t// 红包类型 必填\n\t// default 普通\n\t// password 口令\n\t\"type\": \"default\",\n\t// 领取类型 必填\n\t// average 均分模式 红包总金额 / 可领人数\n\t// random 随机模式 每人至少可以领取1\n\t\"receive\": \"average\",\n\t// 红包总金额 1 - 60000 萝卜 必填\n\t\"carrot\": 2,\n\t// 可领人数 1 - 10000 人 必填\n\t\"number\": 2,\n\t// 寄语 50子内 必填\n\t\"blessing\": \"新年快乐\",\n\t// 字符串 区分大小写 1-50字符内 口令或专属时必填\n\t\"text\": null,\n\t// 文件访问url 图片类型建议小于1m\n\t// \"file_url\": \"https://image.tmdb.org/t/p/w500/hew9LSQW4wk63aN1Z7cEBTISL9B.jpg\",\n\t// 文件类型 如果存在 file_id 或 file_url 则必填 决定了红包的类型 支持 image audio\n\t// \"file_type\": \"image\",\n\t// 独占模式 存在file_url并且为true时bot只会显示文件内容 默认为 false\n\t\"is_exclusive\": true,\n\t// 过期时间 60秒 - 48小时 默认为24小时 单位秒\n\t\"seconds\": 120\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    },
+    "url": {
+      "raw": "{{url}}/api/redPacket/create",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "redPacket",
+        "create"
+      ]
+    },
+    "description": "封面图相同的话 建议把 `file_id` 保存起来"
+  },
+  "response": [
+    {
+      "id": "3dda7697-075a-4f30-8c83-ccb30f0e0d70",
+      "name": "发红包",
+      "originalRequest": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t// 红包类型 必填\n\t// default 普通\n\t// password 口令\n\t\"type\": \"password\",\n\t// 领取类型 必填\n\t// average 均分模式 红包总金额 / 可领人数\n\t// random 随机模式 每人至少可以领取1\n\t\"receive\": \"average\",\n\t// 红包总金额 1 - 60000 萝卜 必填\n\t\"carrot\": 2,\n\t// 可领人数 1 - 10000 人 必填\n\t\"number\": 2,\n\t// 寄语 50子内 必填\n\t\"blessing\": \"新年快乐\",\n\t// 字符串 区分大小写 1-50字符内 口令或专属时必填\n\t\"text\": null,\n\t// 文件访问url 图片类型建议小于1m\n\t\"file_url\": \"https://image.tmdb.org/t/p/w500/hew9LSQW4wk63aN1Z7cEBTISL9B.jpg\",\n\t// 文件类型 如果存在 file_id 或 file_url 则必填 决定了红包的类型 支持 image audio\n\t\"file_type\": \"image\",\n\t// 独占模式 存在file_url并且为true时bot只会显示文件内容 默认为 false\n\t\"is_exclusive\": true\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/redPacket/create",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "redPacket",
+            "create"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.6"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Fri, 15 May 2026 17:34:13 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"red_packet_id\": \"BLJg3EDpYAno\"\n}"
+    }
+  ]
+}

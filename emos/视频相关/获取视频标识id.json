@@ -1,0 +1,370 @@
+{
+  "name": "获取视频标识id",
+  "id": "47ca197f-b486-4661-b41a-8299d5ca3d00",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/video/getVideoId?video_id_type=tmdb&video_id_value=1600&season_number=&episode_number=&tmdb_type=",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "video",
+        "getVideoId"
+      ],
+      "query": [
+        {
+          "key": "video_id_type",
+          "value": "tmdb",
+          "description": "视频id类型"
+        },
+        {
+          "key": "video_id_value",
+          "value": "1600",
+          "description": "视频id值"
+        },
+        {
+          "key": "season_number",
+          "value": "",
+          "description": "具体的季数"
+        },
+        {
+          "key": "episode_number",
+          "value": "",
+          "description": "集体的集数"
+        },
+        {
+          "key": "tmdb_type",
+          "value": "",
+          "description": "tmdb会有id重叠情况 如果视频id类型为tmdb 建议传此字段"
+        }
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "24728bbd-c17a-419e-9a1f-27c8abf1a640",
+      "name": "有具体的季和集",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/video/getVideoId?video_id_type=tmdb&video_id_value=1399&season_number=1&episode_number=1",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "video",
+            "getVideoId"
+          ],
+          "query": [
+            {
+              "key": "video_id_type",
+              "value": "tmdb",
+              "description": "视频id类型"
+            },
+            {
+              "key": "video_id_value",
+              "value": "1399",
+              "description": "视频id值"
+            },
+            {
+              "key": "season_number",
+              "value": "1",
+              "description": "具体的季数"
+            },
+            {
+              "key": "episode_number",
+              "value": "1",
+              "description": "集体的集数"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": "json",
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sun, 18 Jan 2026 07:19:18 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "description": "",
+          "type": "text"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"item_type\": \"vl\",\n    \"item_id\": 2,\n    \"video_type\": \"tv\",\n    \"video_title\": \"权力的游戏\",\n    \"date_air\": \"2011-04-17\",\n    \"todb_id\": 1001,\n    \"tmdb_id\": 1399,\n    \"season_info\": {\n        \"item_type\": \"vs\",\n        \"item_id\": 7,\n        \"season_title\": \"第一季 权力的游戏\",\n        \"season_number\": 1,\n        \"date_air\": \"2011-04-17\"\n    },\n    \"episode_info\": {\n        \"item_type\": \"ve\",\n        \"item_id\": 393,\n        \"episode_title\": \"凛冬将至\",\n        \"episode_number\": 1,\n        \"date_air\": \"2011-04-17\"\n    }\n}"
+    },
+    {
+      "id": "dfccea6b-b6e1-46dc-b68e-ea062dabfffe",
+      "name": "只有季",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/video/getVideoId?video_id_type=tmdb&video_id_value=1399&season_number=1&episode_number=",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "video",
+            "getVideoId"
+          ],
+          "query": [
+            {
+              "key": "video_id_type",
+              "value": "tmdb",
+              "description": "视频id类型"
+            },
+            {
+              "key": "video_id_value",
+              "value": "1399",
+              "description": "视频id值"
+            },
+            {
+              "key": "season_number",
+              "value": "1",
+              "description": "具体的季数"
+            },
+            {
+              "key": "episode_number",
+              "value": "",
+              "description": "集体的集数"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": "json",
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sun, 18 Jan 2026 07:19:48 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "description": "",
+          "type": "text"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"item_type\": \"vl\",\n    \"item_id\": 2,\n    \"video_type\": \"tv\",\n    \"video_title\": \"权力的游戏\",\n    \"date_air\": \"2011-04-17\",\n    \"todb_id\": 1001,\n    \"tmdb_id\": 1399,\n    \"season_info\": {\n        \"item_type\": \"vs\",\n        \"item_id\": 7,\n        \"season_title\": \"第一季 权力的游戏\",\n        \"season_number\": 1,\n        \"date_air\": \"2011-04-17\"\n    },\n    \"episode_info\": []\n}"
+    },
+    {
+      "id": "582d3608-3318-4f83-8cc9-da5e95d66bb0",
+      "name": "只有剧",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/video/getVideoId?video_id_type=tmdb&video_id_value=1399&season_number=&episode_number=",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "video",
+            "getVideoId"
+          ],
+          "query": [
+            {
+              "key": "video_id_type",
+              "value": "tmdb",
+              "description": "视频id类型"
+            },
+            {
+              "key": "video_id_value",
+              "value": "1399",
+              "description": "视频id值"
+            },
+            {
+              "key": "season_number",
+              "value": "",
+              "description": "具体的季数"
+            },
+            {
+              "key": "episode_number",
+              "value": "",
+              "description": "集体的集数"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": "json",
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sun, 18 Jan 2026 07:20:17 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "description": "",
+          "type": "text"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"item_type\": \"vl\",\n    \"item_id\": 2,\n    \"video_type\": \"tv\",\n    \"video_title\": \"权力的游戏\",\n    \"date_air\": \"2011-04-17\",\n    \"todb_id\": 1001,\n    \"tmdb_id\": 1399,\n    \"season_info\": [],\n    \"episode_info\": []\n}"
+    },
+    {
+      "id": "be6e9ea5-3790-4e5e-8ddd-26cd0fd6f5f4",
+      "name": "tmdb 重叠时",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/video/getVideoId?video_id_type=tmdb&video_id_value=1600&season_number=&episode_number=&tmdb_type=",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "video",
+            "getVideoId"
+          ],
+          "query": [
+            {
+              "key": "video_id_type",
+              "value": "tmdb",
+              "description": "视频id类型"
+            },
+            {
+              "key": "video_id_value",
+              "value": "1600",
+              "description": "视频id值"
+            },
+            {
+              "key": "season_number",
+              "value": "",
+              "description": "具体的季数"
+            },
+            {
+              "key": "episode_number",
+              "value": "",
+              "description": "集体的集数"
+            },
+            {
+              "key": "tmdb_type",
+              "value": "",
+              "description": "tmdb会有id重叠情况 如果视频id类型为tmdb 建议传此字段"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.3"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sat, 14 Mar 2026 05:51:14 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"item_type\": \"vl\",\n    \"item_id\": 7865,\n    \"video_type\": \"movie\",\n    \"video_title\": \"两生花\",\n    \"date_air\": \"1991-05-15\",\n    \"has_media\": false,\n    \"todb_id\": 39205,\n    \"tmdb_id\": 1600,\n    \"season_info\": [],\n    \"episode_info\": []\n}"
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "name": "订单列表",
+  "id": "d4dc34f3-f274-46ed-b527-aa46862d2e50",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/shop/order/shop/order?user_id&order_no&order_title&is_pay&is_delivery&product_id",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "shop",
+        "order",
+        "shop",
+        "order"
+      ],
+      "query": [
+        {
+          "key": "user_id",
+          "value": null
+        },
+        {
+          "key": "order_no",
+          "value": null
+        },
+        {
+          "key": "order_title",
+          "value": null
+        },
+        {
+          "key": "is_pay",
+          "value": null
+        },
+        {
+          "key": "is_delivery",
+          "value": null
+        },
+        {
+          "key": "product_id",
+          "value": null
+        }
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "416d1253-5fda-4800-b8c5-b294e45eccde",
+      "name": "订单列表",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/shop/order/shop/order?user_id&order_no&order_title&is_pay&is_delivery&product_id",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "shop",
+            "order",
+            "shop",
+            "order"
+          ],
+          "query": [
+            {
+              "key": "user_id",
+              "value": null
+            },
+            {
+              "key": "order_no",
+              "value": null
+            },
+            {
+              "key": "order_title",
+              "value": null
+            },
+            {
+              "key": "is_pay",
+              "value": null
+            },
+            {
+              "key": "is_delivery",
+              "value": null
+            },
+            {
+              "key": "product_id",
+              "value": null
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.3"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sat, 28 Feb 2026 14:32:51 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"page\": 1,\n    \"page_size\": 10,\n    \"total\": 2,\n    \"items\": [\n        {\n            \"user\": {\n                \"user_id\": \"eWD3N7EX8s\",\n                \"username\": \"soa\",\n                \"avatar\": null\n            },\n            \"order_no\": \"20260228215154shopyLwcZ\",\n            \"product_id\": 1000,\n            \"price_order\": 100,\n            \"price_settle\": 95,\n            \"order_title\": \"苹果1\",\n            \"order_cover_url\": null,\n            \"status_pay\": \"paid\",\n            \"urge_number\": 7,\n            \"buy_number\": 2,\n            \"time_pay\": \"2026-02-28 21:51:58\",\n            \"time_delivery\": null,\n            \"time_urge\": \"2026-02-28 22:03:17\",\n            \"remark_shop\": null,\n            \"remark_user\": null,\n            \"created_at\": \"2026-02-28T13:51:54.000000Z\"\n        },\n        {\n            \"user\": {\n                \"user_id\": \"eWD3N7EX8s\",\n                \"username\": \"soa\",\n                \"avatar\": null\n            },\n            \"order_no\": \"20260228212058shop0uOFb\",\n            \"product_id\": 1000,\n            \"price_order\": 100,\n            \"price_settle\": 95,\n            \"order_title\": \"苹果1\",\n            \"order_cover_url\": null,\n            \"status_pay\": \"unpaid\",\n            \"urge_number\": null,\n            \"buy_number\": 1,\n            \"time_pay\": null,\n            \"time_delivery\": null,\n            \"time_urge\": null,\n            \"remark_shop\": null,\n            \"remark_user\": null,\n            \"created_at\": \"2026-02-28T13:20:58.000000Z\"\n        }\n    ]\n}"
+    }
+  ]
+}

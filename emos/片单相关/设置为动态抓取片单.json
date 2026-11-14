@@ -1,0 +1,230 @@
+{
+  "name": "设置为动态抓取片单",
+  "id": "ea338855-c049-4799-9933-e190b2fd1640",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "PUT",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\n    // 抓取地址 空则关闭此功能\n    \"url\": null\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    },
+    "url": {
+      "raw": "{{url}}/api/watch/{{watch_id}}/dynamic",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "watch",
+        "{{watch_id}}",
+        "dynamic"
+      ]
+    },
+    "description": "接口为同步调用 将会去目标地址执行抓取"
+  },
+  "response": [
+    {
+      "id": "5dbb7cee-217d-4fcf-a0f5-10756e7c003b",
+      "name": "无地址",
+      "originalRequest": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    // 抓取地址 空则关闭此功能\n    \"url\": null\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/watch/{{watch_id}}/dynamic",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "watch",
+            "{{watch_id}}",
+            "dynamic"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.3"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Tue, 24 Feb 2026 12:41:36 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"url\": null\n}"
+    },
+    {
+      "id": "aa651891-676c-4fed-8b24-6e32a04d271a",
+      "name": "设置成功",
+      "originalRequest": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    // 抓取地址 空则关闭此功能\n    \"url\": \"https://emos.local/watch/tv\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/watch/{{watch_id}}/dynamic",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "watch",
+            "{{watch_id}}",
+            "dynamic"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.3"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Tue, 24 Feb 2026 12:42:07 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"url\": \"https://emos.local/watch/tv\",\n    \"spider\": {\n        \"count_sync\": 576,\n        \"count_no_data\": 1797\n    }\n}"
+    },
+    {
+      "id": "6136920a-fcc4-45ad-a2ea-e190ac4233a2",
+      "name": "抓取错误",
+      "originalRequest": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    // 抓取地址 空则关闭此功能\n    \"url\": \"https://top.emos.club/watch/tv\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/watch/{{watch_id}}/dynamic",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "watch",
+            "{{watch_id}}",
+            "dynamic"
+          ]
+        }
+      },
+      "status": "Unprocessable Content",
+      "code": 422,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.3"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Tue, 24 Feb 2026 12:42:49 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"error\": \"updated_at same\"\n}"
+    }
+  ]
+}

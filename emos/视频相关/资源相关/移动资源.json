@@ -1,0 +1,109 @@
+{
+  "name": "移动资源",
+  "id": "8079fc62-07bb-4b2f-8521-f867ca22eb7d",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "PUT",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/video/media/move?media_id=YLgw45W2Jk1V&item_type=ve&item_id=3",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "video",
+        "media",
+        "move"
+      ],
+      "query": [
+        {
+          "key": "media_id",
+          "value": "YLgw45W2Jk1V"
+        },
+        {
+          "key": "item_type",
+          "value": "ve"
+        },
+        {
+          "key": "item_id",
+          "value": "3"
+        }
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "f844a8ac-99ea-4bd6-88ba-da533d16f45f",
+      "name": "移动资源",
+      "originalRequest": {
+        "method": "PUT",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/video/media/move?media_id=YLgw45W2Jk1V&item_type=ve&item_id=3",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "video",
+            "media",
+            "move"
+          ],
+          "query": [
+            {
+              "key": "media_id",
+              "value": "YLgw45W2Jk1V"
+            },
+            {
+              "key": "item_type",
+              "value": "ve"
+            },
+            {
+              "key": "item_id",
+              "value": "3"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sun, 18 Jan 2026 15:48:28 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"carrot\": 1\n}"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "name": "请求数",
+  "id": "fc371064-4eea-48fb-9120-673c320f91b0",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/video/record/request?user_id",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "video",
+        "record",
+        "request"
+      ],
+      "query": [
+        {
+          "key": "user_id",
+          "value": null,
+          "description": "对方用户id 传递的话则查对方"
+        }
+      ]
+    },
+    "description": "只可查询近一周的\n带有 `admin` 角色的可以查全局\n"
+  },
+  "response": [
+    {
+      "id": "fbf8ab7a-8f2c-4dfc-9673-0d31af941ae6",
+      "name": "请求数",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/video/record/request?user_id",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "video",
+            "record",
+            "request"
+          ],
+          "query": [
+            {
+              "key": "user_id",
+              "value": null,
+              "description": "对方用户id 传递的话则查对方"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.5"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sun, 19 Apr 2026 05:36:35 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"page\": 1,\n    \"page_size\": 10,\n    \"total\": 1,\n    \"items\": [\n        {\n            \"video_media_id\": \"deqped9rnmx8\",\n            \"range\": \"0-\",\n            \"is_proxy\": false,\n            \"video_id\": 1000,\n            \"video_type\": \"tv\",\n            \"video_title\": \"沧元图\",\n            \"ip\": \"192.168.1.4\",\n            \"ua\": \"Yamby/2.0.2.2(Android\",\n            \"time\": \"2026-04-17 05:07:03\"\n        }\n    ]\n}"
+    }
+  ]
+}

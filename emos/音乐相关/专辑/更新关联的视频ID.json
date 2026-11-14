@@ -1,0 +1,95 @@
+{
+  "name": "更新关联的视频ID",
+  "id": "6785c833-bd89-4206-ae5b-a27f6e10cc2c",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "PUT",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/music/album/{{music_alumb_id}}/updateVideoId?video_id={{video_id}}",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "music",
+        "album",
+        "{{music_alumb_id}}",
+        "updateVideoId"
+      ],
+      "query": [
+        {
+          "key": "video_id",
+          "value": "{{video_id}}"
+        }
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "bbd80169-b591-4ccf-93ee-9535fba6d2cc",
+      "name": "更新关联的视频ID",
+      "originalRequest": {
+        "method": "PUT",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/music/album/{{music_alumb_id}}/updateVideoId?video_id={{video_id}}",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "music",
+            "album",
+            "{{music_alumb_id}}",
+            "updateVideoId"
+          ],
+          "query": [
+            {
+              "key": "video_id",
+              "value": "{{video_id}}"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.6"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sat, 23 May 2026 01:30:20 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"carrot\": 1\n}"
+    }
+  ]
+}

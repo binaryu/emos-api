@@ -1,0 +1,157 @@
+{
+  "name": "签到",
+  "id": "f589fc74-2e55-454b-90f4-577eb1d4e4ee",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "PUT",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/user/sign?content",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "user",
+        "sign"
+      ],
+      "query": [
+        {
+          "key": "content",
+          "value": null,
+          "description": "说点什么进行随机签到以获得更多萝卜",
+          "type": "text"
+        }
+      ]
+    },
+    "description": "禁止接口轮训 发现做封禁处理\n如果是搞自动签到 禁止选0点"
+  },
+  "response": [
+    {
+      "id": "4fcc3756-e95a-46b5-98cd-8d1a8ba29aac",
+      "name": "签到正常",
+      "originalRequest": {
+        "method": "PUT",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/user/sign?content",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "user",
+            "sign"
+          ],
+          "query": [
+            {
+              "key": "content",
+              "value": null,
+              "description": "说点什么进行随机签到以获得更多萝卜"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Mon, 16 Feb 2026 06:05:44 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"sign_index\": 1,\n    \"earn_point\": 2,\n    \"continuous_days\": 1\n}"
+    },
+    {
+      "id": "f4c02b65-d964-4b5b-8398-8c89d911556b",
+      "name": "签到异常",
+      "originalRequest": {
+        "method": "PUT",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/user/sign?content",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "user",
+            "sign"
+          ],
+          "query": [
+            {
+              "key": "content",
+              "value": null,
+              "description": "说点什么进行随机签到以获得更多萝卜"
+            }
+          ]
+        }
+      },
+      "status": "Too Many Requests",
+      "code": 429,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Mon, 16 Feb 2026 06:06:16 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"message\": \"重复签到\"\n}"
+    }
+  ]
+}

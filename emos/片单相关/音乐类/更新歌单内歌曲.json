@@ -1,0 +1,101 @@
+{
+  "name": "更新歌单内歌曲",
+  "id": "167d7c31-a480-432d-8fe5-f1a9bfe85f5d",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "POST",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\r\n    // 排序 1-5000之间 越小约靠前 默认80 必填\r\n    \"sort\": 5000,\r\n    // 备注 100字内\r\n    \"remark\": null\r\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    },
+    "url": {
+      "raw": "{{url}}/api/watch/{{watch_id}}/music/{{music_song_id}}",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "watch",
+        "{{watch_id}}",
+        "music",
+        "{{music_song_id}}"
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "79014268-c727-4cd2-848f-86a0b5c39186",
+      "name": "更新歌单内歌曲",
+      "originalRequest": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    // 排序 1-5000之间 越小约靠前 默认80 必填\r\n    \"sort\": 5000,\r\n    // 备注 100字内\r\n    \"remark\": null\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/watch/{{watch_id}}/music/{{music_song_id}}",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "watch",
+            "{{watch_id}}",
+            "music",
+            "{{music_song_id}}"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.6"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sat, 23 May 2026 04:32:05 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"count\": 1\n}"
+    }
+  ]
+}

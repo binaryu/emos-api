@@ -1,0 +1,100 @@
+{
+  "name": "保存为群星版本",
+  "id": "e89328ff-bd05-4a39-a65f-94b25200f30f",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "POST",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\r\n    // 歌曲名称 50字内 必填\r\n    \"name_song\": \"小星星\",\r\n    // 歌手 50字内\r\n    \"name_person\": \"张三\",\r\n    // 简介 1000字内\r\n    \"description\": \"张三\",\r\n    // 发行日期 Y-m-d 格式\r\n    \"release_date\": null,\r\n    // 是否少儿不宜 必填\r\n    \"is_adult\": false,\r\n    // 封面图\r\n    \"image_poster_url\": null,\r\n    // 文件ID 必填\r\n    \"file_id\": \"YXBVljwKNE7a\"\r\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    },
+    "url": {
+      "raw": "{{url}}/api/upload/music/saveHeadless",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "upload",
+        "music",
+        "saveHeadless"
+      ]
+    },
+    "description": "有时候 `todb` 添加过于麻烦  \n则可以再这里将他保存为 `群星` 的版本  \n虽然不建议这么做"
+  },
+  "response": [
+    {
+      "id": "7424b57f-94e0-4122-a4e4-6529a7dc7797",
+      "name": "保存为群星版本",
+      "originalRequest": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    // 歌曲名称 50字内 必填\r\n    \"name_song\": \"小星星\",\r\n    // 歌手 50字内\r\n    \"name_person\": \"张三\",\r\n    // 简介 1000字内\r\n    \"description\": \"张三\",\r\n    // 发行日期 Y-m-d 格式\r\n    \"release_date\": null,\r\n    // 是否少儿不宜 必填\r\n    \"is_adult\": false,\r\n    // 封面图\r\n    \"image_poster_url\": null,\r\n    // 文件ID 必填\r\n    \"file_id\": \"YXBVljwKNE7a\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/upload/music/saveHeadless",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "upload",
+            "music",
+            "saveHeadless"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.6"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sat, 06 Jun 2026 13:26:00 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"carrot\": 1,\n    \"media_id\": \"ymqnzjo29z80\"\n}"
+    }
+  ]
+}

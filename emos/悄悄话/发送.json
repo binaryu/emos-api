@@ -1,0 +1,93 @@
+{
+  "name": "发送",
+  "id": "edf9056f-71b5-4461-b4e9-b9f1104ae523",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "POST",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\n    \"receiver_user_id\": \"eXD3VPZ3Ys\",\n    // 最多5k\n    \"content\": \"内容\",\n    \"is_anonymous\": false\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    },
+    "url": {
+      "raw": "{{url}}/api/whisper/create",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "whisper",
+        "create"
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "38079e81-3615-4fc6-b3c1-4d9000e61baa",
+      "name": "发送",
+      "originalRequest": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"receiver_user_id\": \"eXD3VPZ3Ys\",\n    \"content\": \"内容\",\n    \"is_anonymous\": false\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/whisper/create",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "whisper",
+            "create"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Wed, 23 Sep 2026 03:34:44 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"whisper_id\": 1001\n}"
+    }
+  ]
+}

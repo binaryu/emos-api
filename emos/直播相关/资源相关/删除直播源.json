@@ -1,0 +1,81 @@
+{
+  "name": "删除直播源",
+  "id": "e001e0e4-0054-48ca-9b34-17b0282fed91",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "DELETE",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/live/media/{{live_media_id}}",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "live",
+        "media",
+        "{{live_media_id}}"
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "c6df06c5-a986-413c-ac98-8cd854fcd3e8",
+      "name": "删除直播源",
+      "originalRequest": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/live/media/{{live_media_id}}",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "live",
+            "media",
+            "{{live_media_id}}"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Wed, 11 Feb 2026 11:59:48 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"carrot\": 1\n}"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "name": "判断是否可以参与活动",
+  "id": "e55ed8ef-4bad-4e42-8b79-138c1abf7766",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "POST",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\n    \"fund_activity_code\": \"{{fund_activity_code}}\"\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    },
+    "url": {
+      "raw": "{{url}}/api/fund/order/check",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "fund",
+        "order",
+        "check"
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "51f05685-b595-41b9-9af1-a7eceb6e44e2",
+      "name": "判断是否可以参与活动",
+      "originalRequest": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"fund_activity_code\": \"{{fund_activity_code}}\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/fund/order/check",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "fund",
+            "order",
+            "check"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.9"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Fri, 14 Aug 2026 14:22:57 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"message\": \"活动仅可以参与 1 次\"\n}"
+    }
+  ]
+}

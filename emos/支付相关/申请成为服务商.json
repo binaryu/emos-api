@@ -1,0 +1,97 @@
+{
+  "name": "申请成为服务商",
+  "id": "aad56495-3de4-46c6-9239-fb5016a47bc3",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "POST",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\n    // 必填 10字内\n    \"name\": \"名称\",\n    // 必填 200字内\n    \"description\": \"简介\"\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    },
+    "url": {
+      "raw": "{{url}}/api/pay/apply",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "pay",
+        "apply"
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "c3282355-8422-415d-9d96-a9efe74af017",
+      "name": "申请成为服务商",
+      "originalRequest": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"名称\",\n    \"description\": \"简介\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/pay/apply",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "pay",
+            "apply"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Content-Type",
+          "value": "text/html; charset=utf-8"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sat, 14 Feb 2026 10:06:33 GMT"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": null
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "name": "观影历史",
+  "id": "017ecf68-2385-44d8-a055-f74c64790e2b",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/video/record/list",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "video",
+        "record",
+        "list"
+      ]
+    },
+    "description": "只会显示回传超过10s的视频"
+  },
+  "response": [
+    {
+      "id": "d775982f-e690-4302-ba4c-ff5e0935c16f",
+      "name": "观影历史",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/video/record/list",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "video",
+            "record",
+            "list"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.5"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sun, 19 Apr 2026 06:04:15 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"page\": 1,\n    \"page_size\": 10,\n    \"total\": 2,\n    \"items\": [\n        {\n            \"video_id\": 1007,\n            \"video_title\": \"教父\",\n            \"video_type\": \"movie\",\n            \"todb_id\": 1002,\n            \"tmdb_id\": 238,\n            \"video_image_logo\": \"https://image.theotherdb.org/w154/4m3XGKBbmXjKPpyQ\",\n            \"video_image_poster\": \"https://image.theotherdb.org/w185/VqemkNz8JjKDr6Xd\",\n            \"video_image_backdrop\": \"https://image.theotherdb.org/w1280/xkd23zZ5qaPW1gPN\",\n            \"video_season_id\": null,\n            \"season_number\": null,\n            \"video_episode_id\": null,\n            \"episode_number\": null,\n            \"episode_image_poster\": null,\n            \"media_id\": \"deqped9rnmx8\",\n            \"media_name\": \"4K - hevc - sx66 上传\",\n            \"media_seconds\": 1385,\n            \"play_seconds\": 0,\n            \"play_ua\": \"Yamby/2.0.2.2(Android\",\n            \"is_complete\": false,\n            \"time\": \"2026-04-19 06:04:11\"\n        },\n        {\n            \"video_id\": 1000,\n            \"video_title\": \"沧元图\",\n            \"video_type\": \"tv\",\n            \"todb_id\": 2632,\n            \"tmdb_id\": 229192,\n            \"video_image_logo\": \"https://image.theotherdb.org/w154/Ld4J6WEwyjMR0pY5\",\n            \"video_image_poster\": \"https://image.theotherdb.org/w185/rDGwpKMvXPWVMyb4\",\n            \"video_image_backdrop\": \"https://image.theotherdb.org/w1280/JQo56WNjrpWX9Nvg\",\n            \"video_season_id\": 1,\n            \"season_number\": 1,\n            \"video_episode_id\": 1,\n            \"episode_number\": 1,\n            \"episode_image_poster\": \"https://image.theotherdb.org/w185/dw47oRxjdlWZMVmG\",\n            \"media_id\": \"deqped9rnmx8\",\n            \"media_name\": \"4K - hevc - sx66 上传\",\n            \"media_seconds\": 1385,\n            \"play_seconds\": 81,\n            \"play_ua\": \"Yamby/2.0.2.2(Android\",\n            \"is_complete\": false,\n            \"time\": \"2026-04-19 06:03:55\"\n        }\n    ]\n}"
+    }
+  ]
+}

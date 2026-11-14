@@ -1,0 +1,78 @@
+{
+  "name": "基本信息",
+  "id": "7e5dd6d7-0f4d-4904-94aa-25f074569f6f",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/user",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "user"
+      ]
+    },
+    "description": "- `server_` 开头的为对应服的登录地址\n    \n- `password` 服的登录密码 根据 `must_otp` 联合判断是否为一次性密码\n    \n- `telegram_bind_url` tg绑定地址 `null` 标示已绑定\n    \n- `pseudonym` 笔名 上传与邀请时候 显示的昵称\n    \n- `roles` 角色列表\n    \n- `is_viewing` 是否有观影权限\n    \n- `is_show_empty` 是否显示空媒体库\n    \n- `is_can_upload` 是否可以上传\n\n- `is_show_watch_default` 是否显示片单默认\n    \n- `size_upload` 上传总量 字节\n    \n- `invite_remaining` 可以邀请人数\n    \n- `slot_remaining` 剩余片单卡槽数\n    \n- `sign` 签到信息 当天未签到时返回为 `null`"
+  },
+  "response": [
+    {
+      "id": "13dd391a-c1be-481a-a9cb-e883e16b4609",
+      "name": "基本信息",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/user",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "user"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.4.16"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Wed, 20 May 2026 10:17:25 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"server_video\": \"https://video.emos.best\",\n    \"server_live\": null,\n    \"server_music\": null,\n    \"server_abs\": null,\n    \"telegram_group_url\": \"https://t.me/emospg\",\n    \"telegram_bind_url\": \"https://t.me/emos_test_bot?start=bind_4L95jopXJv\",\n    \"telegram_user_id\": null,\n    \"user_id\": \"eXD3VD3Y1s\",\n    \"username\": \"sorakand\",\n    \"avatar\": null,\n    \"pseudonym\": null,\n    \"password\": null,\n    \"is_show_empty\": true,\n    \"is_can_upload\": false,\n    \"is_can_down\": false,\n    \"is_original_image\": false,\n    \"roles\": [],\n    \"must_otp\": true,\n    \"is_viewing\": false,\n    \"invite_remaining\": 0,\n    \"is_have_emps\": false,\n    \"slot_remaining\": 2,\n    \"size_upload\": 0,\n    \"carrot\": 0,\n    \"sign\": null\n}"
+    }
+  ]
+}

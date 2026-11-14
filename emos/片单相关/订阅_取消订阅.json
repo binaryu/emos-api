@@ -1,0 +1,88 @@
+{
+  "name": "订阅/取消订阅",
+  "id": "de6a77f5-4afb-4005-a7f2-ffb1d9facb3d",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "PUT",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/watch/{{watch_id}}/subscribe?sort",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "watch",
+        "{{watch_id}}",
+        "subscribe"
+      ],
+      "query": [
+        {
+          "key": "sort",
+          "value": null,
+          "description": "排序 在订阅时生效"
+        }
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "a30e83ac-a1f1-45d1-bf58-7f080ec1890d",
+      "name": "订阅/取消订阅",
+      "originalRequest": {
+        "method": "PUT",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/watch/{{watch_id}}/subscribe",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "watch",
+            "{{watch_id}}",
+            "subscribe"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Mon, 19 Jan 2026 15:36:07 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"is_subscribe\": true\n}"
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "name": "基本信息",
+  "id": "18ff7f1c-869f-40f4-9cb7-9a02e5b72ce2",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/shop/seller/base?seller_id",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "shop",
+        "seller",
+        "base"
+      ],
+      "query": [
+        {
+          "key": "seller_id",
+          "value": null,
+          "description": "如果查自己为空即可"
+        }
+      ]
+    },
+    "description": "商户状态\n\n- `default` 默认\n- `examine` 审核中\n- `pass` 通过\n- `disable` 禁用"
+  },
+  "response": [
+    {
+      "id": "e09a8a25-5b95-47a6-900b-b4069dc75bce",
+      "name": "有数据时",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/shop/seller/base?seller_id",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "shop",
+            "seller",
+            "base"
+          ],
+          "query": [
+            {
+              "key": "seller_id",
+              "value": null,
+              "description": "如果查自己为空即可"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.3"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sat, 28 Feb 2026 10:41:55 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"seller_id\": 1000,\n    \"cover\": null,\n    \"cover_url\": null,\n    \"name\": \"我的小店\",\n    \"description\": \"专卖啦啦啦\",\n    \"status\": \"examine\",\n    \"is_self\": true\n}"
+    },
+    {
+      "id": "fd40f0fd-da96-49d5-ba9f-476ff05f10f4",
+      "name": "无数据时",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/shop/seller/base?seller_id",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "shop",
+            "seller",
+            "base"
+          ],
+          "query": [
+            {
+              "key": "seller_id",
+              "value": null,
+              "description": "如果查自己为空即可"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.4"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Mon, 30 Mar 2026 16:36:26 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"status\": \"default\"\n}"
+    }
+  ]
+}

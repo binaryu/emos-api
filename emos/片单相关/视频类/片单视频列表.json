@@ -1,0 +1,95 @@
+{
+  "name": "片单视频列表",
+  "id": "4ed1ce1a-b8eb-4316-bf8e-10af9e588b75",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/watch/{{watch_id}}/video?video_title=",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "watch",
+        "{{watch_id}}",
+        "video"
+      ],
+      "query": [
+        {
+          "key": "video_title",
+          "value": "",
+          "description": "视频标题搜索"
+        }
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "8a1d65cd-e5c2-4d64-9652-c0d7d34edd7d",
+      "name": "片单视频列表",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/watch/{{watch_id}}/video?video_title",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "watch",
+            "{{watch_id}}",
+            "video"
+          ],
+          "query": [
+            {
+              "key": "video_title",
+              "value": null,
+              "description": "视频标题搜索"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sun, 25 Jan 2026 07:50:33 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"page\": 1,\n    \"page_size\": 15,\n    \"total\": 6863,\n    \"items\": [\n        {\n            \"video_id\": 1001,\n            \"todb_id\": 1001,\n            \"tmdb_id\": 1399,\n            \"video_type\": \"tv\",\n            \"video_title\": \"权力的游戏\",\n            \"video_origin_title\": \"Game of Thrones\",\n            \"video_image_poster\": \"https://image.theotherdb.org/w185/6N5ZAPKyG2zLwlgx\",\n            \"video_date_air\": \"2011-04-17\",\n            \"video_is_adult\": false,\n            \"genres\": [\n                {\n                    \"id\": 1,\n                    \"name\": \"Sci-Fi & Fantasy\"\n                },\n                {\n                    \"id\": 3,\n                    \"name\": \"剧情\"\n                },\n                {\n                    \"id\": 4,\n                    \"name\": \"动作冒险\"\n                }\n            ],\n            \"video_is_delete\": false,\n            \"sort\": 90,\n            \"remark\": null,\n            \"user_id\": \"eWD3N7EX8s\",\n            \"user_username\": \"soa\",\n            \"user_avatar\": null,\n            \"updated_at\": \"2026-01-25T07:12:59.000000Z\"\n        },\n        {\n            \"video_id\": 1002,\n            \"todb_id\": 1002,\n            \"tmdb_id\": 238,\n            \"video_type\": \"movie\",\n            \"video_title\": \"教父\",\n            \"video_origin_title\": \"The Godfather\",\n            \"video_image_poster\": \"https://image.theotherdb.org/w185/VqemkNz8JjKDr6Xd\",\n            \"video_date_air\": \"1972-03-14\",\n            \"video_is_adult\": false,\n            \"genres\": [\n                {\n                    \"id\": 3,\n                    \"name\": \"剧情\"\n                },\n                {\n                    \"id\": 5,\n                    \"name\": \"犯罪\"\n                }\n            ],\n            \"video_is_delete\": false,\n            \"sort\": 90,\n            \"remark\": null,\n            \"user_id\": \"eWD3N7EX8s\",\n            \"user_username\": \"soa\",\n            \"user_avatar\": null,\n            \"updated_at\": \"2026-01-25T07:13:52.000000Z\"\n        },\n        {\n            \"video_id\": 1003,\n            \"todb_id\": 1003,\n            \"tmdb_id\": 66732,\n            \"video_type\": \"tv\",\n            \"video_title\": \"怪奇物语\",\n            \"video_origin_title\": \"Stranger Things\",\n            \"video_image_poster\": \"https://image.theotherdb.org/w185/0lkE6Mze4nWDwvY8\",\n            \"video_date_air\": \"2016-07-15\",\n            \"video_is_adult\": false,\n            \"genres\": [\n                {\n                    \"id\": 1,\n                    \"name\": \"Sci-Fi & Fantasy\"\n                },\n                {\n                    \"id\": 6,\n                    \"name\": \"悬疑\"\n                },\n                {\n                    \"id\": 4,\n                    \"name\": \"动作冒险\"\n                }\n            ],\n            \"video_is_delete\": false,\n            \"sort\": 90,\n            \"remark\": null,\n            \"user_id\": \"eWD3N7EX8s\",\n            \"user_username\": \"soa\",\n            \"user_avatar\": null,\n            \"updated_at\": \"2026-01-25T07:12:59.000000Z\"\n        },\n        {\n            \"video_id\": 1004,\n            \"todb_id\": 1004,\n            \"tmdb_id\": 209867,\n            \"video_type\": \"tv\",\n            \"video_title\": \"葬送的芙莉莲\",\n            \"video_origin_title\": \"葬送のフリーレン\",\n            \"video_image_poster\": \"https://image.theotherdb.org/w185/b056AmKrkDWEj18e\",\n            \"video_date_air\": \"2023-09-29\",\n            \"video_is_adult\": false,\n            \"genres\": [\n                {\n                    \"id\": 7,\n                    \"name\": \"动画\"\n                },\n                {\n                    \"id\": 4,\n                    \"name\": \"动作冒险\"\n                },\n                {\n                    \"id\": 3,\n                    \"name\": \"剧情\"\n                },\n                {\n                    \"id\": 1,\n                    \"name\": \"Sci-Fi & Fantasy\"\n                }\n            ],\n            \"video_is_delete\": false,\n            \"sort\": 90,\n            \"remark\": null,\n            \"user_id\": \"eWD3N7EX8s\",\n            \"user_username\": \"soa\",\n            \"user_avatar\": null,\n            \"updated_at\": \"2026-01-25T07:12:59.000000Z\"\n        },\n        {\n            \"video_id\": 1005,\n            \"todb_id\": 1005,\n            \"tmdb_id\": 223911,\n            \"video_type\": \"tv\",\n            \"video_title\": \"仙逆\",\n            \"video_origin_title\": \"仙逆\",\n            \"video_image_poster\": \"https://image.theotherdb.org/w185/60yjDBR0knznw5do\",\n            \"video_date_air\": \"2023-09-25\",\n            \"video_is_adult\": false,\n            \"genres\": [\n                {\n                    \"id\": 4,\n                    \"name\": \"动作冒险\"\n                },\n                {\n                    \"id\": 7,\n                    \"name\": \"动画\"\n                },\n                {\n                    \"id\": 3,\n                    \"name\": \"剧情\"\n                },\n                {\n                    \"id\": 1,\n                    \"name\": \"Sci-Fi & Fantasy\"\n                }\n            ],\n            \"video_is_delete\": false,\n            \"sort\": 90,\n            \"remark\": null,\n            \"user_id\": \"eWD3N7EX8s\",\n            \"user_username\": \"soa\",\n            \"user_avatar\": null,\n            \"updated_at\": \"2026-01-25T07:13:52.000000Z\"\n        },\n        {\n            \"video_id\": 1006,\n            \"todb_id\": 1006,\n            \"tmdb_id\": 76121,\n            \"video_type\": \"tv\",\n            \"video_title\": \"DARLING in the FRANXX\",\n            \"video_origin_title\": \"ダーリン・イン・ザ・フランキス\",\n            \"video_image_poster\": \"https://image.theotherdb.org/w185/0rDGwpKMwgzVMyb4\",\n            \"video_date_air\": \"2018-01-13\",\n            \"video_is_adult\": false,\n            \"genres\": [\n                {\n                    \"id\": 7,\n                    \"name\": \"动画\"\n                },\n                {\n                    \"id\": 3,\n                    \"name\": \"剧情\"\n                },\n                {\n                    \"id\": 1,\n                    \"name\": \"Sci-Fi & Fantasy\"\n                },\n                {\n                    \"id\": 8,\n                    \"name\": \"喜剧\"\n                }\n            ],\n            \"video_is_delete\": false,\n            \"sort\": 90,\n            \"remark\": null,\n            \"user_id\": \"eWD3N7EX8s\",\n            \"user_username\": \"soa\",\n            \"user_avatar\": null,\n            \"updated_at\": \"2026-01-25T07:12:59.000000Z\"\n        },\n        {\n            \"video_id\": 1007,\n            \"todb_id\": 1007,\n            \"tmdb_id\": 349498,\n            \"video_type\": \"movie\",\n            \"video_title\": \"垫底辣妹\",\n            \"video_origin_title\": \"ビリギャル\",\n            \"video_image_poster\": \"https://image.theotherdb.org/w185/56q74rRo89KwZLEb\",\n            \"video_date_air\": \"2015-05-01\",\n            \"video_is_adult\": false,\n            \"genres\": [\n                {\n                    \"id\": 8,\n                    \"name\": \"喜剧\"\n                },\n                {\n                    \"id\": 3,\n                    \"name\": \"剧情\"\n                }\n            ],\n            \"video_is_delete\": false,\n            \"sort\": 90,\n            \"remark\": null,\n            \"user_id\": \"eWD3N7EX8s\",\n            \"user_username\": \"soa\",\n            \"user_avatar\": null,\n            \"updated_at\": \"2026-01-25T07:12:59.000000Z\"\n        },\n        {\n            \"video_id\": 1008,\n            \"todb_id\": 1008,\n            \"tmdb_id\": 106449,\n            \"video_type\": \"tv\",\n            \"video_title\": \"凡人修仙传\",\n            \"video_origin_title\": \"凡人修仙传\",\n            \"video_image_poster\": \"https://image.theotherdb.org/w185/OYDeMgWlkZKx051V\",\n            \"video_date_air\": \"2020-07-25\",\n            \"video_is_adult\": false,\n            \"genres\": [\n                {\n                    \"id\": 7,\n                    \"name\": \"动画\"\n                },\n                {\n                    \"id\": 4,\n                    \"name\": \"动作冒险\"\n                },\n                {\n                    \"id\": 1,\n                    \"name\": \"Sci-Fi & Fantasy\"\n                }\n            ],\n            \"video_is_delete\": false,\n            \"sort\": 90,\n            \"remark\": null,\n            \"user_id\": \"eWD3N7EX8s\",\n            \"user_username\": \"soa\",\n            \"user_avatar\": null,\n            \"updated_at\": \"2026-01-25T07:12:59.000000Z\"\n        },\n        {\n            \"video_id\": 1009,\n            \"todb_id\": 1009,\n            \"tmdb_id\": 124003,\n            \"video_type\": \"tv\",\n            \"video_title\": \"完美世界\",\n            \"video_origin_title\": \"完美世界\",\n            \"video_image_poster\": \"https://image.theotherdb.org/w185/Oo3gmkRDNnWV15GA\",\n            \"video_date_air\": \"2021-04-23\",\n            \"video_is_adult\": false,\n            \"genres\": [\n                {\n                    \"id\": 4,\n                    \"name\": \"动作冒险\"\n                },\n                {\n                    \"id\": 1,\n                    \"name\": \"Sci-Fi & Fantasy\"\n                },\n                {\n                    \"id\": 7,\n                    \"name\": \"动画\"\n                }\n            ],\n            \"video_is_delete\": false,\n            \"sort\": 90,\n            \"remark\": null,\n            \"user_id\": \"eWD3N7EX8s\",\n            \"user_username\": \"soa\",\n            \"user_avatar\": null,\n            \"updated_at\": \"2026-01-25T07:13:52.000000Z\"\n        },\n        {\n            \"video_id\": 1010,\n            \"todb_id\": 1010,\n            \"tmdb_id\": 206534,\n            \"video_type\": \"tv\",\n            \"video_title\": \"苍兰诀\",\n            \"video_origin_title\": \"苍兰诀\",\n            \"video_image_poster\": \"https://image.theotherdb.org/w185/Z94MERbo5DKp2Jeg\",\n            \"video_date_air\": \"2022-07-15\",\n            \"video_is_adult\": false,\n            \"genres\": [\n                {\n                    \"id\": 7,\n                    \"name\": \"动画\"\n                },\n                {\n                    \"id\": 1,\n                    \"name\": \"Sci-Fi & Fantasy\"\n                }\n            ],\n            \"video_is_delete\": false,\n            \"sort\": 90,\n            \"remark\": null,\n            \"user_id\": \"eWD3N7EX8s\",\n            \"user_username\": \"soa\",\n            \"user_avatar\": null,\n            \"updated_at\": \"2026-01-25T07:12:59.000000Z\"\n        },\n        {\n            \"video_id\": 1011,\n            \"todb_id\": 1011,\n            \"tmdb_id\": 227980,\n            \"video_type\": \"tv\",\n            \"video_title\": \"华卫士基萨利斯\",\n            \"video_origin_title\": \"Sentika F8ABA6 Jisariz\",\n            \"video_image_poster\": \"https://image.theotherdb.org/w185/dw47oRxylZKZMVmG\",\n            \"video_date_air\": \"2023-05-07\",\n            \"video_is_adult\": false,\n            \"genres\": [\n                {\n                    \"id\": 4,\n                    \"name\": \"动作冒险\"\n                },\n                {\n                    \"id\": 1,\n                    \"name\": \"Sci-Fi & Fantasy\"\n                },\n                {\n                    \"id\": 3,\n                    \"name\": \"剧情\"\n                }\n            ],\n            \"video_is_delete\": false,\n            \"sort\": 90,\n            \"remark\": null,\n            \"user_id\": \"eWD3N7EX8s\",\n            \"user_username\": \"soa\",\n            \"user_avatar\": null,\n            \"updated_at\": \"2026-01-25T07:13:52.000000Z\"\n        },\n        {\n            \"video_id\": 1012,\n            \"todb_id\": 1012,\n            \"tmdb_id\": 107255,\n            \"video_type\": \"tv\",\n            \"video_title\": \"龙族\",\n            \"video_origin_title\": \"龙族\",\n            \"video_image_poster\": \"https://image.theotherdb.org/w185/xGPd1KqJagWqyj6Q\",\n            \"video_date_air\": \"2022-08-19\",\n            \"video_is_adult\": false,\n            \"genres\": [\n                {\n                    \"id\": 7,\n                    \"name\": \"动画\"\n                },\n                {\n                    \"id\": 4,\n                    \"name\": \"动作冒险\"\n                },\n                {\n                    \"id\": 1,\n                    \"name\": \"Sci-Fi & Fantasy\"\n                }\n            ],\n            \"video_is_delete\": false,\n            \"sort\": 90,\n            \"remark\": null,\n            \"user_id\": \"eWD3N7EX8s\",\n            \"user_username\": \"soa\",\n            \"user_avatar\": null,\n            \"updated_at\": \"2026-01-25T07:12:59.000000Z\"\n        },\n        {\n            \"video_id\": 1013,\n            \"todb_id\": 1013,\n            \"tmdb_id\": 228429,\n            \"video_type\": \"tv\",\n            \"video_title\": \"斗罗大陆Ⅱ绝世唐门\",\n            \"video_origin_title\": \"斗罗大陆Ⅱ绝世唐门\",\n            \"video_image_poster\": \"https://image.theotherdb.org/w185/1XaJpKvB94K3lx9Y\",\n            \"video_date_air\": \"2023-06-24\",\n            \"video_is_adult\": false,\n            \"genres\": [\n                {\n                    \"id\": 7,\n                    \"name\": \"动画\"\n                },\n                {\n                    \"id\": 1,\n                    \"name\": \"Sci-Fi & Fantasy\"\n                },\n                {\n                    \"id\": 4,\n                    \"name\": \"动作冒险\"\n                },\n                {\n                    \"id\": 3,\n                    \"name\": \"剧情\"\n                }\n            ],\n            \"video_is_delete\": false,\n            \"sort\": 90,\n            \"remark\": null,\n            \"user_id\": \"eWD3N7EX8s\",\n            \"user_username\": \"soa\",\n            \"user_avatar\": null,\n            \"updated_at\": \"2026-01-25T07:12:59.000000Z\"\n        },\n        {\n            \"video_id\": 1014,\n            \"todb_id\": 1014,\n            \"tmdb_id\": 218642,\n            \"video_type\": \"tv\",\n            \"video_title\": \"师兄啊师兄\",\n            \"video_origin_title\": \"师兄啊师兄\",\n            \"video_image_poster\": \"https://image.theotherdb.org/w185/adPQEW3BlBK1qn9o\",\n            \"video_date_air\": \"2023-01-19\",\n            \"video_is_adult\": false,\n            \"genres\": [\n                {\n                    \"id\": 7,\n                    \"name\": \"动画\"\n                },\n                {\n                    \"id\": 8,\n                    \"name\": \"喜剧\"\n                },\n                {\n                    \"id\": 1,\n                    \"name\": \"Sci-Fi & Fantasy\"\n                },\n                {\n                    \"id\": 4,\n                    \"name\": \"动作冒险\"\n                }\n            ],\n            \"video_is_delete\": false,\n            \"sort\": 90,\n            \"remark\": null,\n            \"user_id\": \"eWD3N7EX8s\",\n            \"user_username\": \"soa\",\n            \"user_avatar\": null,\n            \"updated_at\": \"2026-01-25T07:12:59.000000Z\"\n        },\n        {\n            \"video_id\": 1015,\n            \"todb_id\": 1015,\n            \"tmdb_id\": 206343,\n            \"video_type\": \"tv\",\n            \"video_title\": \"神墓\",\n            \"video_origin_title\": \"神墓\",\n            \"video_image_poster\": \"https://image.theotherdb.org/w185/xkd23zZXxlK1gPNe\",\n            \"video_date_air\": \"2022-07-21\",\n            \"video_is_adult\": false,\n            \"genres\": [\n                {\n                    \"id\": 7,\n                    \"name\": \"动画\"\n                },\n                {\n                    \"id\": 1,\n                    \"name\": \"Sci-Fi & Fantasy\"\n                }\n            ],\n            \"video_is_delete\": false,\n            \"sort\": 90,\n            \"remark\": null,\n            \"user_id\": \"eWD3N7EX8s\",\n            \"user_username\": \"soa\",\n            \"user_avatar\": null,\n            \"updated_at\": \"2026-01-25T07:12:59.000000Z\"\n        }\n    ]\n}"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "name": "删除商品",
+  "id": "f670cc06-707a-4c8c-a243-76a954aa0154",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "DELETE",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/shop/product/delete?product_id=1000",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "shop",
+        "product",
+        "delete"
+      ],
+      "query": [
+        {
+          "key": "product_id",
+          "value": "1000"
+        }
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "19031ae0-77ac-42ac-9835-df1316c7719e",
+      "name": "删除商品",
+      "originalRequest": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/shop/product/delete?product_id=1000",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "shop",
+            "product",
+            "delete"
+          ],
+          "query": [
+            {
+              "key": "product_id",
+              "value": "1000"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.3"
+        },
+        {
+          "key": "Content-Type",
+          "value": "text/html; charset=utf-8"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sat, 28 Feb 2026 11:38:13 GMT"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": null
+    }
+  ]
+}

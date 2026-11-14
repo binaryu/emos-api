@@ -1,0 +1,86 @@
+{
+  "name": "服务商信息",
+  "id": "6ef54280-3c65-4a30-9759-a7f15666ea94",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/pay/base",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "pay",
+        "base"
+      ]
+    },
+    "description": "- `total_revenue` 总收入\n- `total_expenditure` 总支出\n- `status` 审核状态 \n\t- `review` 审核中\n\t- `pass` 通过\n "
+  },
+  "response": [
+    {
+      "id": "227bc890-02d8-493c-b6d1-89c9332f8510",
+      "name": "服务商信息",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/pay/base",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "pay",
+            "base"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": "",
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sat, 14 Feb 2026 10:09:30 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [
+        {
+          "expires": "Invalid Date",
+          "domain": "",
+          "path": ""
+        }
+      ],
+      "responseTime": null,
+      "body": "{\n    \"name\": \"名称\",\n    \"description\": \"简介\",\n    \"total_revenue\": 0,\n    \"total_expenditure\": 0,\n    \"notify_url\": null,\n    \"status\": \"review\"\n}"
+    }
+  ]
+}

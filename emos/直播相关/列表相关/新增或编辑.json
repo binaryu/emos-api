@@ -1,0 +1,98 @@
+{
+  "name": "新增或编辑",
+  "id": "9df8e482-c9ed-46bd-8add-494c426a8167",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "POST",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\n    // 存在则更新\n    \"id\": null,\n    // 直播媒体库id 必填\n    \"live_library_id\": 1,\n    // 标题 必填\n    \"title\": \"啦啦\",\n    // 简介\n    \"description\": null,\n    // 宣传词\n    \"tagline\": null,\n    // 图片文件id\n    \"image_poster\": \"XNrvMYe2Mkxb\"\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    },
+    "url": {
+      "raw": "{{url}}/api/live/list",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "live",
+        "list"
+      ]
+    },
+    "description": "如果存在 `code` 则为官方源 除图片外均可修改\n返回值为 已添加的总数\n"
+  },
+  "response": [
+    {
+      "id": "522ea343-407f-4a84-b096-98ac6e779dcb",
+      "name": "新增或编辑",
+      "originalRequest": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    // 存在则更新\n    \"id\": null,\n    // 直播媒体库id 必填\n    \"live_library_id\": 1,\n    // 标题 必填\n    \"title\": \"啦啦\",\n    // 简介\n    \"description\": null,\n    // 宣传词\n    \"tagline\": null,\n    // 图片文件id\n    \"image_poster\": \"XNrvMYe2Mkxb\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/live/list",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "live",
+            "list"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Wed, 11 Feb 2026 11:47:05 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"count\": 1\n}"
+    }
+  ]
+}

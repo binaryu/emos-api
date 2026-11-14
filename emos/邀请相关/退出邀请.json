@@ -1,0 +1,76 @@
+{
+  "name": "退出邀请",
+  "id": "014eab70-53c2-449a-9b98-915d739bddfc",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "POST",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/invite/exit",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "invite",
+        "exit"
+      ]
+    },
+    "description": "退出后需要重新找人邀请"
+  },
+  "response": [
+    {
+      "id": "bf49777d-9f51-4c9b-815a-042e18260263",
+      "name": "退出邀请",
+      "originalRequest": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/invite/exit",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "invite",
+            "exit"
+          ]
+        }
+      },
+      "status": "No Content",
+      "code": 204,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.10"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sun, 06 Sep 2026 03:33:57 GMT"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": null
+    }
+  ]
+}

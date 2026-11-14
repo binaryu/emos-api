@@ -1,0 +1,93 @@
+{
+  "name": "添加影片",
+  "id": "40ac2282-1bdc-47a6-8d52-30349b36865e",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "POST",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\r\n    \"video_list_id\": {{video_id}}\r\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    },
+    "url": {
+      "raw": "{{url}}/api/reel/create",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "reel",
+        "create"
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "06560d1f-1a3b-4006-9a8e-dc00979c5b28",
+      "name": "添加影片",
+      "originalRequest": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"video_list_id\": {{video_id}}\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/reel/create",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "reel",
+            "create"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Mon, 20 Jul 2026 02:32:39 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"forge_reel_uuid\": \"0a6e3e35-4e13-4d4d-86d3-5e1ab828ecd3\"\n}"
+    }
+  ]
+}

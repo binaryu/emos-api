@@ -1,0 +1,80 @@
+{
+  "name": "获取一次登录密码",
+  "id": "9dbfd514-125a-4275-bbf6-1d078d890b2f",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/user/passwordTemporary",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "user",
+        "passwordTemporary"
+      ]
+    },
+    "description": "只有当 `must_otp` 为 `true` 时才是临时密码"
+  },
+  "response": [
+    {
+      "id": "0ddb8117-fc6f-419d-a525-67fec6012835",
+      "name": "获取一次登录密码",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/user/passwordTemporary",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "user",
+            "passwordTemporary"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.4.16"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Wed, 20 May 2026 10:26:56 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"password\": 559,\n    \"second\": 45\n}"
+    }
+  ]
+}

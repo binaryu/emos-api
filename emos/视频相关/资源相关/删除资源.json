@@ -1,0 +1,96 @@
+{
+  "name": "删除资源",
+  "id": "3bafaa2d-d26f-446e-8da6-63395033e7fa",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "DELETE",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\n    \"media_id\":\"2xeowrq1nv49\",\n    // 删除别人视频时 需要传入原因 50字内\n    \"reason\": null\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    },
+    "url": {
+      "raw": "{{url}}/api/video/media/delete",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "video",
+        "media",
+        "delete"
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "7d411b95-4987-4e39-9d41-9732a8e601f0",
+      "name": "删除资源",
+      "originalRequest": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/video/media/delete?media_id=YLgw45W2Jk1V",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "video",
+            "media",
+            "delete"
+          ],
+          "query": [
+            {
+              "key": "media_id",
+              "value": "YLgw45W2Jk1V"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sun, 18 Jan 2026 15:46:42 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"carrot\": 3\n}"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "name": "查看已订阅用户",
+  "id": "43c05081-181f-4de1-b1e8-d0075a54ccc8",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/watch/{{watch_id}}/user",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "watch",
+        "{{watch_id}}",
+        "user"
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "6e405f7f-8ccc-4e89-acdc-4b69847886be",
+      "name": "查看已订阅用户",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/watch/{{watch_id}}/user",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "watch",
+            "{{watch_id}}",
+            "user"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sun, 25 Jan 2026 04:33:07 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"page\": 1,\n    \"page_size\": 15,\n    \"total\": 1,\n    \"items\": [\n        {\n            \"username\": \"soa\",\n            \"avatar\": null,\n            \"carrot\": 10,\n            \"expiration_date\": \"2026-02-01\",\n            \"created_at\": \"2026-01-25T03:18:52.000000Z\"\n        }\n    ]\n}"
+    }
+  ]
+}

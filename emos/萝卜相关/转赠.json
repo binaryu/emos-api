@@ -1,0 +1,97 @@
+{
+  "name": "转赠",
+  "id": "6271d8f3-c399-44b0-ae1b-d94e7d6f77f4",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "PUT",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\n    // 对方用户ID\n    \"user_id\": \"ewd3n7ex8s\",\n    // 萝卜数量 2到6000之间\n    \"carrot\": 2\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    },
+    "url": {
+      "raw": "{{url}}/api/carrot/transfer",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "carrot",
+        "transfer"
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "0ec1088b-5c8c-45e9-b94c-d75f4ae582a3",
+      "name": "转赠",
+      "originalRequest": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"user_id\": \"eWD3N7EX8s\",\n    \"carrot\": 2\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/carrot/transfer",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "carrot",
+            "transfer"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sun, 25 Jan 2026 14:05:13 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"carrot\": 1936\n}"
+    }
+  ]
+}

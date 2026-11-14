@@ -1,0 +1,156 @@
+{
+  "name": "更新笔名",
+  "id": "6b0631c8-c421-4998-af2e-270baa15ddbc",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "PUT",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/user/pseudonym?name=张三",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "user",
+        "pseudonym"
+      ],
+      "query": [
+        {
+          "key": "name",
+          "value": "张三",
+          "description": "新笔名"
+        }
+      ]
+    },
+    "description": "就像是 `up主` `化名` 等一样的东西\n只对之后上传的生效"
+  },
+  "response": [
+    {
+      "id": "1b351853-fce2-46cb-912c-df982dc27aab",
+      "name": "成功",
+      "originalRequest": {
+        "method": "PUT",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/user/pseudonym?name=张三",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "user",
+            "pseudonym"
+          ],
+          "query": [
+            {
+              "key": "name",
+              "value": "张三",
+              "description": "新笔名"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sat, 17 Jan 2026 04:49:42 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"pseudonym\": \"张三\"\n}"
+    },
+    {
+      "id": "0fbd3d59-c34b-4846-9ae7-c2a4bffa047e",
+      "name": "失败",
+      "originalRequest": {
+        "method": "PUT",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/user/pseudonym?name=张三",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "user",
+            "pseudonym"
+          ],
+          "query": [
+            {
+              "key": "name",
+              "value": "张三",
+              "description": "新笔名"
+            }
+          ]
+        }
+      },
+      "status": "Unprocessable Content",
+      "code": 422,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sat, 17 Jan 2026 04:50:14 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"message\": \"此名称已被占用 不妨换个其他的\"\n}"
+    }
+  ]
+}

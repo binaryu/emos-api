@@ -1,0 +1,114 @@
+{
+  "name": "邀请历史",
+  "id": "21610de8-def7-439b-906f-f611fdbdfab7",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/invite/history?username&page_size&user_id&page&telegram_user_id",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "invite",
+        "history"
+      ],
+      "query": [
+        {
+          "key": "username",
+          "value": null,
+          "description": "根据用户名搜索"
+        },
+        {
+          "key": "page_size",
+          "value": null
+        },
+        {
+          "key": "user_id",
+          "value": null,
+          "description": "根据用户ID搜索"
+        },
+        {
+          "key": "page",
+          "value": null
+        },
+        {
+          "key": "telegram_user_id",
+          "value": null,
+          "description": "根据tgid搜索"
+        }
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "043a16b0-0e2d-4e47-82b6-cc9c23bb9418",
+      "name": "邀请历史",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/invite/history?page&page_size",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "invite",
+            "history"
+          ],
+          "query": [
+            {
+              "key": "page",
+              "value": null
+            },
+            {
+              "key": "page_size",
+              "value": null
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sat, 17 Jan 2026 04:54:50 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"page\": 1,\n    \"page_size\": 1,\n    \"total\": 1,\n    \"items\": [\n        {\n            \"user_id\": \"eP31288ERs\",\n            \"username\": \"aad1\",\n            \"telegram_user_id\": null,\n            \"invite_at\": \"2026-01-16 13:44:26\",\n            \"invite_remark\": null,\n            \"join_at\": \"2026-01-17 00:10:00\",\n            \"last_video_player\": null,\n            \"last_telegram_message\": null,\n            \"last_user_sign\": null\n        }\n    ]\n}"
+    }
+  ]
+}

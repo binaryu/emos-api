@@ -1,0 +1,32 @@
+{
+  "name": "获取播放清单",
+  "id": "421b40d9-c843-4421-a5c8-cb50982ac276",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "POST",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\r\n    \"media_id\": \"45rpvqdjok9j\",\r\n    // \"media_id\": \"wq9oj2l2n7j3\",\r\n    \"codecs\": [\r\n        \"h265\",\r\n        \"h264\",\r\n        \"eac3\",\r\n        \"aac\"\r\n    ]\r\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    },
+    "url": {
+      "raw": "{{url}}/api/reel/manifest",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "reel",
+        "manifest"
+      ]
+    }
+  },
+  "response": []
+}

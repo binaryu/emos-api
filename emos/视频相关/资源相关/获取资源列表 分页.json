@@ -1,0 +1,211 @@
+{
+  "name": "获取资源列表 分页",
+  "id": "d6105837-eaaf-4783-bd04-e463431ed205",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/video/media/listAll?media_id=&user_id=&only_delete=&include_metadata=",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "video",
+        "media",
+        "listAll"
+      ],
+      "query": [
+        {
+          "key": "media_id",
+          "value": "",
+          "description": "资源ID"
+        },
+        {
+          "key": "user_id",
+          "value": "",
+          "description": "上传用户"
+        },
+        {
+          "key": "status",
+          "value": null,
+          "description": "状态",
+          "disabled": true
+        },
+        {
+          "key": "only_delete",
+          "value": "",
+          "description": "仅查询已删除"
+        },
+        {
+          "key": "include_metadata",
+          "value": "",
+          "description": "包含元数据"
+        }
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "d234c18e-e657-499a-9329-088658706c09",
+      "name": "含元数据",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/video/media/listAll?user_id=&only_delete=&include_metadata=1",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "video",
+            "media",
+            "listAll"
+          ],
+          "query": [
+            {
+              "key": "user_id",
+              "value": "",
+              "description": "上传用户"
+            },
+            {
+              "key": "status",
+              "value": null,
+              "description": "状态",
+              "disabled": true
+            },
+            {
+              "key": "only_delete",
+              "value": "",
+              "description": "仅查询已删除"
+            },
+            {
+              "key": "include_metadata",
+              "value": "1",
+              "description": "包含元数据"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.6"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Wed, 03 Jun 2026 06:09:06 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"page\": 1,\n    \"page_size\": 2,\n    \"total\": 2,\n    \"items\": [\n        {\n            \"video_id\": 4111,\n            \"video_type\": \"tv\",\n            \"video_title\": \"小城大事\",\n            \"todb_id\": 4111,\n            \"tmdb_id\": 279593,\n            \"season_id\": 7575,\n            \"season_number\": 1,\n            \"season_title\": \"第 1 季\",\n            \"episode_id\": 161263,\n            \"episode_number\": 11,\n            \"episode_title\": \"滨海路之争！群众干部打起来了？\",\n            \"part_id\": null,\n            \"part_number\": null,\n            \"part_title\": null,\n            \"media_id\": \"ewyo9rw0oqdz\",\n            \"media_name\": \"4K 高码率 f1ne 上传\",\n            \"media_status\": \"complete\",\n            \"media_file_size\": 5209954120,\n            \"media_file_second\": 2799,\n            \"media_file_metadata\": {\n                \"streams\": [\n                    {\n                        \"index\": 0,\n                        \"codec_name\": \"hevc\",\n                        \"codec_long_name\": \"H.265 / HEVC (High Efficiency Video Coding)\",\n                        \"profile\": \"Main 10\",\n                        \"codec_type\": \"video\",\n                        \"codec_tag_string\": \"[0][0][0][0]\",\n                        \"codec_tag\": \"0x0000\",\n                        \"width\": 3840,\n                        \"height\": 2160,\n                        \"coded_width\": 3840,\n                        \"coded_height\": 2160,\n                        \"closed_captions\": 0,\n                        \"film_grain\": 0,\n                        \"has_b_frames\": 3,\n                        \"sample_aspect_ratio\": \"1:1\",\n                        \"display_aspect_ratio\": \"16:9\",\n                        \"pix_fmt\": \"yuv420p10le\",\n                        \"level\": 153,\n                        \"color_range\": \"tv\",\n                        \"color_space\": \"bt2020nc\",\n                        \"color_transfer\": \"smpte2084\",\n                        \"color_primaries\": \"bt2020\",\n                        \"chroma_location\": \"left\",\n                        \"refs\": 1,\n                        \"view_ids_available\": \"\",\n                        \"view_pos_available\": \"\",\n                        \"r_frame_rate\": \"60/1\",\n                        \"avg_frame_rate\": \"60/1\",\n                        \"time_base\": \"1/1000\",\n                        \"start_pts\": 0,\n                        \"start_time\": \"0.000000\",\n                        \"extradata_size\": 205,\n                        \"disposition\": {\n                            \"default\": 1,\n                            \"dub\": 0,\n                            \"original\": 0,\n                            \"comment\": 0,\n                            \"lyrics\": 0,\n                            \"karaoke\": 0,\n                            \"forced\": 0,\n                            \"hearing_impaired\": 0,\n                            \"visual_impaired\": 0,\n                            \"clean_effects\": 0,\n                            \"attached_pic\": 0,\n                            \"timed_thumbnails\": 0,\n                            \"non_diegetic\": 0,\n                            \"captions\": 0,\n                            \"descriptions\": 0,\n                            \"metadata\": 0,\n                            \"dependent\": 0,\n                            \"still_image\": 0,\n                            \"multilayer\": 0\n                        },\n                        \"tags\": {\n                            \"DURATION\": \"00:46:39.083000000\"\n                        }\n                    },\n                    {\n                        \"index\": 1,\n                        \"codec_name\": \"eac3\",\n                        \"codec_long_name\": \"ATSC A/52B (AC-3, E-AC-3)\",\n                        \"codec_type\": \"audio\",\n                        \"codec_tag_string\": \"[0][0][0][0]\",\n                        \"codec_tag\": \"0x0000\",\n                        \"sample_fmt\": \"fltp\",\n                        \"sample_rate\": \"48000\",\n                        \"channels\": 2,\n                        \"channel_layout\": \"stereo\",\n                        \"bits_per_sample\": 0,\n                        \"initial_padding\": 0,\n                        \"r_frame_rate\": \"0/0\",\n                        \"avg_frame_rate\": \"0/0\",\n                        \"time_base\": \"1/1000\",\n                        \"start_pts\": 0,\n                        \"start_time\": \"0.000000\",\n                        \"bit_rate\": \"64000\",\n                        \"disposition\": {\n                            \"default\": 1,\n                            \"dub\": 0,\n                            \"original\": 0,\n                            \"comment\": 0,\n                            \"lyrics\": 0,\n                            \"karaoke\": 0,\n                            \"forced\": 0,\n                            \"hearing_impaired\": 0,\n                            \"visual_impaired\": 0,\n                            \"clean_effects\": 0,\n                            \"attached_pic\": 0,\n                            \"timed_thumbnails\": 0,\n                            \"non_diegetic\": 0,\n                            \"captions\": 0,\n                            \"descriptions\": 0,\n                            \"metadata\": 0,\n                            \"dependent\": 0,\n                            \"still_image\": 0,\n                            \"multilayer\": 0\n                        },\n                        \"tags\": {\n                            \"title\": \"DDP 2.0\",\n                            \"DURATION\": \"00:46:39.264000000\"\n                        }\n                    },\n                    {\n                        \"index\": 2,\n                        \"codec_name\": \"aac\",\n                        \"codec_long_name\": \"AAC (Advanced Audio Coding)\",\n                        \"profile\": \"LC\",\n                        \"codec_type\": \"audio\",\n                        \"codec_tag_string\": \"[0][0][0][0]\",\n                        \"codec_tag\": \"0x0000\",\n                        \"sample_fmt\": \"fltp\",\n                        \"sample_rate\": \"48000\",\n                        \"channels\": 6,\n                        \"channel_layout\": \"5.1\",\n                        \"bits_per_sample\": 0,\n                        \"initial_padding\": 0,\n                        \"r_frame_rate\": \"0/0\",\n                        \"avg_frame_rate\": \"0/0\",\n                        \"time_base\": \"1/1000\",\n                        \"start_pts\": 0,\n                        \"start_time\": \"0.000000\",\n                        \"extradata_size\": 2,\n                        \"disposition\": {\n                            \"default\": 0,\n                            \"dub\": 0,\n                            \"original\": 0,\n                            \"comment\": 0,\n                            \"lyrics\": 0,\n                            \"karaoke\": 0,\n                            \"forced\": 0,\n                            \"hearing_impaired\": 0,\n                            \"visual_impaired\": 0,\n                            \"clean_effects\": 0,\n                            \"attached_pic\": 0,\n                            \"timed_thumbnails\": 0,\n                            \"non_diegetic\": 0,\n                            \"captions\": 0,\n                            \"descriptions\": 0,\n                            \"metadata\": 0,\n                            \"dependent\": 0,\n                            \"still_image\": 0,\n                            \"multilayer\": 0\n                        },\n                        \"tags\": {\n                            \"title\": \"AAC 5.1\",\n                            \"DURATION\": \"00:46:39.168000000\"\n                        }\n                    },\n                    {\n                        \"index\": 3,\n                        \"codec_name\": \"aac\",\n                        \"codec_long_name\": \"AAC (Advanced Audio Coding)\",\n                        \"profile\": \"LC\",\n                        \"codec_type\": \"audio\",\n                        \"codec_tag_string\": \"[0][0][0][0]\",\n                        \"codec_tag\": \"0x0000\",\n                        \"sample_fmt\": \"fltp\",\n                        \"sample_rate\": \"48000\",\n                        \"channels\": 2,\n                        \"channel_layout\": \"stereo\",\n                        \"bits_per_sample\": 0,\n                        \"initial_padding\": 0,\n                        \"r_frame_rate\": \"0/0\",\n                        \"avg_frame_rate\": \"0/0\",\n                        \"time_base\": \"1/1000\",\n                        \"start_pts\": 0,\n                        \"start_time\": \"0.000000\",\n                        \"extradata_size\": 2,\n                        \"disposition\": {\n                            \"default\": 1,\n                            \"dub\": 0,\n                            \"original\": 0,\n                            \"comment\": 0,\n                            \"lyrics\": 0,\n                            \"karaoke\": 0,\n                            \"forced\": 0,\n                            \"hearing_impaired\": 0,\n                            \"visual_impaired\": 0,\n                            \"clean_effects\": 0,\n                            \"attached_pic\": 0,\n                            \"timed_thumbnails\": 0,\n                            \"non_diegetic\": 0,\n                            \"captions\": 0,\n                            \"descriptions\": 0,\n                            \"metadata\": 0,\n                            \"dependent\": 0,\n                            \"still_image\": 0,\n                            \"multilayer\": 0\n                        },\n                        \"tags\": {\n                            \"title\": \"AAC 2.0\",\n                            \"DURATION\": \"00:46:39.146000000\"\n                        }\n                    }\n                ],\n                \"format\": {\n                    \"nb_streams\": 4,\n                    \"nb_programs\": 0,\n                    \"nb_stream_groups\": 0,\n                    \"format_name\": \"matroska,webm\",\n                    \"format_long_name\": \"Matroska / WebM\",\n                    \"start_time\": \"0.000000\",\n                    \"duration\": \"2799.264000\",\n                    \"size\": \"5209954120\",\n                    \"bit_rate\": \"14889497\",\n                    \"probe_score\": 100,\n                    \"tags\": {\n                        \"ENCODER\": \"Lavf60.21.101\"\n                    }\n                }\n            },\n            \"user_pseudonym\": \"f1bb\",\n            \"user_id\": \"e0E446ZE6s\",\n            \"is_self_upload\": false,\n            \"storage_title\": \"Zn存档服\",\n            \"created_at\": \"2026-01-19T11:42:21.000000Z\"\n        },\n        {\n            \"video_id\": 1038,\n            \"video_type\": \"movie\",\n            \"video_title\": \"我们仍未知道那天所看见的花的名字。剧场版\",\n            \"todb_id\": 1038,\n            \"tmdb_id\": 255413,\n            \"season_id\": null,\n            \"season_number\": null,\n            \"season_title\": null,\n            \"episode_id\": null,\n            \"episode_number\": null,\n            \"episode_title\": null,\n            \"part_id\": null,\n            \"part_number\": null,\n            \"part_title\": null,\n            \"media_id\": \"59mnkq6jn2rl\",\n            \"media_name\": \"存档服 - 1080P\",\n            \"media_status\": \"complete\",\n            \"media_file_size\": 1519505690,\n            \"media_file_second\": 5949,\n            \"media_file_metadata\": {\n                \"streams\": [\n                    {\n                        \"index\": 0,\n                        \"codec_name\": \"hevc\",\n                        \"codec_long_name\": \"H.265 / HEVC (High Efficiency Video Coding)\",\n                        \"profile\": \"Main\",\n                        \"codec_type\": \"video\",\n                        \"codec_tag_string\": \"[0][0][0][0]\",\n                        \"codec_tag\": \"0x0000\",\n                        \"width\": 1920,\n                        \"height\": 1080,\n                        \"coded_width\": 1920,\n                        \"coded_height\": 1080,\n                        \"closed_captions\": 0,\n                        \"film_grain\": 0,\n                        \"has_b_frames\": 2,\n                        \"sample_aspect_ratio\": \"1:1\",\n                        \"display_aspect_ratio\": \"16:9\",\n                        \"pix_fmt\": \"yuv420p\",\n                        \"level\": 120,\n                        \"color_range\": \"tv\",\n                        \"chroma_location\": \"left\",\n                        \"refs\": 1,\n                        \"view_ids_available\": \"\",\n                        \"view_pos_available\": \"\",\n                        \"r_frame_rate\": \"24000/1001\",\n                        \"avg_frame_rate\": \"24000/1001\",\n                        \"time_base\": \"1/1000\",\n                        \"start_pts\": 0,\n                        \"start_time\": \"0.000000\",\n                        \"extradata_size\": 1989,\n                        \"disposition\": {\n                            \"default\": 1,\n                            \"dub\": 0,\n                            \"original\": 0,\n                            \"comment\": 0,\n                            \"lyrics\": 0,\n                            \"karaoke\": 0,\n                            \"forced\": 0,\n                            \"hearing_impaired\": 0,\n                            \"visual_impaired\": 0,\n                            \"clean_effects\": 0,\n                            \"attached_pic\": 0,\n                            \"timed_thumbnails\": 0,\n                            \"non_diegetic\": 0,\n                            \"captions\": 0,\n                            \"descriptions\": 0,\n                            \"metadata\": 0,\n                            \"dependent\": 0,\n                            \"still_image\": 0,\n                            \"multilayer\": 0\n                        },\n                        \"tags\": {\n                            \"BPS-eng\": \"1815047\",\n                            \"DURATION-eng\": \"01:39:08.943000000\",\n                            \"NUMBER_OF_FRAMES-eng\": \"142632\",\n                            \"NUMBER_OF_BYTES-eng\": \"1349702085\",\n                            \"_STATISTICS_WRITING_APP-eng\": \"mkvmerge v42.0.0 ('Overtime') 64-bit\",\n                            \"_STATISTICS_WRITING_DATE_UTC-eng\": \"2020-01-09 16:01:16\",\n                            \"_STATISTICS_TAGS-eng\": \"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES\"\n                        }\n                    },\n                    {\n                        \"index\": 1,\n                        \"codec_name\": \"aac\",\n                        \"codec_long_name\": \"AAC (Advanced Audio Coding)\",\n                        \"profile\": \"LC\",\n                        \"codec_type\": \"audio\",\n                        \"codec_tag_string\": \"[0][0][0][0]\",\n                        \"codec_tag\": \"0x0000\",\n                        \"sample_fmt\": \"fltp\",\n                        \"sample_rate\": \"48000\",\n                        \"channels\": 2,\n                        \"channel_layout\": \"stereo\",\n                        \"bits_per_sample\": 0,\n                        \"initial_padding\": 0,\n                        \"r_frame_rate\": \"0/0\",\n                        \"avg_frame_rate\": \"0/0\",\n                        \"time_base\": \"1/1000\",\n                        \"start_pts\": 21,\n                        \"start_time\": \"0.021000\",\n                        \"extradata_size\": 2,\n                        \"disposition\": {\n                            \"default\": 1,\n                            \"dub\": 0,\n                            \"original\": 0,\n                            \"comment\": 0,\n                            \"lyrics\": 0,\n                            \"karaoke\": 0,\n                            \"forced\": 0,\n                            \"hearing_impaired\": 0,\n                            \"visual_impaired\": 0,\n                            \"clean_effects\": 0,\n                            \"attached_pic\": 0,\n                            \"timed_thumbnails\": 0,\n                            \"non_diegetic\": 0,\n                            \"captions\": 0,\n                            \"descriptions\": 0,\n                            \"metadata\": 0,\n                            \"dependent\": 0,\n                            \"still_image\": 0,\n                            \"multilayer\": 0\n                        },\n                        \"tags\": {\n                            \"language\": \"jpn\",\n                            \"title\": \"Japanese\",\n                            \"BPS-eng\": \"212275\",\n                            \"DURATION-eng\": \"01:39:08.928000000\",\n                            \"NUMBER_OF_FRAMES-eng\": \"278856\",\n                            \"NUMBER_OF_BYTES-eng\": \"157851221\",\n                            \"_STATISTICS_WRITING_APP-eng\": \"mkvmerge v42.0.0 ('Overtime') 64-bit\",\n                            \"_STATISTICS_WRITING_DATE_UTC-eng\": \"2020-01-09 16:01:16\",\n                            \"_STATISTICS_TAGS-eng\": \"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES\"\n                        }\n                    },\n                    {\n                        \"index\": 2,\n                        \"codec_name\": \"ass\",\n                        \"codec_long_name\": \"ASS (Advanced SSA) subtitle\",\n                        \"codec_type\": \"subtitle\",\n                        \"codec_tag_string\": \"[0][0][0][0]\",\n                        \"codec_tag\": \"0x0000\",\n                        \"r_frame_rate\": \"0/0\",\n                        \"avg_frame_rate\": \"0/0\",\n                        \"time_base\": \"1/1000\",\n                        \"start_pts\": 0,\n                        \"start_time\": \"0.000000\",\n                        \"duration_ts\": 5948949,\n                        \"duration\": \"5948.949000\",\n                        \"extradata_size\": 2754,\n                        \"disposition\": {\n                            \"default\": 1,\n                            \"dub\": 0,\n                            \"original\": 0,\n                            \"comment\": 0,\n                            \"lyrics\": 0,\n                            \"karaoke\": 0,\n                            \"forced\": 0,\n                            \"hearing_impaired\": 0,\n                            \"visual_impaired\": 0,\n                            \"clean_effects\": 0,\n                            \"attached_pic\": 0,\n                            \"timed_thumbnails\": 0,\n                            \"non_diegetic\": 0,\n                            \"captions\": 0,\n                            \"descriptions\": 0,\n                            \"metadata\": 0,\n                            \"dependent\": 0,\n                            \"still_image\": 0,\n                            \"multilayer\": 0\n                        },\n                        \"tags\": {\n                            \"title\": \"SC\",\n                            \"BPS-eng\": \"122\",\n                            \"DURATION-eng\": \"01:38:26.860000000\",\n                            \"NUMBER_OF_FRAMES-eng\": \"1764\",\n                            \"NUMBER_OF_BYTES-eng\": \"90714\",\n                            \"_STATISTICS_WRITING_APP-eng\": \"mkvmerge v42.0.0 ('Overtime') 64-bit\",\n                            \"_STATISTICS_WRITING_DATE_UTC-eng\": \"2020-01-09 16:01:16\",\n                            \"_STATISTICS_TAGS-eng\": \"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES\"\n                        }\n                    },\n                    {\n                        \"index\": 3,\n                        \"codec_name\": \"ass\",\n                        \"codec_long_name\": \"ASS (Advanced SSA) subtitle\",\n                        \"codec_type\": \"subtitle\",\n                        \"codec_tag_string\": \"[0][0][0][0]\",\n                        \"codec_tag\": \"0x0000\",\n                        \"r_frame_rate\": \"0/0\",\n                        \"avg_frame_rate\": \"0/0\",\n                        \"time_base\": \"1/1000\",\n                        \"start_pts\": 0,\n                        \"start_time\": \"0.000000\",\n                        \"duration_ts\": 5948949,\n                        \"duration\": \"5948.949000\",\n                        \"extradata_size\": 2754,\n                        \"disposition\": {\n                            \"default\": 0,\n                            \"dub\": 0,\n                            \"original\": 0,\n                            \"comment\": 0,\n                            \"lyrics\": 0,\n                            \"karaoke\": 0,\n                            \"forced\": 0,\n                            \"hearing_impaired\": 0,\n                            \"visual_impaired\": 0,\n                            \"clean_effects\": 0,\n                            \"attached_pic\": 0,\n                            \"timed_thumbnails\": 0,\n                            \"non_diegetic\": 0,\n                            \"captions\": 0,\n                            \"descriptions\": 0,\n                            \"metadata\": 0,\n                            \"dependent\": 0,\n                            \"still_image\": 0,\n                            \"multilayer\": 0\n                        },\n                        \"tags\": {\n                            \"title\": \"TC\",\n                            \"BPS-eng\": \"122\",\n                            \"DURATION-eng\": \"01:38:26.860000000\",\n                            \"NUMBER_OF_FRAMES-eng\": \"1764\",\n                            \"NUMBER_OF_BYTES-eng\": \"90714\",\n                            \"_STATISTICS_WRITING_APP-eng\": \"mkvmerge v42.0.0 ('Overtime') 64-bit\",\n                            \"_STATISTICS_WRITING_DATE_UTC-eng\": \"2020-01-09 16:01:16\",\n                            \"_STATISTICS_TAGS-eng\": \"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES\"\n                        }\n                    },\n                    {\n                        \"index\": 4,\n                        \"codec_name\": \"ttf\",\n                        \"codec_long_name\": \"TrueType font\",\n                        \"codec_type\": \"attachment\",\n                        \"codec_tag_string\": \"[0][0][0][0]\",\n                        \"codec_tag\": \"0x0000\",\n                        \"r_frame_rate\": \"0/0\",\n                        \"avg_frame_rate\": \"0/0\",\n                        \"time_base\": \"1/90000\",\n                        \"start_pts\": 0,\n                        \"start_time\": \"0.000000\",\n                        \"duration_ts\": 535405410,\n                        \"duration\": \"5948.949000\",\n                        \"extradata_size\": 9910468,\n                        \"disposition\": {\n                            \"default\": 0,\n                            \"dub\": 0,\n                            \"original\": 0,\n                            \"comment\": 0,\n                            \"lyrics\": 0,\n                            \"karaoke\": 0,\n                            \"forced\": 0,\n                            \"hearing_impaired\": 0,\n                            \"visual_impaired\": 0,\n                            \"clean_effects\": 0,\n                            \"attached_pic\": 0,\n                            \"timed_thumbnails\": 0,\n                            \"non_diegetic\": 0,\n                            \"captions\": 0,\n                            \"descriptions\": 0,\n                            \"metadata\": 0,\n                            \"dependent\": 0,\n                            \"still_image\": 0,\n                            \"multilayer\": 0\n                        },\n                        \"tags\": {\n                            \"filename\": \"方正准圆_GBK.ttf\",\n                            \"mimetype\": \"application/x-truetype-font\"\n                        }\n                    }\n                ],\n                \"format\": {\n                    \"nb_streams\": 5,\n                    \"nb_programs\": 0,\n                    \"nb_stream_groups\": 0,\n                    \"format_name\": \"matroska,webm\",\n                    \"format_long_name\": \"Matroska / WebM\",\n                    \"start_time\": \"0.000000\",\n                    \"duration\": \"5948.949000\",\n                    \"size\": \"1519505690\",\n                    \"bit_rate\": \"2043393\",\n                    \"probe_score\": 100,\n                    \"tags\": {\n                        \"encoder\": \"libebml v1.3.10 + libmatroska v1.5.2\",\n                        \"creation_time\": \"2020-01-09T16:01:16.000000Z\",\n                        \"Writing frontend\": \"StaxRip v1.7.0.0\"\n                    }\n                }\n            },\n            \"user_pseudonym\": null,\n            \"user_id\": null,\n            \"is_self_upload\": false,\n            \"storage_title\": \"Zn存档服\",\n            \"created_at\": \"2025-10-30T10:18:20.000000Z\"\n        }\n    ]\n}"
+    },
+    {
+      "id": "e37287fb-f7b9-4209-b485-e7ac44f3258f",
+      "name": "不含元数据",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/video/media/listAll?user_id=&only_delete=&include_metadata=",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "video",
+            "media",
+            "listAll"
+          ],
+          "query": [
+            {
+              "key": "user_id",
+              "value": "",
+              "description": "上传用户"
+            },
+            {
+              "key": "status",
+              "value": null,
+              "description": "状态",
+              "disabled": true
+            },
+            {
+              "key": "only_delete",
+              "value": "",
+              "description": "仅查询已删除"
+            },
+            {
+              "key": "include_metadata",
+              "value": "",
+              "description": "包含元数据"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.6"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Wed, 03 Jun 2026 06:09:41 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"page\": 1,\n    \"page_size\": 2,\n    \"total\": 2,\n    \"items\": [\n        {\n            \"video_id\": 4111,\n            \"video_type\": \"tv\",\n            \"video_title\": \"小城大事\",\n            \"todb_id\": 4111,\n            \"tmdb_id\": 279593,\n            \"season_id\": 7575,\n            \"season_number\": 1,\n            \"season_title\": \"第 1 季\",\n            \"episode_id\": 161263,\n            \"episode_number\": 11,\n            \"episode_title\": \"滨海路之争！群众干部打起来了？\",\n            \"part_id\": null,\n            \"part_number\": null,\n            \"part_title\": null,\n            \"media_id\": \"ewyo9rw0oqdz\",\n            \"media_name\": \"4K 高码率 f1ne 上传\",\n            \"media_status\": \"complete\",\n            \"media_file_size\": 5209954120,\n            \"media_file_second\": 2799,\n            \"media_file_metadata\": null,\n            \"user_pseudonym\": \"f1bb\",\n            \"user_id\": \"e0E446ZE6s\",\n            \"is_self_upload\": false,\n            \"storage_title\": \"Zn存档服\",\n            \"created_at\": \"2026-01-19T11:42:21.000000Z\"\n        },\n        {\n            \"video_id\": 1038,\n            \"video_type\": \"movie\",\n            \"video_title\": \"我们仍未知道那天所看见的花的名字。剧场版\",\n            \"todb_id\": 1038,\n            \"tmdb_id\": 255413,\n            \"season_id\": null,\n            \"season_number\": null,\n            \"season_title\": null,\n            \"episode_id\": null,\n            \"episode_number\": null,\n            \"episode_title\": null,\n            \"part_id\": null,\n            \"part_number\": null,\n            \"part_title\": null,\n            \"media_id\": \"59mnkq6jn2rl\",\n            \"media_name\": \"存档服 - 1080P\",\n            \"media_status\": \"complete\",\n            \"media_file_size\": 1519505690,\n            \"media_file_second\": 5949,\n            \"media_file_metadata\": null,\n            \"user_pseudonym\": null,\n            \"user_id\": null,\n            \"is_self_upload\": false,\n            \"storage_title\": \"Zn存档服\",\n            \"created_at\": \"2025-10-30T10:18:20.000000Z\"\n        }\n    ]\n}"
+    }
+  ]
+}

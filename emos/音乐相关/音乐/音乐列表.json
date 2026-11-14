@@ -1,0 +1,173 @@
+{
+  "name": "音乐列表",
+  "id": "64721483-788e-4cab-9ba0-6c6267088fb6",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/music/song/list?song_id&name&has_media&is_favorite=&is_rating&album_id=&person_id_artist=&person_name_artist&is_headless",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "music",
+        "song",
+        "list"
+      ],
+      "query": [
+        {
+          "key": "song_id",
+          "value": null,
+          "description": "音乐ID"
+        },
+        {
+          "key": "name",
+          "value": null,
+          "description": "音乐名称"
+        },
+        {
+          "key": "has_media",
+          "value": null,
+          "description": "是否存在资源"
+        },
+        {
+          "key": "is_favorite",
+          "value": "",
+          "description": "仅展示收藏的"
+        },
+        {
+          "key": "is_rating",
+          "value": null,
+          "description": "仅展示自己评分的"
+        },
+        {
+          "key": "album_id",
+          "value": "",
+          "description": "专辑ID"
+        },
+        {
+          "key": "person_id_artist",
+          "value": "",
+          "description": "歌手id"
+        },
+        {
+          "key": "person_name_artist",
+          "value": null,
+          "description": "歌手姓名"
+        },
+        {
+          "key": "is_headless",
+          "value": null
+        }
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "8ceef0f8-9ee4-4288-94b5-8bb19fb82ab4",
+      "name": "音乐列表",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/music/song/list?song_id&name&has_media&is_favorite=&is_rating&album_id=&person_id_artist=&person_name_artist&is_headless",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "music",
+            "song",
+            "list"
+          ],
+          "query": [
+            {
+              "key": "song_id",
+              "value": null,
+              "description": "音乐ID"
+            },
+            {
+              "key": "name",
+              "value": null,
+              "description": "音乐名称"
+            },
+            {
+              "key": "has_media",
+              "value": null,
+              "description": "是否存在资源"
+            },
+            {
+              "key": "is_favorite",
+              "value": "",
+              "description": "仅展示收藏的"
+            },
+            {
+              "key": "is_rating",
+              "value": null,
+              "description": "仅展示自己评分的"
+            },
+            {
+              "key": "album_id",
+              "value": "",
+              "description": "专辑ID"
+            },
+            {
+              "key": "person_id_artist",
+              "value": "",
+              "description": "歌手id"
+            },
+            {
+              "key": "person_name_artist",
+              "value": null,
+              "description": "歌手姓名"
+            },
+            {
+              "key": "is_headless",
+              "value": null
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.6"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sat, 06 Jun 2026 15:54:04 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"page\": 1,\n    \"page_size\": 5,\n    \"total\": 572,\n    \"items\": [\n        {\n            \"song_id\": 1573,\n            \"todb_music_music_id\": null,\n            \"name\": \"张三 - 小星星\",\n            \"image_poster_url\": null,\n            \"description\": \"张三\",\n            \"tagline\": null,\n            \"release_date\": null,\n            \"duration\": 189,\n            \"video_list_id\": null,\n            \"rating\": null,\n            \"rating_user\": null,\n            \"has_media\": true,\n            \"is_adult\": false,\n            \"person_artists\": [],\n            \"albums\": [],\n            \"is_favorite\": false,\n            \"count_medias\": 0,\n            \"count_lryics\": 0\n        },\n        {\n            \"song_id\": 1005,\n            \"todb_music_music_id\": 1005,\n            \"name\": \"七月的极光\",\n            \"image_poster_url\": null,\n            \"description\": null,\n            \"tagline\": null,\n            \"release_date\": null,\n            \"duration\": 193,\n            \"video_list_id\": 1000,\n            \"rating\": null,\n            \"rating_user\": null,\n            \"has_media\": true,\n            \"is_adult\": null,\n            \"person_artists\": [],\n            \"albums\": [\n                {\n                    \"todb_music_album_id\": 1000,\n                    \"name\": \"太阳之子\"\n                }\n            ],\n            \"is_favorite\": false,\n            \"count_medias\": 0,\n            \"count_lryics\": 2\n        },\n        {\n            \"song_id\": 1407,\n            \"todb_music_music_id\": 1846,\n            \"name\": \"七号公园\",\n            \"image_poster_url\": null,\n            \"description\": null,\n            \"tagline\": null,\n            \"release_date\": null,\n            \"duration\": 214,\n            \"video_list_id\": null,\n            \"rating\": null,\n            \"rating_user\": null,\n            \"has_media\": false,\n            \"is_adult\": null,\n            \"person_artists\": [\n                {\n                    \"person_id\": 1000,\n                    \"name\": \"a2\",\n                    \"original_name\": \"許嵩\",\n                    \"image_profile_url\": \"https://image.theotherdb.org/original/EXQdp7KwBmRMjB8N\",\n                    \"gender\": null,\n                    \"is_virtual\": null,\n                    \"is_adult\": null\n                }\n            ],\n            \"albums\": [\n                {\n                    \"todb_music_album_id\": 1195,\n                    \"name\": \"七号公园\"\n                }\n            ],\n            \"is_favorite\": false,\n            \"count_medias\": 0,\n            \"count_lryics\": 0\n        },\n        {\n            \"song_id\": 1570,\n            \"todb_music_music_id\": 1844,\n            \"name\": \"散场电影\",\n            \"image_poster_url\": null,\n            \"description\": null,\n            \"tagline\": null,\n            \"release_date\": null,\n            \"duration\": 215,\n            \"video_list_id\": null,\n            \"rating\": null,\n            \"rating_user\": null,\n            \"has_media\": false,\n            \"is_adult\": null,\n            \"person_artists\": [\n                {\n                    \"person_id\": 1001,\n                    \"name\": \"许嵩\",\n                    \"original_name\": \"許嵩\",\n                    \"image_profile_url\": \"https://image.theotherdb.org/original/EXQdp7KwBmRMjB8N\",\n                    \"gender\": null,\n                    \"is_virtual\": null,\n                    \"is_adult\": null\n                }\n            ],\n            \"albums\": [\n                {\n                    \"todb_music_album_id\": 1193,\n                    \"name\": \"散场电影\"\n                }\n            ],\n            \"is_favorite\": false,\n            \"count_medias\": 0,\n            \"count_lryics\": 0\n        },\n        {\n            \"song_id\": 1569,\n            \"todb_music_music_id\": 1843,\n            \"name\": \"浅唱\",\n            \"image_poster_url\": null,\n            \"description\": null,\n            \"tagline\": null,\n            \"release_date\": null,\n            \"duration\": 246,\n            \"video_list_id\": null,\n            \"rating\": null,\n            \"rating_user\": null,\n            \"has_media\": false,\n            \"is_adult\": null,\n            \"person_artists\": [\n                {\n                    \"person_id\": 1001,\n                    \"name\": \"许嵩\",\n                    \"original_name\": \"許嵩\",\n                    \"image_profile_url\": \"https://image.theotherdb.org/original/EXQdp7KwBmRMjB8N\",\n                    \"gender\": null,\n                    \"is_virtual\": null,\n                    \"is_adult\": null\n                }\n            ],\n            \"albums\": [\n                {\n                    \"todb_music_album_id\": 1192,\n                    \"name\": \"浅唱\"\n                }\n            ],\n            \"is_favorite\": false,\n            \"count_medias\": 0,\n            \"count_lryics\": 0\n        }\n    ]\n}"
+    }
+  ]
+}

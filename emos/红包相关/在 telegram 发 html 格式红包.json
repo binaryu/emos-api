@@ -1,0 +1,98 @@
+{
+  "name": "在 telegram 发 html 格式红包",
+  "id": "9958676a-c8f3-4d65-b211-cfaba5ab277b",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "POST",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\n    // 红包类型 必填\n    \"type\": \"default\",\n    // 领取类型 必填\n    \"receive\": \"average\",\n    // 红包总金额 1 - 60000 萝卜 必填\n    \"carrot\": 2,\n    // 可领人数 1 - 10000 人 必填\n    \"number\": 2,\n    // 字符串 区分大小写 1-50字符内 口令或专属时必填\n    \"password\": null,\n    // 过期时间 60秒 - 48小时 默认为24小时 单位秒\n    \"seconds\": 120,\n    // html 内容 6000字符内\n    \"html\": \"啦啦啦啦<br><h1>asdf</h1><img src=\\\"https://telegram.org/example/photo.jpg\\\"></img><hr /><audio src=\\\"https://telegram.org/example/audio.ogg\\\"></audio><video src=\\\"https://telegram.org/example/video.mp4\\\" tg-spoiler></video>\"\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    },
+    "url": {
+      "raw": "{{url}}/api/redPacket/createTelegramHtml",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "redPacket",
+        "createTelegramHtml"
+      ]
+    },
+    "description": "telegram 可用 html 标签列表\n\nhttps://core.telegram.org/bots/api#rich-html-style\n\n图片视频等 均采用外链 https 类型地址 端口不支持自定义\n\n如果发送失败 会吞红包 等待有效期结束会自动退款\n\n其余参数和 发红包相同 \n\n\n"
+  },
+  "response": [
+    {
+      "id": "166ccab1-57f8-4b12-b6fd-37a0895af77c",
+      "name": "在 telegram 发 html 格式红包",
+      "originalRequest": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    // 红包类型 必填\n    \"type\": \"default\",\n    // 领取类型 必填\n    \"receive\": \"average\",\n    // 红包总金额 1 - 60000 萝卜 必填\n    \"carrot\": 2,\n    // 可领人数 1 - 10000 人 必填\n    \"number\": 2,\n    // 字符串 区分大小写 1-50字符内 口令或专属时必填\n    \"password\": null,\n    // 过期时间 60秒 - 48小时 默认为24小时 单位秒\n    \"seconds\": 120,\n    // html 内容 6000字符内\n    \"html\": \"啦啦啦啦<br><h1>asdf</h1><img src=\\\"https://telegram.org/example/photo.jpg\\\"></img><hr /><audio src=\\\"https://telegram.org/example/audio.ogg\\\"></audio><video src=\\\"https://telegram.org/example/video.mp4\\\" tg-spoiler></video>\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/redPacket/createTelegramHtml",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "redPacket",
+            "createTelegramHtml"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.10"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sun, 06 Sep 2026 02:38:59 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"red_packet_id\": \"vkQN8d6jYJqD\"\n}"
+    }
+  ]
+}

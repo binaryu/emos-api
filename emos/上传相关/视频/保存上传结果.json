@@ -1,0 +1,99 @@
+{
+  "name": "保存上传结果",
+  "id": "f2722f08-0026-450f-a8cf-279a71983cf0",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "POST",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\n    \"item_type\": \"ve\",\n    \"item_id\": 1000,\n    \"file_id\": \"en57MBjBMRmP\"\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    },
+    "url": {
+      "raw": "{{url}}/api/upload/video/save",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "upload",
+        "video",
+        "save"
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "82141643-38a7-408e-9d9e-ef403ffb5656",
+      "name": "保存上传结果",
+      "originalRequest": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"item_type\": \"vl\",\n    \"item_id\": 1,\n    \"file_id\": \"EzqvM34pPRge\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/upload/video/save",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "upload",
+            "video",
+            "save"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sun, 18 Jan 2026 15:40:51 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"count\": 1,\n    \"media_id\": \"Y1qy9kW9v86K\",\n    \"carrot\": 3\n}"
+    }
+  ]
+}

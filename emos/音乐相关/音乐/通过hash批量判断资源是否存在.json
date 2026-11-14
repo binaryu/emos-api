@@ -1,0 +1,100 @@
+{
+  "name": "通过hash批量判断资源是否存在",
+  "id": "5a85ebce-a5c8-48ae-bf8e-0025b16275d7",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "POST",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\r\n    \"hashs\": [\r\n        \"12f1193d8773fe556d34cd3f8b676d7489a76c5d59257155bfeb7d7a1244806f\",\r\n        \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\"\r\n    ]\r\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    },
+    "url": {
+      "raw": "{{url}}/api/music/song/batchHashExist",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "music",
+        "song",
+        "batchHashExist"
+      ]
+    },
+    "description": "采用 `sha256` 验证 需要转为小写"
+  },
+  "response": [
+    {
+      "id": "2f12e916-e90c-496f-b855-e96af724754b",
+      "name": "通过hash批量判断资源是否存在",
+      "originalRequest": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"hashs\": [\r\n        \"12f1193d8773fe556d34cd3f8b676d7489a76c5d59257155bfeb7d7a1244806f\",\r\n        \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\"\r\n    ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/music/song/batchHashExist",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "music",
+            "song",
+            "batchHashExist"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.6"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Tue, 09 Jun 2026 06:47:20 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "[\n    {\n        \"media_id\": \"1pgnyxel9qyd\",\n        \"music_song_id\": 1908,\n        \"file_hash\": \"12f1193d8773fe556d34cd3f8b676d7489a76c5d59257155bfeb7d7a1244806f\",\n        \"name\": \"sorakand 上传\",\n        \"created_at\": \"2026-06-08T17:19:26.000000Z\"\n    }\n]"
+    }
+  ]
+}

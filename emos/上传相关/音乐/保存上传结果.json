@@ -1,0 +1,99 @@
+{
+  "name": "保存上传结果",
+  "id": "31803485-32b2-4fbe-b7d8-37acd549bcc2",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "POST",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\r\n    \"music_song_id\": {{music_song_id}},\r\n    \"file_id\": \"VJdRlL9K0xgO\"\r\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    },
+    "url": {
+      "raw": "{{url}}/api/upload/music/save",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "upload",
+        "music",
+        "save"
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "b90370e2-a039-4d67-9374-5ee50323e4db",
+      "name": "保存上传结果",
+      "originalRequest": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"music_song_id\": {{music_song_id}},\r\n    \"file_id\": \"XNrvMY2pkxbE\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/upload/music/save",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "upload",
+            "music",
+            "save"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.6"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sat, 23 May 2026 05:43:25 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"carrot\": 2,\n    \"media_id\": \"ymqnzjo29z80\"\n}"
+    }
+  ]
+}

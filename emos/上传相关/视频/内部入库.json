@@ -1,0 +1,100 @@
+{
+  "name": "内部入库",
+  "id": "8fa5e54a-57c5-4557-bf80-6a0d37ee8239",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "POST",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\n    \"item_type\": \"ve\",\n    \"item_id\": 1000,\n    // 储存位置 先设定为 local_emos_1 后面会变动\n    \"path_type\": \"local_emos_1\",\n    // 上传者用户名 基于路径截取\n    \"upload_username\": \"sx66\",\n    // 文件最终保存路径 上传者用户名后的地址 地址必须 urldecode 后传递\n    \"file_path\": \"sync/一人之下[todbid=2510]/S06E01.2026.2160p.WEB-DL.H265.SDR.24fps.10bit.HIFI 2.0.4Audios.mkv\",\n    // 文件大小 字节\n    \"file_size\": 1111\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    },
+    "url": {
+      "raw": "{{url}}/api/upload/video/saveInternal",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "upload",
+        "video",
+        "saveInternal"
+      ]
+    },
+    "description": "需申请使用 接口于 261018 因麻佬服务到期废弃"
+  },
+  "response": [
+    {
+      "id": "28c47519-296d-4d03-8b31-7ac0ee4fda26",
+      "name": "内部入库",
+      "originalRequest": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"item_type\": \"ve\",\n    \"item_id\": 1000,\n    // 储存位置 先设定为 local_emos_1 后面会变动\n    \"path_type\": \"local_emos_1\",\n    // 上传者用户名 基于路径截取\n    \"upload_username\": \"sx66\",\n    // 文件最终保存路径 上传者用户名后的地址 地址必须 urldecode 后传递\n    \"file_path\": \"sync/一人之下[todbid=2510]/S06E01.2026.2160p.WEB-DL.H265.SDR.24fps.10bit.HIFI 2.0.4Audios.mkv\",\n    // 文件大小 字节\n    \"file_size\": 1111\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/upload/video/saveInternal",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "upload",
+            "video",
+            "saveInternal"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.4"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sat, 04 Apr 2026 04:48:35 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"media_id\": \"deqped9rnmx8\",\n    \"carrot\": 2\n}"
+    }
+  ]
+}

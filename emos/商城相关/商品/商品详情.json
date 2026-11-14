@@ -1,0 +1,93 @@
+{
+  "name": "商品详情",
+  "id": "f2ebc812-3c26-4cb3-8ee6-fb10db54aad2",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/shop/product/info?product_id=1000",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "shop",
+        "product",
+        "info"
+      ],
+      "query": [
+        {
+          "key": "product_id",
+          "value": "1000"
+        }
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "d6d008cc-d8d7-41f4-b28a-9cc2ac565b67",
+      "name": "商品详情",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/shop/product/info?product_id=1000",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "shop",
+            "product",
+            "info"
+          ],
+          "query": [
+            {
+              "key": "product_id",
+              "value": "1000"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.3"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sat, 28 Feb 2026 12:09:07 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"seller\": {\n        \"seller_id\": 1000,\n        \"name\": \"我的小店\",\n        \"description\": \"专卖啦啦啦\",\n        \"cover_url\": null\n    },\n    \"product_id\": 1000,\n    \"category_id\": 1000,\n    \"category_name\": \"分类1\",\n    \"cover\": null,\n    \"cover_url\": null,\n    \"name\": \"苹果1\",\n    \"description\": \"好吃又大的大苹果\",\n    \"exchange_way\": \"购买后自提\",\n    \"price\": null,\n    \"price_origin\": 1000,\n    \"stock\": 100,\n    \"is_up\": false,\n    \"up_time\": \"2026-02-28 19:45:13\",\n    \"time_start\": \"2026-02-28 12:12:12\",\n    \"time_end\": \"2026-02-28 14:14:14\",\n    \"sort\": 80,\n    \"updated_at\": \"2026-02-28T11:45:13.000000Z\",\n    \"sales\": 0\n}"
+    }
+  ]
+}

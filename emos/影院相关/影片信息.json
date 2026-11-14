@@ -1,0 +1,77 @@
+{
+  "name": "影片信息",
+  "id": "7422db92-2000-435d-aafd-7576c568bfce",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/reel/info/{{forge_reel_uuid}}",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "reel",
+        "info",
+        "{{forge_reel_uuid}}"
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "b64f0ba0-a569-4463-9af8-26784488e5d7",
+      "name": "影片信息",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/reel/info/{{forge_reel_uuid}}",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "reel",
+            "info",
+            "{{forge_reel_uuid}}"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Mon, 20 Jul 2026 12:47:39 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"todbv_id\": 1028,\n    \"video_list_id\": 1000,\n    \"video_type\": \"tv\",\n    \"video_title\": \"千香\",\n    \"video_runtime\": null,\n    \"video_record\": {\n        \"video_season_id\": 1000,\n        \"season_number\": 1,\n        \"season_title\": \"第 1 季\",\n        \"video_episode_id\": 1007,\n        \"episode_number\": 8,\n        \"episode_title\": \"修远灵根尽毁众人前往青丘\",\n        \"video_part_id\": null,\n        \"part_number\": null,\n        \"part_title\": null,\n        \"media_id\": \"30yp1642nj82\",\n        \"media_name\": \"1080p - 清单1 - sorakand 提1\",\n        \"media_second\": 8,\n        \"play_seconds\": 0,\n        \"is_complete\": false\n    }\n}"
+    }
+  ]
+}

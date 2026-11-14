@@ -1,0 +1,98 @@
+{
+  "name": "更新关联的视频ID",
+  "id": "3880992d-f1f2-4e43-a5e9-23d0b487372d",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "PUT",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/music/song/{{music_song_id}}/updateVideoId?video_id={{video_id}}",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "music",
+        "song",
+        "{{music_song_id}}",
+        "updateVideoId"
+      ],
+      "query": [
+        {
+          "key": "video_id",
+          "value": "{{video_id}}",
+          "description": "视频ID"
+        }
+      ]
+    },
+    "description": "类似于 `MV`"
+  },
+  "response": [
+    {
+      "id": "35690d47-684e-4f6b-b50d-5b0a29c84830",
+      "name": "更新关联的视频ID",
+      "originalRequest": {
+        "method": "PUT",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/music/song/{{music_song_id}}/updateVideoId?video_id={{video_id}}",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "music",
+            "song",
+            "{{music_song_id}}",
+            "updateVideoId"
+          ],
+          "query": [
+            {
+              "key": "video_id",
+              "value": "{{video_id}}",
+              "description": "视频ID"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.6"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Fri, 22 May 2026 15:20:03 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"carrot\": 1000\n}"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "name": "下单并支付",
+  "id": "f58541d1-8f39-4bc5-8090-14d762d34655",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "POST",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\n    \"fund_activity_code\": \"{{fund_activity_code}}\",\n    \"carrot\": 100\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    },
+    "url": {
+      "raw": "{{url}}/api/fund/order/create",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "fund",
+        "order",
+        "create"
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "e4589086-6654-4969-be64-acefd1a1ef83",
+      "name": "创建订单",
+      "originalRequest": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"fund_activity_code\": \"{{fund_activity_code}}\",\n    \"carrot\": 100\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/fund/order/create",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "fund",
+            "order",
+            "create"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.9"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Fri, 14 Aug 2026 13:52:36 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"no\": \"20260814215236fundAJuVP\"\n}"
+    }
+  ]
+}

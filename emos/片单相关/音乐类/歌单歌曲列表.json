@@ -1,0 +1,93 @@
+{
+  "name": "歌单歌曲列表",
+  "id": "d1bd906a-867e-4fae-a28b-b54e366b268d",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/watch/{{watch_id}}/music?song_title=",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "watch",
+        "{{watch_id}}",
+        "music"
+      ],
+      "query": [
+        {
+          "key": "song_title",
+          "value": ""
+        }
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "5f929586-1a66-43e7-bcb9-0ef00fce7aee",
+      "name": "歌单歌曲列表",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/watch/{{watch_id}}/music?song_title=",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "watch",
+            "{{watch_id}}",
+            "music"
+          ],
+          "query": [
+            {
+              "key": "song_title",
+              "value": ""
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.6"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sat, 06 Jun 2026 15:50:26 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"page\": 1,\n    \"page_size\": 5,\n    \"total\": 1,\n    \"items\": [\n        {\n            \"song_id\": 1512,\n            \"todb_music_music_id\": 1786,\n            \"name\": \"曼陀山庄（天龙八部端游怀旧服主题曲）\",\n            \"image_poster_url\": null,\n            \"description\": null,\n            \"tagline\": null,\n            \"duration\": 256,\n            \"video_list_id\": null,\n            \"rating\": null,\n            \"is_adult\": null,\n            \"person_artists\": [\n                {\n                    \"person_id\": 1001,\n                    \"name\": \"许嵩\",\n                    \"original_name\": \"許嵩\",\n                    \"image_profile_url\": \"https://image.theotherdb.org/original/EXQdp7KwBmRMjB8N\",\n                    \"gender\": null,\n                    \"is_virtual\": null,\n                    \"is_adult\": null\n                }\n            ],\n            \"albums\": [\n                {\n                    \"todb_music_album_id\": 1135,\n                    \"name\": \"曼陀山庄（天龙八部端游怀旧服主题曲）\"\n                }\n            ],\n            \"remark\": null,\n            \"sort\": 5000\n        }\n    ]\n}"
+    }
+  ]
+}

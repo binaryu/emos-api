@@ -1,0 +1,115 @@
+{
+  "name": "列表",
+  "id": "3114989e-4eaa-40af-abe8-bdca0bacc281",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/live/list?library_id=100&code&title",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "live",
+        "list"
+      ],
+      "query": [
+        {
+          "key": "library_id",
+          "value": "100",
+          "description": "直播的媒体库id"
+        },
+        {
+          "key": "code",
+          "value": null,
+          "description": "直播列表的唯一编码 官方源存在",
+          "type": "text"
+        },
+        {
+          "key": "title",
+          "value": null,
+          "description": "直播列表 按照标题搜索",
+          "type": "text"
+        }
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "9b00f7d9-7f91-45e2-b21d-68e1b5eb8a0a",
+      "name": "列表",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/live/list?library_id=100&code&title",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "live",
+            "list"
+          ],
+          "query": [
+            {
+              "key": "library_id",
+              "value": "100",
+              "description": "直播的媒体库id"
+            },
+            {
+              "key": "code",
+              "value": null,
+              "description": "直播列表的唯一编码 官方源存在"
+            },
+            {
+              "key": "title",
+              "value": null,
+              "description": "直播列表 按照标题搜索"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Wed, 11 Feb 2026 11:40:15 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"page\": 1,\n    \"page_size\": 2,\n    \"total\": 18,\n    \"items\": [\n        {\n            \"id\": 1101,\n            \"live_library_id\": null,\n            \"code\": \"CCTV1\",\n            \"title\": \"CCTV1\",\n            \"description\": null,\n            \"tagline\": null,\n            \"image_poster_url\": \"https://files.emosstore.sbs/files/base/live/CCTV1.png\",\n            \"sort\": 1101,\n            \"is_can_edit\": true,\n            \"media_count\": 1,\n            \"updated_at\": \"2026-02-11T08:52:24.000000Z\"\n        },\n        {\n            \"id\": 1102,\n            \"live_library_id\": null,\n            \"code\": \"CCTV2\",\n            \"title\": \"CCTV2\",\n            \"description\": null,\n            \"tagline\": null,\n            \"image_poster_url\": \"https://files.emosstore.sbs/files/base/live/CCTV2.png\",\n            \"sort\": 1102,\n            \"is_can_edit\": true,\n            \"media_count\": 0,\n            \"updated_at\": \"2026-02-11T08:52:24.000000Z\"\n        }\n    ]\n}"
+    }
+  ]
+}

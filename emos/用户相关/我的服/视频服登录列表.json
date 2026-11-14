@@ -1,0 +1,80 @@
+{
+  "name": "视频服登录列表",
+  "id": "2eb608b4-b719-43c1-9f35-11ec0c33eb76",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/user/server/videoHistory",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "user",
+        "server",
+        "videoHistory"
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "5b071980-240e-4c34-b95d-99f9c3875111",
+      "name": "登录的设备列表",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/emya/history",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "emya",
+            "history"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.4"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sun, 12 Apr 2026 18:20:13 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "[\n    {\n        \"device_client\": \"Yamby\",\n        \"device_name\": \"Xiaomi-AAA\",\n        \"device_id\": \"f347ffda-94d1-4afa-8823-9aa102a9b1e0\",\n        \"device_version\": \"2.0.2.2\",\n        \"last_used_at\": \"2026-04-04 05:08:17\"\n    }\n]"
+    }
+  ]
+}

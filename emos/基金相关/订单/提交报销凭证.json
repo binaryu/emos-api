@@ -1,0 +1,95 @@
+{
+  "name": "提交报销凭证",
+  "id": "e2611a36-0f4a-41c4-9213-9ffd01e90021",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "POST",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\n\t\"order_no\": \"20260815145709funduWCLH\",\n\t\"images\": [],\n\t\"remark\": \"\"\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    },
+    "url": {
+      "raw": "{{url}}/api/fund/order/evidence",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "fund",
+        "order",
+        "evidence"
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "360bf216-b830-434a-80a4-237ace9e4cf5",
+      "name": "提交报销凭证",
+      "originalRequest": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"order_no\": \"20260815145709funduWCLH\",\n\t\"images\": [],\n\t\"remark\": \"\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/fund/order/evidence",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "fund",
+            "order",
+            "evidence"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Tue, 22 Sep 2026 02:38:10 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"payout_status\": \"reviewing\"\n}"
+    }
+  ]
+}

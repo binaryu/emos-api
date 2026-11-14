@@ -1,0 +1,116 @@
+{
+  "name": "更新记录",
+  "id": "ea60e9a3-8c73-40e4-8b31-e588b42b400f",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "PUT",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/video/record/change?mode=delete&type=vl&id=1000",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "video",
+        "record",
+        "change"
+      ],
+      "query": [
+        {
+          "key": "mode",
+          "value": "delete",
+          "description": "更新类型 delete 删除 complete 标记为完成"
+        },
+        {
+          "key": "type",
+          "value": "vl",
+          "description": "视频类型 对这个类下所有视频生效"
+        },
+        {
+          "key": "id",
+          "value": "1000",
+          "description": "对应的类ID"
+        }
+      ]
+    },
+    "description": "这个视频的 就是 vl 用 video_id \n如果是某季 就是 vs 用 video_season_id\n如果是某集 就是 ve 用 video_episode_id"
+  },
+  "response": [
+    {
+      "id": "15d00435-836d-4450-b047-eb28c0a88972",
+      "name": "更新记录",
+      "originalRequest": {
+        "method": "PUT",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/video/record/change?mode=delete&type=vl&id=1000",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "video",
+            "record",
+            "change"
+          ],
+          "query": [
+            {
+              "key": "mode",
+              "value": "delete",
+              "description": "更新类型 delete 删除 complete 标记为完成"
+            },
+            {
+              "key": "type",
+              "value": "vl",
+              "description": "视频类型 对这个类下所有视频生效"
+            },
+            {
+              "key": "id",
+              "value": "1000",
+              "description": "对应的类ID"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.5"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sun, 19 Apr 2026 06:25:53 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"count\": 1\n}"
+    }
+  ]
+}

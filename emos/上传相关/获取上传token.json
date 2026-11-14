@@ -1,0 +1,299 @@
+{
+  "name": "获取上传token",
+  "event": [
+    {
+      "listen": "test",
+      "script": {
+        "id": "79501be9-c9b2-4928-9398-c9f79784443a",
+        "exec": [
+          "pm.environment.set('file_id', pm.response.json().file_id)"
+        ],
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {}
+      }
+    }
+  ],
+  "id": "20079c91-05d9-467f-b15a-c69d70c6ce57",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "POST",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\n\t// 资源类型 video 视频 subtitle 字幕 image 图片 audio 音频 music 音乐\n\t\"type\": \"image\",\n\t// 文件格式\n\t\"file_type\": \"image/png\",\n\t// 文件名称\n\t\"file_name\": \"dem1o2.mp4\",\n\t// 文件大小 字节\n\t\"file_size\": 250817,\n\t// 储存位置 和资源类型挂钩 如果当前资源没有对应储存 将储存于默认位置\n\t// default 默认\n\t// zn_r2_upload Zn存档服R2\n    // google_drive 谷歌盘\n\t\"file_storage\": \"google_drive\"\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    },
+    "url": {
+      "raw": "{{url}}/api/upload/getUploadToken",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "upload",
+        "getUploadToken"
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "066e7194-7e1e-417e-85f2-af2f12b843ad",
+      "name": "获取错误提示",
+      "originalRequest": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    // 资源类型 video 视频 subtitle 字幕 image 图片 audio 音频 music 音乐\n    \"type\": \"music\",\n    // 文件格式\n    \"file_type\": \"music/mp3\",\n    // 文件名称\n    \"file_name\": \"dem1o2.mp3\",\n    // 文件大小 字节\n    \"file_size\": 250817,\n    // 储存位置 global 国际 internal 国内 default 默认\n    \"file_storage\": \"default\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/upload/getUploadToken",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "upload",
+            "getUploadToken"
+          ]
+        }
+      },
+      "status": "Unprocessable Content",
+      "code": 422,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.6"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sun, 07 Jun 2026 07:10:18 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"message\": \"此资源您一周内上传过\"\n}"
+    },
+    {
+      "id": "ebe70e0b-03c8-45fd-94a4-8461deffdd53",
+      "name": "图片",
+      "originalRequest": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    // 资源类型 video 视频 subtitle 字幕 image 图片\n    \"type\": \"image\",\n    // 文件格式\n    \"file_type\": \"video/png\",\n    // 文件名称\n    \"file_name\": \"demo.png\",\n    // 文件大小 字节\n    \"file_size\": 250817,\n    // 储存位置 global 国际 internal 国内 default 默认\n    \"file_storage\": \"default\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/upload/getUploadToken",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "upload",
+            "getUploadToken"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.4"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Wed, 08 Apr 2026 17:05:46 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"type\": \"tusd\",\n    \"file_id\": \"qwPOM8Apy8kE\",\n    \"data\": {\n        \"upload_url\": \"https://file.emos.best/files\"\n    }\n}"
+    },
+    {
+      "id": "2d27a55a-3907-4b1a-b5ad-2c68577219d8",
+      "name": "音乐",
+      "originalRequest": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    // 资源类型 video 视频 subtitle 字幕 image 图片 audio 音频 music 音乐\n    \"type\": \"music\",\n    // 文件格式\n    \"file_type\": \"music/mp3\",\n    // 文件名称\n    \"file_name\": \"demo2.mp3\",\n    // 文件大小 字节\n    \"file_size\": 250817,\n    // 储存位置 global 国际 internal 国内 default 默认\n    \"file_storage\": \"default\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/upload/getUploadToken",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "upload",
+            "getUploadToken"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.6"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sat, 06 Jun 2026 12:09:37 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"type\": \"tusd\",\n    \"file_id\": \"YXBVljwKNE7a\",\n    \"data\": {\n        \"upload_url\": \"https://music.emosstore.sbs/files/\"\n    }\n}"
+    },
+    {
+      "id": "5266025b-a176-439c-b3c4-1822003a0935",
+      "name": "分片上传",
+      "originalRequest": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t// 资源类型 video 视频 subtitle 字幕 image 图片 audio 音频 music 音乐\n\t\"type\": \"video\",\n\t// 文件格式\n\t\"file_type\": \"video/mp4\",\n\t// 文件名称\n\t\"file_name\": \"dem1o2.mp4\",\n\t// 文件大小 字节\n\t\"file_size\": 250817,\n\t// 储存位置 和资源类型挂钩 如果当前资源没有对应储存 将储存于默认位置\n\t// default 默认\n\t// zn_r2_upload Zn存档服R2\n\t\"file_storage\": \"zn_r2_upload\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/upload/getUploadToken",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "upload",
+            "getUploadToken"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Fri, 24 Jul 2026 15:42:32 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"type\": \"multipart\",\n    \"file_id\": \"D2orpWkwpEQO\",\n    \"data\": {\n\t\t// 分片大小\n        \"multipart_size\": {\n            \"min\": 5242880,\n            \"max\": 5368709120\n        }\n    }\n}"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "name": "媒体列表",
+  "id": "4bcf29ae-b18c-4438-9312-158d120be421",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/reel/media?video_list_id={{video_id}}&season_number=1&episode_number&part_number",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "reel",
+        "media"
+      ],
+      "query": [
+        {
+          "key": "video_list_id",
+          "value": "{{video_id}}",
+          "type": "text"
+        },
+        {
+          "key": "season_number",
+          "value": "1",
+          "type": "text"
+        },
+        {
+          "key": "episode_number",
+          "value": null,
+          "type": "text"
+        },
+        {
+          "key": "part_number",
+          "value": null,
+          "type": "text"
+        }
+      ]
+    }
+  },
+  "response": []
+}

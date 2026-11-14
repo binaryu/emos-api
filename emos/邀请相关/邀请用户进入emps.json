@@ -1,0 +1,103 @@
+{
+  "name": "邀请用户进入emps",
+  "id": "a91efa53-d24d-483f-955f-43119b073e93",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "POST",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\n    // 用户ID\n    \"invite_user_id\": \"eP31288ERs\"\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    },
+    "url": {
+      "raw": "{{url}}/api/invite/emps",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "invite",
+        "emps"
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "14498a5a-d37b-43ea-980e-0c1334a507a6",
+      "name": "邀请用户进入emps",
+      "originalRequest": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    // 用户ID\n    \"invite_user_id\": \"eP31288ERs\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/invite/emps",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "invite",
+            "emps"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": "",
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.4"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sun, 12 Apr 2026 17:55:11 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [
+        {
+          "expires": "Invalid Date",
+          "domain": "",
+          "path": ""
+        }
+      ],
+      "responseTime": null,
+      "body": "{\n    // 花掉的萝卜\n    \"carrot\": -120\n}"
+    }
+  ]
+}

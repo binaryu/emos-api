@@ -1,0 +1,95 @@
+{
+  "name": "新增或修改",
+  "id": "f4c108e5-0570-4bf9-8215-03e8ba94931e",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "POST",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\n    // 存在则更新\n    \"id\": null,\n    // 片单类型 必填\n    \"type\": \"music\",\n    // 片单名称 100字内\n    \"name\": \"张三的片单1\",\n    // 简介 1万字内\n    \"description\": \"这是个简介\",\n    // 是否公开\n    \"is_public\": true,\n    // 所需萝卜 达到后才可以进行订阅 最高 50000\n    \"point\": 0,\n    // 标签\n    \"tags\": [\n        \"国漫\",\n        \"追新\"\n    ],\n    // 是否显示空媒体\n    \"is_show_empty\": true,\n    // 封面图地址\n    \"image_poster_url\": \"http://emos.local/image.png\"\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    },
+    "url": {
+      "raw": "{{url}}/api/watch",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "watch"
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "e53f9b80-f1bd-4cd1-a503-74283527d1b9",
+      "name": "新增或修改",
+      "originalRequest": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    // 存在则更新\n    \"id\": null,\n    // 片单名称 100字内\n    \"name\": \"张三的片单1\",\n    // 简介 1万字内\n    \"description\": \"这是个简介\",\n    // 是否公开\n    \"is_public\": true,\n    // 所需萝卜 达到后才可以进行订阅 最高 50000\n    \"point\": 0,\n    // 标签\n    \"tags\": [\n        \"国漫\",\n        \"追新\"\n    ],\n    // 是否显示空媒体\n    \"is_show_empty\": true,\n    // 封面图 file_id\n    \"image_poster\": \"XNrvMY2pkxbE\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/watch",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "watch"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Tue, 20 Jan 2026 03:49:13 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"watch_id\": 1000,\n    \"count\": 1\n}"
+    }
+  ]
+}

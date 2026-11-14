@@ -1,0 +1,97 @@
+{
+  "name": "新增直播源",
+  "id": "fc2b6b2b-9aad-430a-a33d-31fa45ae6516",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "POST",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\n    // 直播列表ID\n    \"live_list_id\": {{live_list_id}},\n    // 源名称\n    \"name\": \"三网直达1080p\",\n    \"path_type\": \"m3u8\",\n    // m3u8地址\n    \"path_url\": \"http://emos.local/1080p.m3u8\"\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    },
+    "url": {
+      "raw": "{{url}}/api/live/media",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "live",
+        "media"
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "8b0ce778-7b92-4ac1-b4ea-cf3b22d98788",
+      "name": "新增直播源",
+      "originalRequest": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    // 直播列表ID\n    \"live_list_id\": {{live_list_id}},\n    // 源名称\n    \"name\": \"三网直达1080p\",\n    \"path_type\": \"m3u8\",\n    // m3u8地址\n    \"path_url\": \"http://emos.local/1080p.m3u8\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/live/media",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "live",
+            "media"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Wed, 11 Feb 2026 11:58:44 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"live_media_id\": \"lgqjrvnnwzxd\",\n    \"carrot\": 2\n}"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "name": "用spotify歌手去todb同步数据",
+  "id": "1d9e96b6-5df6-4b94-8ea3-3f22c2e3f52a",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "PATCH",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\r\n    // https://open.spotify.com/artist/64NFGuC9PjqtNyJqnnTXh5\r\n    \"artist_id\": \"64NFGuC9PjqtNyJqnnTXh5\"\r\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    },
+    "url": {
+      "raw": "{{url}}/api/music/syncSpotifyArtist",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "music",
+        "syncSpotifyArtist"
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "eb9b2a3c-b138-43f2-8242-7ad55b633a88",
+      "name": "用spotify歌手去todb同步数据",
+      "originalRequest": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    // https://open.spotify.com/artist/7aRC4L63dBn3CiLDuWaLSI\r\n    \"artist_id\": \"7aRC4L63dBn3CiLDuWaLSI\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/music/syncSpotifyArtist",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "music",
+            "syncSpotifyArtist"
+          ]
+        }
+      },
+      "status": "No Content",
+      "code": 204,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.6"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sun, 07 Jun 2026 09:19:53 GMT"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": null
+    }
+  ]
+}

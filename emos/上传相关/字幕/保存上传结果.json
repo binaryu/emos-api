@@ -1,0 +1,99 @@
+{
+  "name": "保存上传结果",
+  "id": "ac971f7a-bf91-4508-813c-a5d05ecbac34",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "POST",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\n    \"item_type\": \"ve\",\n    \"item_id\": 4,\n    \"file_id\": \"EzqvM34pPRge\"\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    },
+    "url": {
+      "raw": "{{url}}/api/upload/subtitle/save",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "upload",
+        "subtitle",
+        "save"
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "5eaf030c-e9d1-43a3-98ef-f36c625eb0f0",
+      "name": "保存上传结果",
+      "originalRequest": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"item_type\": \"ve\",\n    \"item_id\": 4,\n    \"file_id\": \"EzqvM34pPRge\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/upload/subtitle/save",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "upload",
+            "subtitle",
+            "save"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sun, 18 Jan 2026 16:20:30 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"carrot\": 1,\n    \"subtitle_id\": \"Bpvx8YxPoVdQ\"\n}"
+    }
+  ]
+}

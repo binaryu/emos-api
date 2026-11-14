@@ -1,0 +1,75 @@
+{
+  "name": "发出的",
+  "id": "27cdbf5d-9bad-4776-841a-4c5dd54fa37a",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/whisper/sender",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "whisper",
+        "sender"
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "8c63a578-9560-4fb3-a192-e05b571ead44",
+      "name": "发出的",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/whisper/sender",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "whisper",
+            "sender"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Wed, 23 Sep 2026 03:54:59 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "[\n    {\n        \"whisper_id\": 1001,\n        \"sender_content\": \"内容\",\n        \"sender_is_anonymous\": false,\n        \"sender_at\": \"2026-09-23 11:34:44\",\n        \"receiver_user\": {\n            \"id\": \"eXD3VPZ3Ys\",\n            \"username\": \"emos\",\n            \"avatar\": null\n        },\n        \"receiver_content\": null,\n        \"receiver_at\": null\n    },\n    {\n        \"whisper_id\": 1000,\n        \"sender_content\": \"内容\",\n        \"sender_is_anonymous\": true,\n        \"sender_at\": \"2026-09-23 11:33:34\",\n        \"receiver_user\": {\n            \"id\": \"eXD3VD3Y1s\",\n            \"username\": \"soa\",\n            \"avatar\": null\n        },\n        \"receiver_content\": \"内容\",\n        \"receiver_at\": \"2026-09-23 11:53:43\"\n    }\n]"
+    }
+  ]
+}

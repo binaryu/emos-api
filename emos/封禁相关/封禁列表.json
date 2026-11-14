@@ -1,0 +1,80 @@
+{
+  "name": "封禁列表",
+  "id": "2910b4c7-aabb-4982-b8d8-42182fc93c34",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/ban/list",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "ban",
+        "list"
+      ]
+    },
+    "description": "只显示最近一周的数据\n如果不在此列表 可直接调用解封接口解封"
+  },
+  "response": [
+    {
+      "id": "8a98af6f-7837-447c-a20b-632a813846da",
+      "name": "封禁列表",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/ban/list",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "ban",
+            "list"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.5"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sun, 19 Apr 2026 07:30:21 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "[\n    {\n        \"user_id\": \"e0E4MKO96s\",\n        \"username\": \"dajun7095\",\n        \"avatar\": null,\n        \"invite_user_id\": \"eK98JXQ9Ms\",\n        \"invite_pseudonym\": \"咸鱼翻身计划\",\n        \"invite_at\": \"2026-01-22 17:39:27\",\n        \"telegram_user_id\": \"6181680957\",\n        \"disable_reason\": \"250306 请求数异常\",\n        \"created_at\": \"2026-01-21T15:27:08.000000Z\"\n    },\n    {\n        \"user_id\": \"e6EJQR69Rs\",\n        \"username\": \"lonicera\",\n        \"avatar\": null,\n        \"invite_user_id\": \"eK98JXQ9Ms\",\n        \"invite_pseudonym\": \"咸鱼翻身计划\",\n        \"invite_at\": \"2026-03-25 00:23:57\",\n        \"telegram_user_id\": \"6301670071\",\n        \"disable_reason\": \"2600404 请求数异常\",\n        \"created_at\": \"2026-03-22T17:17:17.000000Z\"\n    },\n    {\n        \"user_id\": \"eP311523Rs\",\n        \"username\": \"pako\",\n        \"avatar\": null,\n        \"invite_user_id\": \"e0EWN4YERs\",\n        \"invite_pseudonym\": null,\n        \"invite_at\": \"2026-01-17 00:48:33\",\n        \"telegram_user_id\": \"6172713750\",\n        \"disable_reason\": \"2600405 疑似测速\",\n        \"created_at\": \"2026-01-16T16:39:11.000000Z\"\n    },\n    {\n        \"user_id\": \"eG3X6X29Ys\",\n        \"username\": \"quanwuhui\",\n        \"avatar\": null,\n        \"invite_user_id\": \"eK3QNN03Ms\",\n        \"invite_pseudonym\": \"刺猬兽\",\n        \"invite_at\": \"2026-02-01 14:35:15\",\n        \"telegram_user_id\": \"7878810837\",\n        \"disable_reason\": \"2600405 请求数异常\",\n        \"created_at\": \"2026-01-20T22:50:42.000000Z\"\n    }\n]"
+    }
+  ]
+}

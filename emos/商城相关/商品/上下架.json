@@ -1,0 +1,93 @@
+{
+  "name": "上下架",
+  "id": "9dce1c15-6aa1-4589-ac8a-abad7c277601",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "PUT",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/shop/product/up?product_id=1000",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "shop",
+        "product",
+        "up"
+      ],
+      "query": [
+        {
+          "key": "product_id",
+          "value": "1000"
+        }
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "87e54689-43d0-4fcb-9fcd-25f5a9b91e6a",
+      "name": "上下架",
+      "originalRequest": {
+        "method": "PUT",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/shop/product/up?product_id=1000",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "shop",
+            "product",
+            "up"
+          ],
+          "query": [
+            {
+              "key": "product_id",
+              "value": "1000"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.3"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sat, 28 Feb 2026 11:45:13 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"is_up\": false\n}"
+    }
+  ]
+}

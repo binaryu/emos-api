@@ -1,0 +1,12 @@
+{
+  "name": "歌手详情",
+  "id": "fe01da30-9c48-47f8-9825-84521e694eed",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": []
+  },
+  "response": []
+}

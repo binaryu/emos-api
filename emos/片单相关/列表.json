@@ -1,0 +1,161 @@
+{
+  "name": "列表",
+  "id": "67704394-198a-4f99-aad8-3062efe8dff2",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/watch?watch_id&type&name=&author_id=&author_username=&is_public=&is_self=&is_subscribe=",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "watch"
+      ],
+      "query": [
+        {
+          "key": "watch_id",
+          "value": null,
+          "description": "片单ID"
+        },
+        {
+          "key": "type",
+          "value": null,
+          "description": "片单类型",
+          "type": "text"
+        },
+        {
+          "key": "name",
+          "value": "",
+          "description": "片单名称"
+        },
+        {
+          "key": "author_id",
+          "value": "",
+          "description": "作者ID"
+        },
+        {
+          "key": "author_username",
+          "value": "",
+          "description": "作者用户名 采用左匹配模式"
+        },
+        {
+          "key": "is_public",
+          "value": "",
+          "description": "是否公开"
+        },
+        {
+          "key": "is_self",
+          "value": "",
+          "description": "是否自己的"
+        },
+        {
+          "key": "is_subscribe",
+          "value": "",
+          "description": "是否订阅"
+        }
+      ]
+    },
+    "description": "- `maintainers` 维护者\n- `author` 作者信息 官方片单会为 `null`\n- `is_self` 是否自己创建的\n- `is_edit_video` 是否有权限编辑视频列表\n- `is_subscribe` 是否订阅"
+  },
+  "response": [
+    {
+      "id": "647c8733-3146-4743-b52c-757f302cf02d",
+      "name": "列表",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/watch?watch_id&name=&author_id&is_public=&is_self=&is_subscribe=",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "watch"
+          ],
+          "query": [
+            {
+              "key": "watch_id",
+              "value": null,
+              "description": "片单ID"
+            },
+            {
+              "key": "name",
+              "value": "",
+              "description": "片单名称"
+            },
+            {
+              "key": "author_id",
+              "value": null,
+              "description": "作者ID"
+            },
+            {
+              "key": "is_public",
+              "value": "",
+              "description": "是否公开"
+            },
+            {
+              "key": "is_self",
+              "value": "",
+              "description": "是否自己的"
+            },
+            {
+              "key": "is_subscribe",
+              "value": "",
+              "description": "是否订阅"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": "json",
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Mon, 26 Jan 2026 03:27:14 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "description": "",
+          "type": "text"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [
+        {
+          "expires": "Invalid Date",
+          "domain": "",
+          "path": ""
+        }
+      ],
+      "responseTime": null,
+      "body": "{\n    \"page\": 1,\n    \"page_size\": 20,\n    \"total\": 2,\n    \"items\": [\n        {\n            \"subscribe_id\": 1000,\n            \"id\": 1000,\n            \"name\": \"张三的片单1\",\n            \"description\": \"这是个简介\",\n            \"is_public\": true,\n            \"carrot\": 10,\n            \"tags\": [\n                \"国漫\",\n                \"追新\"\n            ],\n            \"image_poster\": \"XNrvMY2pkxbE\",\n            \"image_poster_url\": \"http://emos.local/files/test/77b04728-3048-46f7-bdc2-ef9f798bc043.png\",\n            \"is_show_empty\": true,\n            \"is_self\": true,\n            \"is_edit_video\": true,\n            \"is_subscribe\": true,\n            \"user_is_show\": false,\n            \"user_sort\": 80,\n            \"subscribe_count\": 1,\n            \"video_count\": 6863,\n            \"maintainers\": [\n                {\n                    \"user_id\": \"eQP312ER4s\",\n                    \"username\": \"user_i\",\n                    \"avatar\": null\n                },\n                {\n                    \"user_id\": \"eZO9M29JRs\",\n                    \"username\": \"user_2\",\n                    \"avatar\": \"http://emos.local/avatar1.png\"\n                }\n            ],\n            \"author\": {\n                \"user_id\": \"eWD3N7EX8s\",\n                \"username\": \"soa\",\n                \"avatar\": null\n            },\n            \"updated_at\": \"2026-01-25T06:18:13.000000Z\"\n        },\n        {\n            \"subscribe_id\": 1003,\n            \"id\": 1003,\n            \"name\": \"张三的片单1\",\n            \"description\": \"这是个简介\",\n            \"is_public\": true,\n            \"carrot\": 0,\n            \"tags\": [\n                \"国漫\",\n                \"追新\"\n            ],\n            \"image_poster\": \"XNrvMY2pkxbE\",\n            \"image_poster_url\": \"http://emos.local/files/test/77b04728-3048-46f7-bdc2-ef9f798bc043.png\",\n            \"is_show_empty\": true,\n            \"is_self\": false,\n            \"is_edit_video\": false,\n            \"is_subscribe\": false,\n            \"user_is_show\": null,\n            \"user_sort\": null,\n            \"subscribe_count\": 0,\n            \"video_count\": 0,\n            \"maintainers\": [],\n            \"author\": null,\n            \"updated_at\": \"2026-01-24T10:41:43.000000Z\"\n        }\n    ]\n}"
+    }
+  ]
+}

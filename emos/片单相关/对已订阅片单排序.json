@@ -1,0 +1,90 @@
+{
+  "name": "对已订阅片单排序",
+  "id": "7b859bcc-1e64-4ed8-a865-e6cdfc54729e",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "PUT",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/watch/{{watch_id}}/sort?sort=80",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "watch",
+        "{{watch_id}}",
+        "sort"
+      ],
+      "query": [
+        {
+          "key": "sort",
+          "value": "80"
+        }
+      ]
+    },
+    "description": "类似于 媒体库排序"
+  },
+  "response": [
+    {
+      "id": "1c5c6096-1466-4a7e-b79d-046c096c399b",
+      "name": "排序",
+      "originalRequest": {
+        "method": "PUT",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/watch/{{watch_id}}/sort?sort=80",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "watch",
+            "{{watch_id}}",
+            "sort"
+          ],
+          "query": [
+            {
+              "key": "sort",
+              "value": "80"
+            }
+          ]
+        }
+      },
+      "status": "No Content",
+      "code": 204,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Mon, 19 Jan 2026 16:35:32 GMT"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": null
+    }
+  ]
+}

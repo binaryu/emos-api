@@ -1,0 +1,79 @@
+{
+  "name": "我的邀请信息",
+  "id": "73cca863-e47b-49d9-9469-9c785de28675",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/invite/info",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "invite",
+        "info"
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "b48e0775-3149-4036-b3c2-5f7c2c9038c5",
+      "name": "我的邀请信息",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/invite/info",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "invite",
+            "info"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sat, 17 Jan 2026 04:55:16 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"invite_at\": \"2026-01-16 09:06:31\",\n    \"invite_remaining\": 0,\n    \"invite_count\": 1,\n    \"parent\": {\n        \"pseudonym\": null\n    }\n}"
+    }
+  ]
+}

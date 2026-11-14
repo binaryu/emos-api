@@ -1,0 +1,76 @@
+{
+  "name": "tree",
+  "id": "c5447da9-7943-434f-9e7d-4d137e2517cf",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/invite/tree",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "invite",
+        "tree"
+      ]
+    },
+    "description": "服务端缓存1h 可以考虑本地缓存1day\n根节点名称为 `emos`"
+  },
+  "response": [
+    {
+      "id": "04c4aa52-5062-4489-8a40-dcf1a37ef109",
+      "name": "tree",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/invite/tree",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "invite",
+            "tree"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Tue, 14 Jul 2026 07:42:53 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "[\n    {\n        \"user_id\": \"eXD3VD3Y1s\",\n        \"username\": \"sorakand\",\n        \"invite_at\": \"2026-01-17 10:10:10\",\n        \"invite_user_id\": \"emos\",\n        \"is_disabled\": false,\n        \"join_at\": \"2026-01-17 00:06:35\",\n        \"last_video_player\": \"2026-07-06 12:42:04\",\n        \"last_telegram_message\": \"2026-07-14 15:16:27\",\n        \"last_user_sign\": \"2026-07-14 15:34:57\"\n    },\n    {\n        \"user_id\": \"eJ3ZJNP9Ks\",\n        \"username\": \"afosne\",\n        \"invite_at\": \"2026-01-17 10:10:10\",\n        \"invite_user_id\": \"emos\",\n        \"is_disabled\": false,\n        \"join_at\": \"2026-01-17 00:08:41\",\n        \"last_video_player\": null,\n        \"last_telegram_message\": null,\n        \"last_user_sign\": null\n    },\n    {\n        \"user_id\": \"e0EWQORERs\",\n        \"username\": \"guoqu\",\n        \"invite_at\": \"2026-01-17 10:10:10\",\n        \"invite_user_id\": \"emos\",\n        \"is_disabled\": false,\n        \"join_at\": \"2026-01-17 00:08:43\",\n        \"last_video_player\": null,\n        \"last_telegram_message\": null,\n        \"last_user_sign\": null\n    }\n]"
+    }
+  ]
+}

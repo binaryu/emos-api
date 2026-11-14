@@ -1,0 +1,97 @@
+{
+  "name": "分片合并",
+  "id": "cad2a769-6648-4507-b886-7bafe1bd84bc",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "POST",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\r\n    \"parts\": [\r\n        {\r\n            \"number\": 1,\r\n            \"etag\": \"101f07ef94503a4200bc11d2d194c380\"\r\n        },\r\n        {\r\n            \"number\": 2,\r\n            \"etag\": \"xxxxxxxxxx\"\r\n        },\r\n        {\r\n            \"number\": 3,\r\n            \"etag\": \"xxxxxxxxxx\"\r\n        }\r\n    ]\r\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    },
+    "url": {
+      "raw": "{{url}}/api/upload/multipart/{{file_id}}/complete",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "upload",
+        "multipart",
+        "{{file_id}}",
+        "complete"
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "2aed202d-86b6-470d-8629-1c4de88fdba5",
+      "name": "分片合并",
+      "originalRequest": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"parts\": [\r\n        {\r\n            \"number\": 1,\r\n            \"etag\": \"101f07ef94503a4200bc11d2d194c380\"\r\n        },\r\n        {\r\n            \"number\": 2,\r\n            \"etag\": \"xxxxxxxxxx\"\r\n        },\r\n        {\r\n            \"number\": 3,\r\n            \"etag\": \"xxxxxxxxxx\"\r\n        }\r\n    ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/upload/multipart/{{file_id}}/complete",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "upload",
+            "multipart",
+            "{{file_id}}",
+            "complete"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Fri, 24 Jul 2026 16:52:19 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"file_id\": \"qwPOM8APpy8k\"\n}"
+    }
+  ]
+}

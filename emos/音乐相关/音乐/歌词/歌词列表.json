@@ -1,0 +1,85 @@
+{
+  "name": "歌词列表",
+  "id": "1f37a872-2304-4c41-a765-8146bf372176",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/music/song/{{music_song_id}}/lyric/list",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "music",
+        "song",
+        "{{music_song_id}}",
+        "lyric",
+        "list"
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "8d56dd53-0fe5-4735-8557-97a162467661",
+      "name": "歌词列表",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/music/song/{{music_song_id}}/lyric/list",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "music",
+            "song",
+            "{{music_song_id}}",
+            "lyric",
+            "list"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.6"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Fri, 22 May 2026 16:05:36 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "[\n    {\n        \"lyric_id\": 1,\n        \"type\": \"text\",\n        \"language\": \"zh\",\n        \"content\": \"抬頭的一片天 是男兒的一片天 曾經在滿天的星光下 做夢的少年 不知道天多高 不知道海多遠 卻發誓要帶著你 遠走到海角天邊\",\n        \"name\": \"sorakand 提供\",\n        \"created_at\": \"2026-05-22T15:46:26.000000Z\",\n        \"user\": {\n            \"user_id\": \"eXD3VD3Y1s\",\n            \"username\": \"sorakand\",\n            \"avatar\": null\n        }\n    }\n]"
+    }
+  ]
+}

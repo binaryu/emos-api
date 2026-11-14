@@ -1,0 +1,100 @@
+{
+  "name": "批量更新直播源",
+  "id": "5f39a26d-9d43-4e71-9435-09a67bf2ee94",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "POST",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\n    \"live_list_id\": {{live_list_id}},\n    // 如果 medias 传空 则删除自己添加的所有源\n    \"medias\": [\n        {\n            \"name\": \"1080p\",\n            \"path_type\": \"m3u8\",\n            \"path_url\": \"http://emos.local/live.m3u8\"\n        },\n        {\n            \"name\": \"720p\",\n            \"path_type\": \"m3u8\",\n            \"path_url\": \"http://emos.local/live3.m3u8\"\n        }\n    ]\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    },
+    "url": {
+      "raw": "{{url}}/api/live/media/update",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "live",
+        "media",
+        "update"
+      ]
+    },
+    "description": "外部接口用"
+  },
+  "response": [
+    {
+      "id": "32ae7723-fbc1-4e65-ab58-68918a16150f",
+      "name": "批量更新直播源",
+      "originalRequest": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"live_list_id\": {{live_list_id}},\n    \"medias\": [\n        {\n            \"name\": \"1080p\",\n            \"path_type\": \"m3u8\",\n            \"path_url\": \"http://emos.local/live.m3u8\"\n        },\n        {\n            \"name\": \"720p\",\n            \"path_type\": \"m3u8\",\n            \"path_url\": \"http://emos.local/live3.m3u8\"\n        }\n    ]\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/live/media/update",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "live",
+            "media",
+            "update"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Wed, 11 Feb 2026 12:02:31 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"delete_count\": 1\n}"
+    }
+  ]
+}

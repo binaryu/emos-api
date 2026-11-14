@@ -1,0 +1,79 @@
+{
+  "name": "判断是否登录",
+  "id": "6b87090e-551a-40c7-bf36-782abab8d88c",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/sign/check",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "sign",
+        "check"
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "c68a3f6d-be37-4e4f-a794-2666941c3d87",
+      "name": "判断是否登录",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/sign/check",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "sign",
+            "check"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.3"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sun, 08 Mar 2026 13:33:53 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"is_sign\": true,\n    \"user_id\": \"eWD3N7EX8s\"\n}"
+    }
+  ]
+}

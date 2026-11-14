@@ -1,0 +1,98 @@
+{
+  "name": "转账给用户",
+  "id": "1c321225-cebe-40ad-acb4-71f162f298c7",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "POST",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\n    // 对方用户ID\n    \"user_id\": \"ewd3n7ex8s\",\n    // 萝卜数量 1到50000之间\n    \"carrot\": 166\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    },
+    "url": {
+      "raw": "{{url}}/api/pay/transfer",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "pay",
+        "transfer"
+      ]
+    },
+    "description": "类似于提现 退款等\n费率为千6\n\n- `deduct` 消耗萝卜\n- `carrot` 剩余萝卜"
+  },
+  "response": [
+    {
+      "id": "3c3c0440-3403-4d68-be79-c107fe21f089",
+      "name": "转账给用户",
+      "originalRequest": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    // 对方用户ID\n    \"user_id\": \"ewd3n7ex8s\",\n    // 萝卜数量 1到50000之间\n    \"carrot\": 166\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/pay/transfer",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "pay",
+            "transfer"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sun, 15 Feb 2026 07:06:59 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"deduct\": 166,\n    \"carrot\": 781\n}"
+    }
+  ]
+}

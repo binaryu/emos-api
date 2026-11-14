@@ -1,0 +1,99 @@
+{
+  "name": "新增或编辑商品",
+  "id": "787547a6-6bf9-4e30-a5c6-76460e0586c6",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "POST",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\n    // 商品ID 存在则编辑\n    \"product_id\": null,\n    // 商品分类 必填\n    \"category_id\": 1000,\n    // 封面图 文件url\n    \"cover_url\": null,\n    // 商品名 50字内 必填\n    \"name\": \"苹果\",\n    // 商品简介 200字内\n    \"description\": \"好吃又大的大苹果\",\n    // 兑换方式 1000字内\n    \"exchange_way\": \"购买后自提\",\n    // 价格 1 - 5w 必填\n    \"price\": 100,\n    // 原价 1 - 5w\n    \"price_origin\": 1000,\n    // 库存 1 - 5k 必填\n    \"stock\": 100,\n    // 是否上架\n    \"is_up\": true,\n    // 开售时间\n    \"time_start\": \"2026-02-28 12:12:12\",\n    // 停售时间\n    \"time_end\": \"2026-02-28 14:14:14\",\n    // 排序 1 - 5k 必填\n    \"sort\": 80\n\n\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    },
+    "url": {
+      "raw": "{{url}}/api/shop/product/createOrUpdate",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "shop",
+        "product",
+        "createOrUpdate"
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "eedaf581-0035-4ed0-b070-72e70c63a9bc",
+      "name": "新增或编辑商品",
+      "originalRequest": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    // 商品ID 存在则编辑\n    \"product_id\": null,\n    // 商品分类 必填\n    \"category_id\": 1000,\n    // 封面图 文件id\n    \"cover\": null,\n    // 商品名 50字内 必填\n    \"name\": \"苹果\",\n    // 商品简介 200字内\n    \"description\": \"好吃又大的大苹果\",\n    // 兑换方式 1000字内\n    \"exchange_way\": \"购买后自提\",\n    // 价格 1 - 5w 必填\n    \"price\": 100,\n    // 原价 1 - 5w\n    \"price_origin\": 1000,\n    // 库存 1 - 5k 必填\n    \"stock\": 100,\n    // 是否上架\n    \"is_up\": true,\n    // 开售时间\n    \"time_start\": \"2026-02-28 12:12:12\",\n    // 停售时间\n    \"time_end\": \"2026-02-28 14:14:14\",\n    // 排序 1 - 5k 必填\n    \"sort\": 80\n\n\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/shop/product/createOrUpdate",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "shop",
+            "product",
+            "createOrUpdate"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.3"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sat, 28 Feb 2026 11:34:56 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"product_id\": 1000\n}"
+    }
+  ]
+}

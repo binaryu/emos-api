@@ -1,0 +1,86 @@
+{
+  "name": "重新同步metadata",
+  "id": "8d33c390-5736-4c57-878a-ec3c1c168e6c",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "PUT",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/video/media/syncMetadata?media_id=YLgw45W2Jk1V",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "video",
+        "media",
+        "syncMetadata"
+      ],
+      "query": [
+        {
+          "key": "media_id",
+          "value": "YLgw45W2Jk1V"
+        }
+      ]
+    },
+    "description": "针对无 metadata 的视频信息重新触发同步\n点击后预计3分钟同步完成"
+  },
+  "response": [
+    {
+      "id": "6e7f87b6-afdc-4959-9bc5-260efce4e63b",
+      "name": "重新同步metadata",
+      "originalRequest": {
+        "method": "PUT",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/video/media/syncMetadata?media_id=YLgw45W2Jk1V",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "video",
+            "media",
+            "syncMetadata"
+          ],
+          "query": [
+            {
+              "key": "media_id",
+              "value": "YLgw45W2Jk1V"
+            }
+          ]
+        }
+      },
+      "status": "No Content",
+      "code": 204,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sat, 18 Jul 2026 03:25:12 GMT"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": null
+    }
+  ]
+}

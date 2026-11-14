@@ -1,0 +1,114 @@
+{
+  "name": "获取演员列表",
+  "id": "41e93ddd-f868-41d4-bdf6-1826cbd5ee2c",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/video/persons?video_list_id={{video_id}}&video_season_id=&video_episode_id",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "video",
+        "persons"
+      ],
+      "query": [
+        {
+          "key": "video_list_id",
+          "value": "{{video_id}}",
+          "description": "视频ID 必传"
+        },
+        {
+          "key": "video_season_id",
+          "value": "",
+          "description": "传入则查询当前季"
+        },
+        {
+          "key": "video_episode_id",
+          "value": null,
+          "description": "传入则查询当前集"
+        }
+      ]
+    },
+    "description": "# gender 性别\n\n- `unknow` 未知\n    \n- `male` 男\n    \n- `female` 女\n    \n- `other` 其他"
+  },
+  "response": [
+    {
+      "id": "80e613c2-a5c7-44d8-83b7-7a0c5a8a1e1b",
+      "name": "获取演员列表",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/video/persons?video_list_id={{video_id}}&video_season_id=&video_episode_id",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "video",
+            "persons"
+          ],
+          "query": [
+            {
+              "key": "video_list_id",
+              "value": "{{video_id}}",
+              "description": "视频ID 必传"
+            },
+            {
+              "key": "video_season_id",
+              "value": "",
+              "description": "传入则查询当前季"
+            },
+            {
+              "key": "video_episode_id",
+              "value": null,
+              "description": "传入则查询当前集"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.6"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Fri, 05 Jun 2026 15:16:47 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"page\": 1,\n    \"page_size\": 1,\n    \"total\": 6,\n    \"items\": [\n        {\n            \"id\": null,\n            \"person_id\": null,\n            \"person_id_tmdb\": 1000,\n            \"name\": \"李知恩\",\n            \"image_profile\": \"jlJYPqRa3GWADo5L\",\n            \"original_name\": null,\n            \"tagline\": null,\n            \"biography\": null,\n            \"birthday\": null,\n            \"gender\": null,\n            \"birthplace\": null,\n            \"is_virtual\": null,\n            \"is_adult\": null,\n            \"title\": \"Seong Huiju\",\n            \"job\": null\n        }\n    ]\n}"
+    }
+  ]
+}

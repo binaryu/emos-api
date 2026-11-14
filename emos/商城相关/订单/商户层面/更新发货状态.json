@@ -1,0 +1,101 @@
+{
+  "name": "更新发货状态",
+  "id": "1ed450f9-699a-44ff-8fca-84d442a74f99",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "PUT",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\n    \"order_no\": \"20260331002243shopwHRpa\",\n    // 是否发货\n    \"is_delivery\": true\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    },
+    "url": {
+      "raw": "{{url}}/api/shop/order/shop/delivery",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "shop",
+        "order",
+        "shop",
+        "delivery"
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "d9a924e2-5f59-4301-b081-abadae0e12dc",
+      "name": "更新发货状态",
+      "originalRequest": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"order_no\": \"20260331002243shopwHRpa\",\n    // 是否发货\n    \"is_delivery\": true\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/shop/order/shop/delivery",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "shop",
+            "order",
+            "shop",
+            "delivery"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.4"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Mon, 30 Mar 2026 16:24:36 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"time_delivery\": \"2026-03-31 00:24:36\"\n}"
+    }
+  ]
+}

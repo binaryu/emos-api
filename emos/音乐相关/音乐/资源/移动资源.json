@@ -1,0 +1,98 @@
+{
+  "name": "移动资源",
+  "id": "dee7cbd1-2031-4b50-9d05-2ff9ab26d3e3",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "PUT",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/music/song/{{music_song_id}}/media/move?media_id=ymqnzjo29z80",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "music",
+        "song",
+        "{{music_song_id}}",
+        "media",
+        "move"
+      ],
+      "query": [
+        {
+          "key": "media_id",
+          "value": "ymqnzjo29z80"
+        }
+      ]
+    },
+    "description": "将资源移动到当前歌曲下\n\n这里的 `music_song_id` 是目标歌曲ID"
+  },
+  "response": [
+    {
+      "id": "538d8213-2379-409f-89a9-dbd15ef0b8c5",
+      "name": "移动资源",
+      "originalRequest": {
+        "method": "PUT",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/music/song/{{music_song_id}}/media/move?media_id=ymqnzjo29z80",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "music",
+            "song",
+            "{{music_song_id}}",
+            "media",
+            "move"
+          ],
+          "query": [
+            {
+              "key": "media_id",
+              "value": "ymqnzjo29z80"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.6"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sat, 06 Jun 2026 15:07:04 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"carrot\": 1\n}"
+    }
+  ]
+}

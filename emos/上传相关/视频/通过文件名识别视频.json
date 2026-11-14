@@ -1,0 +1,223 @@
+{
+  "name": "通过文件名识别视频",
+  "id": "3cf5879e-7a0b-4f40-8635-0ec213292618",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/upload/video/recognize?file_name=长风渡.2023.S01E02.第2集.2160p.WEB-DL.EDR.H.265.mp4&provider=binary",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "upload",
+        "video",
+        "recognize"
+      ],
+      "query": [
+        {
+          "key": "file_name",
+          "value": "长风渡.2023.S01E02.第2集.2160p.WEB-DL.EDR.H.265.mp4",
+          "description": "文件名"
+        },
+        {
+          "key": "provider",
+          "value": "binary",
+          "description": "识别服务提供者"
+        }
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "c44c037f-e05c-481e-a4ed-2b9649f8f894",
+      "name": "识别错误",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/upload/video/recognize?file_name=&provider",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "upload",
+            "video",
+            "recognize"
+          ],
+          "query": [
+            {
+              "key": "file_name",
+              "value": "",
+              "description": "文件名"
+            },
+            {
+              "key": "provider",
+              "value": null,
+              "description": "识别服务提供者"
+            }
+          ]
+        }
+      },
+      "status": "Unprocessable Content",
+      "code": 422,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sun, 18 Oct 2026 17:02:16 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"message\": \"未找到对应的视频, 请先同步后使用.\"\n}"
+    },
+    {
+      "id": "21d110b0-fd50-4d02-ade0-8f71630f82e9",
+      "name": "识别正确 tv",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/upload/video/recognize?file_name=&provider",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "upload",
+            "video",
+            "recognize"
+          ],
+          "query": [
+            {
+              "key": "file_name",
+              "value": "",
+              "description": "文件名"
+            },
+            {
+              "key": "provider",
+              "value": null,
+              "description": "识别服务提供者"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sun, 18 Oct 2026 17:02:33 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"file_type\": \"video\",\n    \"video_id\": 1002,\n    \"video_title\": \"21世纪大君夫人\",\n    \"video_type\": \"tv\",\n    \"date_air\": \"2026-04-10\",\n    \"video_season_id\": 1001,\n    \"video_season_title\": \"第 1 季\",\n    \"video_season_number\": 1,\n    \"video_episode_id\": 1034,\n    \"video_episode_title\": \"你要为了一个虚名而嫁给我？\",\n    \"video_episode_number\": 2,\n    \"item_type\": \"ve\",\n    \"item_id\": 1034\n}"
+    },
+    {
+      "id": "f1c671fc-ee31-4f76-8f58-4fa1097c37ac",
+      "name": "识别正确 movie",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/upload/video/recognize?file_name=",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "upload",
+            "video",
+            "recognize"
+          ],
+          "query": [
+            {
+              "key": "file_name",
+              "value": ""
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sun, 18 Oct 2026 17:03:08 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"file_type\": \"video\",\n    \"video_id\": 1001,\n    \"video_title\": \"穿普拉达的女王\",\n    \"video_type\": \"movie\",\n    \"date_air\": \"2006-06-29\",\n    \"item_type\": \"vl\",\n    \"item_id\": 1001\n}"
+    }
+  ]
+}

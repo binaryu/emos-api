@@ -1,0 +1,95 @@
+{
+  "name": "暂存区文件",
+  "id": "4715f1a7-3167-40d5-a9b0-2fb448ddc0f0",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/upload/store/file?path_type=local_emos_1",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "upload",
+        "store",
+        "file"
+      ],
+      "query": [
+        {
+          "key": "path_type",
+          "value": "local_emos_1"
+        }
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "bcbe2b58-8989-4193-8b8e-3d018ff5bc22",
+      "name": "暂存区文件",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/upload/store/file?path_type=local_emos_2",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "upload",
+            "store",
+            "file"
+          ],
+          "query": [
+            {
+              "key": "path_type",
+              "value": "local_emos_2"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": "",
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sun, 18 Oct 2026 15:18:38 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [
+        {
+          "expires": "Invalid Date",
+          "domain": "",
+          "path": ""
+        }
+      ],
+      "responseTime": null,
+      "body": "[\n    {\n        \"file_name\": \"长风渡.2023.S01E02.第2集.2160p.WEB-DL.EDR.H.265.mp4\",\n        \"file_size\": 0,\n        \"mime_type\": \"video/mp4\"\n    },\n    {\n        \"file_name\": \"长风渡.2023.S01E03.第2集.2160p.WEB-DL.EDR.H.265.mp4\",\n        \"file_size\": 0,\n        \"mime_type\": \"video/mp4\"\n    },\n    {\n        \"file_name\": \"长风渡.2023.S01E01.第2集.2160p.WEB-DL.EDR.H.265.mp4.aria2\",\n        \"file_size\": 0,\n        \"mime_type\": \"text/plain; charset=utf-8\"\n    },\n    {\n        \"file_name\": \"长风渡.2023.S01E02.第1集.2160p.WEB-DL.EDR.H.265.mp4\",\n        \"file_size\": 123120,\n        \"mime_type\": \"video/mp4\"\n    },\n    {\n        \"file_name\": \"长风渡.2023.S01E02.第3集.2160p.WEB-DL.EDR.H.265.错误文件.mkv\",\n        \"file_size\": 0,\n        \"mime_type\": \"text/plain; charset=utf-8\"\n    }\n]"
+    }
+  ]
+}

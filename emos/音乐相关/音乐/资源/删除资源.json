@@ -1,0 +1,103 @@
+{
+  "name": "删除资源",
+  "id": "ad793ed3-d929-4e7e-9844-fdb739e6a24e",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "DELETE",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/music/song/{{music_song_id}}/media/delete?media_id=x7zw5keew8r6&reason",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "music",
+        "song",
+        "{{music_song_id}}",
+        "media",
+        "delete"
+      ],
+      "query": [
+        {
+          "key": "media_id",
+          "value": "x7zw5keew8r6"
+        },
+        {
+          "key": "reason",
+          "value": null,
+          "description": "删除原因 删除别人资源时必填",
+          "type": "text"
+        }
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "2c8f7422-0e00-441f-9088-c7f867e5805b",
+      "name": "删除资源",
+      "originalRequest": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/music/song/{{music_song_id}}/media/delete?media_id=ymqnzjo29z80",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "music",
+            "song",
+            "{{music_song_id}}",
+            "media",
+            "delete"
+          ],
+          "query": [
+            {
+              "key": "media_id",
+              "value": "ymqnzjo29z80"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.6"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sat, 23 May 2026 05:48:41 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"carrot\": -1\n}"
+    }
+  ]
+}

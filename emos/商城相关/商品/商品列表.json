@@ -1,0 +1,149 @@
+{
+  "name": "商品列表",
+  "id": "d8a42c32-600a-4d8e-bd0f-378f373304c2",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": ""
+    },
+    "url": {
+      "raw": "{{url}}/api/shop/product/list?seller_id=1000&category_id=1000&name&sort_by=sort&sort_order=asc&is_up=1",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "shop",
+        "product",
+        "list"
+      ],
+      "query": [
+        {
+          "key": "seller_id",
+          "value": "1000"
+        },
+        {
+          "key": "category_id",
+          "value": "1000"
+        },
+        {
+          "key": "name",
+          "value": null,
+          "description": "商品名"
+        },
+        {
+          "key": "sort_by",
+          "value": "sort",
+          "description": "排序字段"
+        },
+        {
+          "key": "sort_order",
+          "value": "asc",
+          "description": "排序方式"
+        },
+        {
+          "key": "is_up",
+          "value": "1",
+          "description": "是否上架"
+        }
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "a76b5fce-694d-42b1-b0e5-5e6997e3af7f",
+      "name": "商品列表",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "{{url}}/api/shop/product/list?seller_id=1000&category_id=1000&name&sort_by=sort&sort_order=asc&is_up=1",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "shop",
+            "product",
+            "list"
+          ],
+          "query": [
+            {
+              "key": "seller_id",
+              "value": "1000"
+            },
+            {
+              "key": "category_id",
+              "value": "1000"
+            },
+            {
+              "key": "name",
+              "value": null,
+              "description": "商品名"
+            },
+            {
+              "key": "sort_by",
+              "value": "sort",
+              "description": "排序字段"
+            },
+            {
+              "key": "sort_order",
+              "value": "asc",
+              "description": "排序方式"
+            },
+            {
+              "key": "is_up",
+              "value": "1",
+              "description": "是否上架"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.4"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Mon, 30 Mar 2026 16:47:43 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"page\": 1,\n    \"page_size\": 10,\n    \"total\": 2,\n    \"items\": [\n        {\n            \"product_id\": 1000,\n            \"category_id\": 1000,\n            \"cover_url\": null,\n            \"name\": \"苹果\",\n            \"price\": 100,\n            \"price_origin\": 1000,\n            \"stock\": 99,\n            \"sales\": 2,\n            \"is_up\": true,\n            \"up_time\": \"2026-03-31 00:20:33\",\n            \"time_start\": \"2026-02-28 12:12:12\",\n            \"time_end\": \"2026-06-28 14:14:14\",\n            \"user_buy_max\": null,\n            \"sort\": 80,\n            \"updated_at\": \"2026-03-30T16:22:43.000000Z\"\n        },\n        {\n            \"product_id\": 1001,\n            \"category_id\": 1000,\n            \"cover_url\": null,\n            \"name\": \"苹果1\",\n            \"price\": 100,\n            \"price_origin\": 1000,\n            \"stock\": 100,\n            \"sales\": 0,\n            \"is_up\": true,\n            \"up_time\": \"2026-03-31 00:31:45\",\n            \"time_start\": \"2026-02-28 12:12:12\",\n            \"time_end\": \"2026-02-28 14:14:14\",\n            \"user_buy_max\": null,\n            \"sort\": 80,\n            \"updated_at\": \"2026-03-30T16:31:52.000000Z\"\n        }\n    ]\n}"
+    }
+  ]
+}

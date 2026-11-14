@@ -1,0 +1,162 @@
+{
+  "name": "创建订单",
+  "id": "a028e122-377e-4f2c-b2a0-ed7aea87cc8b",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "POST",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\n    // 支付方式 telegram_bot tg机器人支付 或 web 网页版支付\n    \"pay_way\": \"telegram_bot\",\n    // 价格 1 到 50000 之间\n    \"price\": 1,\n    // 商品名称 简介等 100字符内\n    \"name\": \"充值啦啦啦\",\n    // 其他参数 回调时会返回的 40字符内 建议格式为 字母数字\n    \"param\": null,\n    // 支付结果通知bot 只对支付方式为tg机器人生效 存在时将会带参返回到对应bot\n    \"callback_telegram_bot_name\": null\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    },
+    "url": {
+      "raw": "{{url}}/api/pay/create",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "pay",
+        "create"
+      ]
+    },
+    "description": "在网页支付时候可以手动将 `return_url` 拼接到地址后面\n如 `https://emos.best/pay/20260215153614-pay-eA2rq?return_url=http://emos.local/to`\n支付成功将会带订单号跳到此地址 `http://emos.local/to?no=20260215153614-pay-eA2rq`"
+  },
+  "response": [
+    {
+      "id": "bfb03bee-9a90-47c6-a801-07e13510c0e7",
+      "name": "网页支付",
+      "originalRequest": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    // 支付方式 telegram_bot tg机器人支付 或 web 网页版支付\n    \"pay_way\": \"web\",\n    // 价格 1 到 50000 之间\n    \"price\": 1,\n    // 商品名称 简介等 100字符内\n    \"name\": \"充值啦啦啦\",\n    // 其他参数 回调时会返回的 100字符内\n    \"param\": null\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/pay/create",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "pay",
+            "create"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sun, 15 Feb 2026 07:35:11 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"no\": \"20260215153511-pay-5FTmJ\",\n    \"pay_way\": \"web\",\n    \"pay_url\": \"https://emos.best/pay/20260215153511-pay-5FTmJ\",\n    \"expired\": \"2026-02-15T15:40:11\"\n}"
+    },
+    {
+      "id": "3436de02-b45b-4bdd-a476-3f5bb03b96ec",
+      "name": "tg bot支付",
+      "originalRequest": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    // 支付方式 telegram_bot tg机器人支付 或 web 网页版支付\n    \"pay_way\": \"telegram_bot\",\n    // 价格 1 到 50000 之间\n    \"price\": 1,\n    // 商品名称 简介等 100字符内\n    \"name\": \"充值啦啦啦\",\n    // 其他参数 回调时会返回的 40字符内\n    \"param\": null,\n    // 支付结果通知bot 只对支付方式为tg机器人生效 存在时将会带参返回到对应bot\n    \"callback_telegram_bot_name\": \"emospg_bot\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/pay/create",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "pay",
+            "create"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.3"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sat, 21 Feb 2026 08:37:19 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"no\": \"20260221163718-pay-r9NUf\",\n    \"pay_way\": \"telegram_bot\",\n    \"pay_url\": \"https://t.me/emos_test_bot?start=pay_20260221163718-pay-r9NUf_emospg_bot\",\n    \"expired\": \"2026-02-21 16:42:18\"\n}"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "name": "更新服务商信息",
+  "id": "79ad93dc-2944-4dc1-b885-a84384854741",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "POST",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\n    // 必填 10字内\n    \"name\": \"名称\",\n    // 必填 200字内\n    \"description\": \"简介\",\n    // 回调地址 可以公网访问的地址 可为空\n    \"notify_url\": null\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    },
+    "url": {
+      "raw": "{{url}}/api/pay/update",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "pay",
+        "update"
+      ]
+    },
+    "description": "只有审核通过的可以更改"
+  },
+  "response": [
+    {
+      "id": "6e85b4ed-356b-4947-93e2-deebcdb89e10",
+      "name": "更新服务商信息",
+      "originalRequest": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    // 必填 100字内\n    \"name\": \"名称\",\n    // 必填 200字内\n    \"description\": \"简介\",\n    // 回调地址 可以公网访问的地址 可为空\n    \"notify_url\": null\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/pay/update",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "pay",
+            "update"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sat, 14 Feb 2026 10:15:45 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"name\": \"名称\",\n    \"description\": \"简介\",\n    \"notify_url\": null\n}"
+    }
+  ]
+}

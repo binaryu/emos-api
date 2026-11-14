@@ -1,0 +1,92 @@
+{
+  "name": "查询用户可用萝卜",
+  "id": "304d480d-e4ef-4c04-b9ba-555f291c36c1",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/pay/getUserCarrot?user_id=ewd3n7ex8s",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "pay",
+        "getUserCarrot"
+      ],
+      "query": [
+        {
+          "key": "user_id",
+          "value": "ewd3n7ex8s",
+          "type": "text"
+        }
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "366c3f0b-e16c-4861-bed5-781dbde15297",
+      "name": "查询用户可用萝卜",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/pay/getUserCarrot?user_id=ewd3n7ex8s",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "pay",
+            "getUserCarrot"
+          ],
+          "query": [
+            {
+              "key": "user_id",
+              "value": "ewd3n7ex8s"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.4"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Wed, 25 Mar 2026 05:24:09 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"carrot\": 50468\n}"
+    }
+  ]
+}

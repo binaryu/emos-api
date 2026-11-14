@@ -1,0 +1,101 @@
+{
+  "name": "修改分类",
+  "id": "ef1f2218-ce19-47ae-bae4-cb65da6e4bac",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "PUT",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/shop/product/category?product_id=1000&category_id=1000",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "shop",
+        "product",
+        "category"
+      ],
+      "query": [
+        {
+          "key": "product_id",
+          "value": "1000"
+        },
+        {
+          "key": "category_id",
+          "value": "1000"
+        }
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "b73d6839-9ad8-41d8-8aa5-ebd41e4fa840",
+      "name": "修改分类",
+      "originalRequest": {
+        "method": "PUT",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/shop/product/category?product_id=1000&category_id=1000",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "shop",
+            "product",
+            "category"
+          ],
+          "query": [
+            {
+              "key": "product_id",
+              "value": "1000"
+            },
+            {
+              "key": "category_id",
+              "value": "1000"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.3"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sat, 28 Feb 2026 14:49:52 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"category_id\": 1000\n}"
+    }
+  ]
+}

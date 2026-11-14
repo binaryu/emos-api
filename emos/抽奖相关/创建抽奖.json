@@ -1,0 +1,97 @@
+{
+  "name": "创建抽奖",
+  "id": "aac0b5b2-716f-4981-9671-5cb1a043ab08",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "POST",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\n    // 抽奖名称 50字符内\n    \"name\": \"大奖啊\",\n    // 抽奖简介 200字符内\n    \"description\": \"感谢xxx提供至此\",\n    // 开始抽奖时间\n    \"time_start\": \"2026-03-03 15:50:20\",\n    // 结束抽奖时间 一周内 不管人数有没有达到 在这个时间都会开奖\n    \"time_end\": \"2026-03-08 14:20:32\",\n    // 参加时需要付的萝卜总数 1 - 5w\n    \"amount\": 2,\n    // 总人数  0 - 5k 存在则是人数开奖模式 不然为时间开奖\n    \"number\": 0,\n    // 参加时需达到的萝卜数 1 - 5w\n    \"rule_carrot\": 0,\n    // 参加时需达到的签到天数 1 - 5k\n    \"rule_sign\": 0,\n    // 奖品列表 1 - 20 之间\n    \"prizes\": [\n        {\n            // 奖品名称 50字符内\n            \"name\": \"奖品1\",\n            // 奖品简介 200字符内\n            \"description\": \"兑奖请联系xxx\",\n            // 奖品数量 1 - 100\n            \"number\": 2,\n            // 自动发奖的内容 存在时需和奖品数量对应\n            \"bodys\": [\n                \"奖品1xxx\",\n                \"奖品2xxx\"\n            ]\n        },\n        {\n            \"name\": \"奖品2\",\n            \"description\": null,\n            \"number\": 1\n        }\n    ]\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    },
+    "url": {
+      "raw": "{{url}}/api/lottery/create",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "lottery",
+        "create"
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "41ecd505-7b58-49d2-b4ec-389b5f33b181",
+      "name": "创建抽奖",
+      "originalRequest": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    // 抽奖名称 50字符内\n    \"name\": \"大奖啊\",\n    // 抽奖简介 200字符内\n    \"description\": \"感谢xxx提供至此\",\n    // 开始抽奖时间\n    \"time_start\": \"2026-03-03 15:50:20\",\n    // 结束抽奖时间 一周内 不管人数有没有达到 在这个时间都会开奖\n    \"time_end\": \"2026-03-04 14:20:32\",\n    // 参加时需要付的萝卜总数 1 - 5w\n    \"amount\": 2,\n    // 总人数  0 - 5k 存在则是人数开奖模式 不然为时间开奖\n    \"number\": 2,\n    // 参加时需达到的萝卜数 1 - 5w\n    \"rule_carrot\": 0,\n    // 参加时需达到的签到天数 1 - 5k\n    \"rule_sign\": 0,\n    // 奖品列表 1 - 20 之间\n    \"prizes\": [\n        {\n            // 奖品名称 50字符内\n            \"name\": \"奖品1\",\n            // 奖品简介 200字符内\n            \"description\": \"兑奖请联系xxx\",\n            // 奖品数量 1 - 100\n            \"number\": 2,\n            // 自动发奖的内容 存在时需和奖品数量对应\n            \"bodys\": [\n                \"奖品1xxx\",\n                \"奖品2xxx\"\n            ]\n        },\n        {\n            \"name\": \"奖品2\",\n            \"description\": null,\n            \"number\": 1\n        }\n    ]\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/lottery/create",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "lottery",
+            "create"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.3"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Tue, 03 Mar 2026 14:39:53 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"lottery_id\": \"4zwLEpq8P2r1\"\n}"
+    }
+  ]
+}

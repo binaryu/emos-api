@@ -1,0 +1,89 @@
+{
+  "name": "删除线路",
+  "id": "42698f0f-510d-4304-977e-55694bf8fce4",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "DELETE",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/proxy/line?id=1",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "proxy",
+        "line"
+      ],
+      "query": [
+        {
+          "key": "id",
+          "value": "1",
+          "description": "线路ID"
+        }
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "dd3a0ef7-b5d7-4886-9c8b-18c75299f7e2",
+      "name": "删除线路",
+      "originalRequest": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/proxy/line?id=1",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "proxy",
+            "line"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "1",
+              "description": "线路ID"
+            }
+          ]
+        }
+      },
+      "status": "No Content",
+      "code": 204,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Tue, 20 Jan 2026 18:01:48 GMT"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": null
+    }
+  ]
+}

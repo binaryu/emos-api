@@ -1,0 +1,136 @@
+{
+  "name": "测试回调",
+  "id": "fb576bc6-6070-40a2-a4fb-58ad1f9fe70e",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "POST",
+    "header": [],
+    "body": {
+      "mode": "formdata",
+      "formdata": [
+        {
+          "key": "no",
+          "value": "20260215153614-pay-eA2rq",
+          "description": "订单号",
+          "type": "text",
+          "uuid": "6dac7b4a-6378-41bc-88a1-21d7ac3169e9"
+        }
+      ]
+    },
+    "url": {
+      "raw": "{{url}}/api/pay/testNotify",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "pay",
+        "testNotify"
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "0235e56f-b8f8-443e-9d0c-69eeace8a99d",
+      "name": "回调内容",
+      "originalRequest": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": []
+        },
+        "url": {
+          "raw": ""
+        }
+      },
+      "_postman_previewlanguage": "json",
+      "header": [
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "description": "",
+          "type": "text"
+        }
+      ],
+      "cookie": [
+        {
+          "expires": "Invalid Date",
+          "domain": "",
+          "path": ""
+        }
+      ],
+      "responseTime": null,
+      "body": "{\n    \"no\": \"20260215164037-pay-Ouu09\",\n    \"time_payed\": \"2026-02-15 18:05:00\",\n    \"price_settle\": 2,\n    // 回调次数\n    \"notify_number\": 11\n}"
+    },
+    {
+      "id": "80f2d9ed-64c1-4f40-8b13-23efdfcc5d26",
+      "name": "测试回调",
+      "originalRequest": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "no",
+              "value": "20260215153614-pay-eA2rq",
+              "description": "订单号",
+              "type": "text",
+              "uuid": "6dac7b4a-6378-41bc-88a1-21d7ac3169e9"
+            }
+          ]
+        },
+        "url": {
+          "raw": "{{url}}/api/pay/testNotify",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "pay",
+            "testNotify"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sun, 15 Feb 2026 10:18:14 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"notify_url\": \"https://emos.best\"\n}"
+    }
+  ]
+}

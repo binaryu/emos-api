@@ -1,0 +1,75 @@
+{
+  "name": "收到的",
+  "id": "772fd28b-94ca-4472-b6ad-71a342cb6a87",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/whisper/receiver",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "whisper",
+        "receiver"
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "b3ddbb59-4aa5-4cff-8ffd-258a10a952a6",
+      "name": "收到的",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/whisper/receiver",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "whisper",
+            "receiver"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Wed, 23 Sep 2026 03:56:29 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "[\n    {\n        \"whisper_id\": 1002,\n        \"sender_content\": \"内容\",\n        \"sender_at\": \"2026-09-23 11:55:51\",\n        \"sender_user\": {\n            \"id\": \"eXD3VD3Y1s\",\n            \"username\": \"soa\",\n            \"avatar\": null\n        },\n        \"receiver_content\": null,\n        \"receiver_at\": null\n    },\n    {\n        \"whisper_id\": 1000,\n        \"sender_content\": \"内容\",\n        \"sender_at\": \"2026-09-23 11:33:34\",\n        \"sender_user\": null,\n        \"receiver_content\": \"内容\",\n        \"receiver_at\": \"2026-09-23 11:53:43\"\n    }\n]"
+    }
+  ]
+}

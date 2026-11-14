@@ -1,0 +1,107 @@
+{
+  "name": "求片/取消求片",
+  "id": "436fa704-b6f4-4e20-bbba-d9d80115adec",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "PUT",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\n    // 视频类型\n    \"video_type\": null,\n    // 排序字段 count_request 求片总数 seek_carrot 萝卜数 upload_expired_at 上传过期时间 updated_at 更新时间\n    \"sort_by\": \"updated_at\",\n    // 排序方式 asc desc\n    \"sort_order\": \"desc\",\n    // 状态 default 默认 upload 已认领 complete 完成 cancel 取消 forget 遗忘\n    \"status\": [\n        \"default\",\n        \"upload\"\n    ],\n    // 是否自己上传\n    \"upload_self\": false,\n    // 搜索标题 前缀匹配模式\n    \"video_title\": null\n}"
+    },
+    "url": {
+      "raw": "{{url}}/api/seek/apply?item_type=vl&item_id=1003",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "seek",
+        "apply"
+      ],
+      "query": [
+        {
+          "key": "item_type",
+          "value": "vl"
+        },
+        {
+          "key": "item_id",
+          "value": "1003"
+        }
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "86460d95-a569-4abb-b3ba-e0a2523405cb",
+      "name": "点播/取消点播",
+      "originalRequest": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    // 视频类型\n    \"video_type\": null,\n    // 排序字段 count_request 求片总数 seek_carrot 萝卜数 upload_expired_at 上传过期时间 updated_at 更新时间\n    \"sort_by\": \"updated_at\",\n    // 排序方式 asc desc\n    \"sort_order\": \"desc\",\n    // 状态 default 默认 upload 已认领 complete 完成 cancel 取消 forget 遗忘\n    \"status\": [\n        \"default\",\n        \"upload\"\n    ],\n    // 是否自己上传\n    \"upload_self\": false,\n    // 搜索标题 前缀匹配模式\n    \"video_title\": null\n}"
+        },
+        "url": {
+          "raw": "{{url}}/api/seek/apply?item_type=vl&item_id=1003",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "seek",
+            "apply"
+          ],
+          "query": [
+            {
+              "key": "item_type",
+              "value": "vl"
+            },
+            {
+              "key": "item_id",
+              "value": "1003"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Thu, 22 Jan 2026 06:47:01 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"seek_is_request\": true\n}"
+    }
+  ]
+}

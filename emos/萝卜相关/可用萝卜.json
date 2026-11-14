@@ -1,0 +1,79 @@
+{
+  "name": "可用萝卜",
+  "id": "2cc67e05-69c2-4d4b-9420-8b1f36512c8b",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/carrot/current",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "carrot",
+        "current"
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "ea96753b-364e-4e2f-887a-4180a165d017",
+      "name": "可用萝卜",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/carrot/current",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "carrot",
+            "current"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.9"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sat, 15 Aug 2026 02:31:45 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"carrot\": 600\n}"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "name": "最新求片 接口轮询用",
+  "id": "20e60fa4-ec8f-4efa-837f-79e7bedf7fc1",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\n    // 视频类型\n    \"video_type\": null,\n    // 排序字段 count_request 求片总数 seek_carrot 萝卜数 upload_expired_at 上传过期时间 updated_at 更新时间\n    \"sort_by\": \"updated_at\",\n    // 排序方式 asc desc\n    \"sort_order\": \"desc\",\n    // 状态 default 默认 upload 已认领 complete 完成 cancel 取消 forget 遗忘\n    \"status\": [\n        \"default\",\n        \"upload\"\n    ],\n    // 是否自己上传\n    \"upload_self\": false,\n    // 搜索标题 前缀匹配模式\n    \"video_title\": null\n}"
+    },
+    "url": {
+      "raw": "{{url}}/api/seek/poll?last_id=&page_size=10",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "seek",
+        "poll"
+      ],
+      "query": [
+        {
+          "key": "last_id",
+          "value": "",
+          "description": "上次id"
+        },
+        {
+          "key": "page_size",
+          "value": "10",
+          "description": "返回条数"
+        }
+      ]
+    },
+    "description": "只会显示未认领的片"
+  },
+  "response": [
+    {
+      "id": "445deca5-4e49-4fce-b5a7-08d762ee4376",
+      "name": "最新求片 接口轮询用",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    // 视频类型\n    \"video_type\": null,\n    // 排序字段 count_request 求片总数 seek_carrot 萝卜数 upload_expired_at 上传过期时间 updated_at 更新时间\n    \"sort_by\": \"updated_at\",\n    // 排序方式 asc desc\n    \"sort_order\": \"desc\",\n    // 状态 default 默认 upload 已认领 complete 完成 cancel 取消 forget 遗忘\n    \"status\": [\n        \"default\",\n        \"upload\"\n    ],\n    // 是否自己上传\n    \"upload_self\": false,\n    // 搜索标题 前缀匹配模式\n    \"video_title\": null\n}"
+        },
+        "url": {
+          "raw": "{{url}}/api/seek/poll?last_id=&page_size=10",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "seek",
+            "poll"
+          ],
+          "query": [
+            {
+              "key": "last_id",
+              "value": "",
+              "description": "上次id"
+            },
+            {
+              "key": "page_size",
+              "value": "10",
+              "description": "返回条数"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Thu, 22 Jan 2026 07:22:33 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "[\n    {\n        \"id\": 1,\n        \"todb_id\": 7819,\n        \"tmdb_id\": 508935,\n        \"video_type\": \"movie\",\n        \"video_title_display\": \"八佰\",\n        \"video_season_id\": null,\n        \"video_season_number\": null,\n        \"video_episode_id\": null,\n        \"video_episode_number\": null,\n        \"updated_at\": \"2026-01-22T07:05:06.000000Z\"\n    },\n    {\n        \"id\": 4,\n        \"todb_id\": 1009,\n        \"tmdb_id\": 124003,\n        \"video_type\": \"tv\",\n        \"video_title_display\": \"完美世界 # S00E02\",\n        \"video_season_id\": 1026,\n        \"video_season_number\": 0,\n        \"video_episode_id\": 1986,\n        \"video_episode_number\": 2,\n        \"updated_at\": \"2026-01-22T06:19:16.000000Z\"\n    }\n]"
+    }
+  ]
+}

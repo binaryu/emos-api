@@ -1,0 +1,105 @@
+{
+  "name": "上传列表",
+  "id": "09939792-1368-4a5e-8a39-e18f0fb9b162",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/upload/image/list?name=&date=",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "upload",
+        "image",
+        "list"
+      ],
+      "query": [
+        {
+          "key": "name",
+          "value": "",
+          "description": "通过文件名查询"
+        },
+        {
+          "key": "date",
+          "value": "",
+          "description": "通过上传日期查询 Y-m-d"
+        }
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "a49d5ec8-479c-4a8e-a8b0-f621baa2fa08",
+      "name": "上传列表",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/upload/image/list?name=&date=",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "upload",
+            "image",
+            "list"
+          ],
+          "query": [
+            {
+              "key": "name",
+              "value": "",
+              "description": "通过文件名查询"
+            },
+            {
+              "key": "date",
+              "value": "",
+              "description": "通过上传日期查询 Y-m-d"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.4"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Thu, 09 Apr 2026 04:32:19 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"page\": 1,\n    \"page_size\": 15,\n    \"total\": 1,\n    \"items\": [\n        {\n            \"file_id\": \"EzqvM34pPRge\",\n            \"url\": \"https://file.emosstore.sbs/files/test/82ee24d0-4b03-432e-91a1-0fee8adcf770.png\",\n            \"file_type\": \"image/png\",\n            \"file_name\": \"demo.png\",\n            \"file_size\": 250817,\n            \"created_at\": \"2026-04-08T17:08:58.000000Z\"\n        }\n    ]\n}"
+    }
+  ]
+}

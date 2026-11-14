@@ -1,0 +1,95 @@
+{
+  "name": "删除订单",
+  "id": "a96d3c81-57fc-4e74-ad53-1fe452c5fe4b",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "DELETE",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/shop/order/user/order?order_no=20260331012556shopgtRev",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "shop",
+        "order",
+        "user",
+        "order"
+      ],
+      "query": [
+        {
+          "key": "order_no",
+          "value": "20260331012556shopgtRev"
+        }
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "15ae24c9-cc1c-4b7d-a40b-f383fe0d9ba2",
+      "name": "删除订单",
+      "originalRequest": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/shop/order/user/order?order_no=20260331012556shopgtRev",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "shop",
+            "order",
+            "user",
+            "order"
+          ],
+          "query": [
+            {
+              "key": "order_no",
+              "value": "20260331012556shopgtRev"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.4"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Mon, 30 Mar 2026 17:26:01 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"is_delete\": true\n}"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "name": "搜索未加入歌单的歌曲",
+  "id": "f7e4fb7f-c628-4403-93b3-7bce8f4f3d64",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/watch/{{watch_id}}/music/search?song_title=",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "watch",
+        "{{watch_id}}",
+        "music",
+        "search"
+      ],
+      "query": [
+        {
+          "key": "song_title",
+          "value": ""
+        }
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "156127bc-0299-4baf-8a29-28d4aed80fcb",
+      "name": "搜索未加入歌单的歌曲",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/watch/{{watch_id}}/music/search?song_title=",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "watch",
+            "{{watch_id}}",
+            "music",
+            "search"
+          ],
+          "query": [
+            {
+              "key": "song_title",
+              "value": ""
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.6"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sun, 07 Jun 2026 13:26:35 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"page\": 1,\n    \"page_size\": 5,\n    \"total\": 573,\n    \"items\": [\n        {\n            \"song_id\": 1407,\n            \"todb_music_song_id\": 1846,\n            \"name\": \"七号公园\",\n            \"image_poster_url\": null,\n            \"tagline\": null,\n            \"duration\": 214,\n            \"is_adult\": null,\n            \"person_artists\": [\n                {\n                    \"person_id\": 1000,\n                    \"name\": \"a2\",\n                    \"original_name\": \"許嵩\",\n                    \"image_profile_url\": \"https://image.theotherdb.org/original/EXQdp7KwBmRMjB8N\",\n                    \"gender\": null,\n                    \"is_virtual\": null,\n                    \"is_adult\": null\n                }\n            ],\n            \"albums\": [\n                {\n                    \"todb_music_album_id\": 1195,\n                    \"name\": \"七号公园\"\n                }\n            ]\n        },\n        {\n            \"song_id\": 1570,\n            \"todb_music_song_id\": 1844,\n            \"name\": \"散场电影\",\n            \"image_poster_url\": null,\n            \"tagline\": null,\n            \"duration\": 215,\n            \"is_adult\": null,\n            \"person_artists\": [\n                {\n                    \"person_id\": 1001,\n                    \"name\": \"许嵩\",\n                    \"original_name\": \"許嵩\",\n                    \"image_profile_url\": \"https://image.theotherdb.org/original/EXQdp7KwBmRMjB8N\",\n                    \"gender\": null,\n                    \"is_virtual\": null,\n                    \"is_adult\": null\n                }\n            ],\n            \"albums\": [\n                {\n                    \"todb_music_album_id\": 1193,\n                    \"name\": \"散场电影\"\n                }\n            ]\n        },\n        {\n            \"song_id\": 1569,\n            \"todb_music_song_id\": 1843,\n            \"name\": \"浅唱\",\n            \"image_poster_url\": null,\n            \"tagline\": null,\n            \"duration\": 246,\n            \"is_adult\": null,\n            \"person_artists\": [\n                {\n                    \"person_id\": 1001,\n                    \"name\": \"许嵩\",\n                    \"original_name\": \"許嵩\",\n                    \"image_profile_url\": \"https://image.theotherdb.org/original/EXQdp7KwBmRMjB8N\",\n                    \"gender\": null,\n                    \"is_virtual\": null,\n                    \"is_adult\": null\n                }\n            ],\n            \"albums\": [\n                {\n                    \"todb_music_album_id\": 1192,\n                    \"name\": \"浅唱\"\n                }\n            ]\n        },\n        {\n            \"song_id\": 1406,\n            \"todb_music_song_id\": 1845,\n            \"name\": \"摇头玩\",\n            \"image_poster_url\": null,\n            \"tagline\": null,\n            \"duration\": 205,\n            \"is_adult\": null,\n            \"person_artists\": [\n                {\n                    \"person_id\": 1000,\n                    \"name\": \"a2\",\n                    \"original_name\": \"許嵩\",\n                    \"image_profile_url\": \"https://image.theotherdb.org/original/EXQdp7KwBmRMjB8N\",\n                    \"gender\": null,\n                    \"is_virtual\": null,\n                    \"is_adult\": null\n                }\n            ],\n            \"albums\": [\n                {\n                    \"todb_music_album_id\": 1194,\n                    \"name\": \"摇头玩\"\n                }\n            ]\n        },\n        {\n            \"song_id\": 1568,\n            \"todb_music_song_id\": 1842,\n            \"name\": \"秋千坠\",\n            \"image_poster_url\": null,\n            \"tagline\": null,\n            \"duration\": 257,\n            \"is_adult\": null,\n            \"person_artists\": [\n                {\n                    \"person_id\": 1001,\n                    \"name\": \"许嵩\",\n                    \"original_name\": \"許嵩\",\n                    \"image_profile_url\": \"https://image.theotherdb.org/original/EXQdp7KwBmRMjB8N\",\n                    \"gender\": null,\n                    \"is_virtual\": null,\n                    \"is_adult\": null\n                }\n            ],\n            \"albums\": [\n                {\n                    \"todb_music_album_id\": 1191,\n                    \"name\": \"秋千坠\"\n                }\n            ]\n        }\n    ]\n}"
+    }
+  ]
+}

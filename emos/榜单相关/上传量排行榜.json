@@ -1,0 +1,88 @@
+{
+  "name": "上传量排行榜",
+  "id": "b998f958-06c9-4718-947c-98fe89be9526",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/rank/upload",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "rank",
+        "upload"
+      ]
+    },
+    "description": "前30条数据 10分钟缓存时间 单位 字节"
+  },
+  "response": [
+    {
+      "id": "9cc28e7c-4d92-4cbe-b9b1-a25eb6694c82",
+      "name": "上传量排行榜",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/rank/upload",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "rank",
+            "upload"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": "json",
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Fri, 23 Jan 2026 17:16:33 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "description": "",
+          "type": "text"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [
+        {
+          "expires": "Invalid Date",
+          "domain": "",
+          "path": ""
+        }
+      ],
+      "responseTime": null,
+      "body": "[\n    {\n        \"index\": 1,\n        \"size\": 100,\n        \"username\": \"use_1\",\n        \"avatar\": null\n    },\n    {\n        \"index\": 1,\n        \"size\": 10,\n        \"username\": \"user_2\",\n        \"avatar\": \"http://emos.local/image.png\"\n    }\n]\n"
+    }
+  ]
+}

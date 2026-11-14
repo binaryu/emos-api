@@ -1,0 +1,97 @@
+{
+  "name": "添加线路",
+  "id": "89c85160-534e-4aac-8586-f76ccaa811b5",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "POST",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\n    // 线路名称 建议为自己的id\n    \"name\": \"@proxy\",\n    // 线路地址 无须尾部斜杠\n    \"url\": \"http://proxy.local\",\n    // 线路一句话简介\n    \"tagline\": \"三网绕路\"\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    },
+    "url": {
+      "raw": "{{url}}/api/proxy/line",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "proxy",
+        "line"
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "4a87e436-743e-435d-9f1b-c794da3b8b06",
+      "name": "添加线路",
+      "originalRequest": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    // 线路名称 建议为自己的id\n    \"name\": \"@proxy\",\n    // 线路地址 无须尾部斜杠\n    \"url\": \"http://proxy.local\",\n    // 线路一句话简介\n    \"tagline\": \"三网绕路\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/proxy/line",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "proxy",
+            "line"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Tue, 20 Jan 2026 18:00:24 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"id\": 1000\n}"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "name": "萝卜排行榜",
+  "id": "b4dfa394-bc10-49fc-991e-28ba6fbd4c4b",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/rank/carrot",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "rank",
+        "carrot"
+      ]
+    },
+    "description": "前30条数据 10分钟缓存时间"
+  },
+  "response": [
+    {
+      "id": "8dc0e5d0-f45b-472e-b3f0-37c8f29fa254",
+      "name": "萝卜排行榜",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/rank/carrot",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "rank",
+            "carrot"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": "json",
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Fri, 23 Jan 2026 16:47:05 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "description": "",
+          "type": "text"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [
+        {
+          "expires": "Invalid Date",
+          "domain": "",
+          "path": ""
+        }
+      ],
+      "responseTime": null,
+      "body": "[\n    {\n        \"index\": 1,\n        \"carrot\": 100,\n        \"username\": \"user_1\",\n        \"avatar\": null\n    },\n    {\n        \"index\": 2,\n        \"carrot\": 10,\n        \"username\": \"user_2\",\n        \"avatar\": \"http://emos.local/image.png\"\n    }\n]"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+name: sync-upstream
+
+on:
+  schedule:
+    - cron: "17 3 */3 * *" # 每月 1、4、7……31 日（UTC 03:17，北京 11:17）
+  workflow_dispatch: # 也可以在 Actions 页面手动跑
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-upstream
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 验证同步脚本
+        run: |
+          python3 -m unittest discover -s scripts -p 'test_*.py'
+          bash -n scripts/sync-emos-api.sh
+
+      - name: 拉取并拆分上游集合
+        run: bash scripts/sync-emos-api.sh
+
+      - name: 有变化才提交
+        run: |
+          git add -A
+          if git diff --cached --quiet; then
+            echo "上游没有变化，无需提交"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: 同步上游接口 $(date -u +%Y-%m-%d)"
+          git push

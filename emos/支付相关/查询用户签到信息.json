@@ -1,0 +1,144 @@
+{
+  "name": "查询用户签到信息",
+  "id": "44f8e185-716f-4d0f-8948-01e4fc5a3bef",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/pay/getUserSign?user_id=eXD3VD3Y1s",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "pay",
+        "getUserSign"
+      ],
+      "query": [
+        {
+          "key": "user_id",
+          "value": "eXD3VD3Y1s"
+        }
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "2990a59c-b777-4f04-a2bd-029f838735cd",
+      "name": "有过签到",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/pay/getUserSign?user_id=eXD3VD3Y1s",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "pay",
+            "getUserSign"
+          ],
+          "query": [
+            {
+              "key": "user_id",
+              "value": "eXD3VD3Y1s"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Tue, 13 Oct 2026 06:58:50 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"sign_index\": 2,\n    \"sign_at\": \"2026-09-19 14:11:37\",\n    \"earn_point\": 4,\n    \"continuous_days\": 1,\n    \"content\": null\n}"
+    },
+    {
+      "id": "e375e162-ab3a-4379-8e4d-bd6e3c83c579",
+      "name": "从未签到",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/pay/getUserSign?user_id=eXD3VD3Y1s",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "pay",
+            "getUserSign"
+          ],
+          "query": [
+            {
+              "key": "user_id",
+              "value": "eXD3VD3Y1s"
+            }
+          ]
+        }
+      },
+      "status": "Not Found",
+      "code": 404,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Tue, 13 Oct 2026 07:00:12 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "text/html; charset=utf-8"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": null
+    }
+  ]
+}

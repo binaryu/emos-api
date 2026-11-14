@@ -1,0 +1,108 @@
+{
+  "name": "搜索未加入片单的视频",
+  "id": "b0a957ef-c20a-4f2d-a978-5927a29e8c7d",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/watch/{{watch_id}}/video/search?title=权力的游戏&type",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "watch",
+        "{{watch_id}}",
+        "video",
+        "search"
+      ],
+      "query": [
+        {
+          "key": "title",
+          "value": "权力的游戏",
+          "description": "视频名称"
+        },
+        {
+          "key": "type",
+          "value": null,
+          "description": "视频类型",
+          "type": "text"
+        }
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "38cf0ef0-c9bb-4559-9ca6-f9bc429bffb4",
+      "name": "搜索未加入片单的视频",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/watch/{{watch_id}}/video/search?title=权力的游戏&type",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "watch",
+            "{{watch_id}}",
+            "video",
+            "search"
+          ],
+          "query": [
+            {
+              "key": "title",
+              "value": "权力的游戏",
+              "description": "视频名称"
+            },
+            {
+              "key": "type",
+              "value": null,
+              "description": "视频类型"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Mon, 19 Jan 2026 17:00:24 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "[\n    {\n        \"video_id\": 1001,\n        \"todbv_id\": 1038,\n        \"video_type\": \"tv\",\n        \"video_title\": \"权力的游戏\",\n        \"video_origin_title\": \"Game of Thrones\",\n        \"video_date_air\": \"2026-06-26\",\n        \"video_is_adult\": false,\n        \"video_image_poster\": \"https://image.theotherdb.org/w185/6N5ZAPKyG2zLwlgx\"\n    }\n]"
+    }
+  ]
+}

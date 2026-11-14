@@ -1,0 +1,93 @@
+{
+  "name": "回复",
+  "id": "a9f3da08-c44e-4de3-be35-6f7e044cf724",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "POST",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\n\t\"whisper_id\": 1000,\n\t\"content\": \"内容\"\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    },
+    "url": {
+      "raw": "{{url}}/api/whisper/reply",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "whisper",
+        "reply"
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "d5d453be-79d3-4629-8d6d-3f3c2df03d67",
+      "name": "回复",
+      "originalRequest": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"whisper_id\": 1000,\n\t\"content\": \"内容\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/whisper/reply",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "whisper",
+            "reply"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Wed, 23 Sep 2026 03:52:35 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"whisper_id\": 1000\n}"
+    }
+  ]
+}

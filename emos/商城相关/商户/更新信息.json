@@ -1,0 +1,105 @@
+{
+  "name": "更新信息",
+  "id": "cc208365-c44e-49d0-a386-494a5a5bdadb",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "POST",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\n    // 店铺名称 30字内\n    \"name\": \"我的小店\",\n    // 店铺简介 200字内\n    \"description\": \"专卖啦啦啦\",\n    // 店铺封面 图片地址\n    \"cover_url\": null\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    },
+    "url": {
+      "raw": "{{url}}/api/shop/seller/update",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "shop",
+        "seller",
+        "update"
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "152f1d6a-0b25-4248-84f3-42a64f1bde90",
+      "name": "更新信息",
+      "originalRequest": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    // 店铺名称 30字内\n    \"name\": \"我的小店\",\n    // 店铺简介 200字内\n    \"description\": \"专卖啦啦啦\",\n    // 店铺封面 文件id\n    \"cover\": \"bqOaKbRKeQNn\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/shop/seller/update",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "shop",
+            "seller",
+            "update"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": "",
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.3"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sat, 28 Feb 2026 10:40:25 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [
+        {
+          "expires": "Invalid Date",
+          "domain": "",
+          "path": ""
+        }
+      ],
+      "responseTime": null,
+      "body": "{\n    \"name\": \"我的小店\",\n    \"description\": \"专卖啦啦啦\",\n    \"cover\": \"bqOaKbRKeQNn\",\n    \"cover_url\": \"https://emos.local/files/test/33437808-6fed-4478-aace-8ca95a5ca162.png\"\n}"
+    }
+  ]
+}

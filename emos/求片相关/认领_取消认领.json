@@ -1,0 +1,97 @@
+{
+  "name": "认领/取消认领",
+  "id": "2d0a683f-d060-4d55-9d15-421f78e930ad",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "PUT",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\n    // 求片ID\n    \"seek_id\": 1,\n    // 类型 confirm 认领 cancel 取消认领\n    \"type\": \"confirm\"\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    },
+    "url": {
+      "raw": "{{url}}/api/seek/claim",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "seek",
+        "claim"
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "468e9dd9-55f9-45f7-a5d8-a9b8dcec6332",
+      "name": "认领成功",
+      "originalRequest": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    // 求片ID\n    \"seek_id\": 1,\n    // 类型 confirm 认领 cancel 取消认领\n    \"type\": \"confirm\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/seek/claim",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "seek",
+            "claim"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Thu, 22 Jan 2026 07:04:45 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"status\": \"upload\"\n}"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "name": "link登录跳转",
+  "id": "d395b602-b2d7-45ac-b936-f76e13d9a4da",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/link?uuid={{$randomUUID}}&name=测试登录&url=https://emos-link.local",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "link"
+      ],
+      "query": [
+        {
+          "key": "uuid",
+          "value": "{{$randomUUID}}"
+        },
+        {
+          "key": "name",
+          "value": "测试登录"
+        },
+        {
+          "key": "url",
+          "value": "https://emos-link.local"
+        }
+      ]
+    }
+  },
+  "response": []
+}

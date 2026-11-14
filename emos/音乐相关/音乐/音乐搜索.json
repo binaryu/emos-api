@@ -1,0 +1,192 @@
+{
+  "name": "音乐搜索",
+  "id": "53d9e186-e794-443a-82e0-db0dcda9267e",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/music/song/search?name&has_media&person_id_artist&person_name_artist&is_headless",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "music",
+        "song",
+        "search"
+      ],
+      "query": [
+        {
+          "key": "name",
+          "value": null
+        },
+        {
+          "key": "has_media",
+          "value": null
+        },
+        {
+          "key": "person_id_artist",
+          "value": null
+        },
+        {
+          "key": "person_name_artist",
+          "value": null
+        },
+        {
+          "key": "is_headless",
+          "value": null,
+          "description": "是否为群星歌曲",
+          "type": "text"
+        }
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "42fa43da-1855-4c1f-b3a4-f2f447499e01",
+      "name": "音乐搜索",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/music/song/search?name&has_media&person_id_artist&person_name_artist&is_headless",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "music",
+            "song",
+            "search"
+          ],
+          "query": [
+            {
+              "key": "name",
+              "value": null
+            },
+            {
+              "key": "has_media",
+              "value": null
+            },
+            {
+              "key": "person_id_artist",
+              "value": null
+            },
+            {
+              "key": "person_name_artist",
+              "value": null
+            },
+            {
+              "key": "is_headless",
+              "value": null,
+              "description": "是否为群星歌曲"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Date",
+          "value": "Sun, 07 Jun 2026 13:29:40 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Content-Length",
+          "value": "417"
+        },
+        {
+          "key": "Connection",
+          "value": "keep-alive"
+        },
+        {
+          "key": "access-control-allow-origin",
+          "value": "*"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Content-Encoding",
+          "value": "br"
+        },
+        {
+          "key": "vary",
+          "value": "Accept-Encoding"
+        },
+        {
+          "key": "cf-cache-status",
+          "value": "DYNAMIC"
+        },
+        {
+          "key": "Content-Security-Policy-Report-Only",
+          "value": "script-src 'unsafe-inline' 'unsafe-eval'; connect-src 'none'; report-uri https://csp-reporting.cloudflare.com/cdn-cgi/script_monitor/report?m=jTsLs7sSxmgqzf.2iluCV2.BGuqZNi7eGalwUPmT4gU-1780838979.8817587-1.0.1.1-jnipMmudzXyM30kM0805XUT0zYXHPFcbNXwyLeafd5z3F_KSGUZEZAJl8K2fhf2v1ouR0uBvqFP95i7aKidQLXer6qEaf8p_rMqOoLdTZNkav_x9PKq6y5IXb1tiBKBWFMP1Ky0ssGDKkVijYHG7DcBDjGE3i6gHsDZVvzO6BQQ; report-to cf-csp-endpoint"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=31536000; includeSubDomains; preload"
+        },
+        {
+          "key": "x-content-type-options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Speculation-Rules",
+          "value": "\"/cdn-cgi/speculation\""
+        },
+        {
+          "key": "Report-To",
+          "value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=HHo6iJktKGULaosvvALgRJNNw1EIYUTENctUChCCpXTDB3bjE6Xa6Wk%2BT43Z5MHrAlHnhcXuCBtHybPw3BQUW32d3PfXlaETnrW6gRWpzyrRgujAii9HWFZYX3E%3D\"}]}"
+        },
+        {
+          "key": "Report-To",
+          "value": "{\"group\":\"cf-csp-endpoint\",\"max_age\":86400,\"endpoints\":[{\"url\":\"https://csp-reporting.cloudflare.com/cdn-cgi/script_monitor/report?m=jTsLs7sSxmgqzf.2iluCV2.BGuqZNi7eGalwUPmT4gU-1780838979.8817587-1.0.1.1-jnipMmudzXyM30kM0805XUT0zYXHPFcbNXwyLeafd5z3F_KSGUZEZAJl8K2fhf2v1ouR0uBvqFP95i7aKidQLXer6qEaf8p_rMqOoLdTZNkav_x9PKq6y5IXb1tiBKBWFMP1Ky0ssGDKkVijYHG7DcBDjGE3i6gHsDZVvzO6BQQ\"}]}"
+        },
+        {
+          "key": "Nel",
+          "value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+        },
+        {
+          "key": "expect-ct",
+          "value": "max-age=86400, enforce"
+        },
+        {
+          "key": "referrer-policy",
+          "value": "same-origin"
+        },
+        {
+          "key": "x-frame-options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "x-xss-protection",
+          "value": "1; mode=block"
+        },
+        {
+          "key": "Server",
+          "value": "cloudflare"
+        },
+        {
+          "key": "CF-RAY",
+          "value": "a08001c84fdc6d31-LAX"
+        },
+        {
+          "key": "alt-svc",
+          "value": "h3=\":443\"; ma=86400"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"page\": 1,\n    \"page_size\": 5,\n    \"total\": 4671,\n    \"items\": [\n        {\n            \"song_id\": 1035,\n            \"todb_music_song_id\": 1642,\n            \"name\": \"国色天香\",\n            \"image_poster_url\": null,\n            \"tagline\": null,\n            \"has_media\": true,\n            \"is_adult\": null,\n            \"person_artists\": [\n                {\n                    \"person_id\": null,\n                    \"name\": \"李玉刚\",\n                    \"original_name\": \"李玉刚\",\n                    \"image_profile_url\": \"https://image.theotherdb.org/original/adPQEW3nmXqK1qn9\",\n                    \"gender\": null,\n                    \"is_virtual\": null,\n                    \"is_adult\": null\n                }\n            ]\n        },\n        {\n            \"song_id\": 5896,\n            \"todb_music_song_id\": 7648,\n            \"name\": \"Explosion\",\n            \"image_poster_url\": null,\n            \"tagline\": null,\n            \"has_media\": false,\n            \"is_adult\": null,\n            \"person_artists\": [\n                {\n                    \"person_id\": null,\n                    \"name\": \"久石让\",\n                    \"original_name\": \"久石讓\",\n                    \"image_profile_url\": \"https://image.theotherdb.org/original/w9X5eR24E9bWxylZ\",\n                    \"gender\": null,\n                    \"is_virtual\": null,\n                    \"is_adult\": null\n                }\n            ]\n        },\n        {\n            \"song_id\": 5895,\n            \"todb_music_song_id\": 7649,\n            \"name\": \"EVE－Piano Version\",\n            \"image_poster_url\": null,\n            \"tagline\": null,\n            \"has_media\": false,\n            \"is_adult\": null,\n            \"person_artists\": [\n                {\n                    \"person_id\": null,\n                    \"name\": \"久石让\",\n                    \"original_name\": \"久石讓\",\n                    \"image_profile_url\": \"https://image.theotherdb.org/original/w9X5eR24E9bWxylZ\",\n                    \"gender\": null,\n                    \"is_virtual\": null,\n                    \"is_adult\": null\n                }\n            ]\n        },\n        {\n            \"song_id\": 5894,\n            \"todb_music_song_id\": 7646,\n            \"name\": \"Cell\",\n            \"image_poster_url\": null,\n            \"tagline\": null,\n            \"has_media\": false,\n            \"is_adult\": null,\n            \"person_artists\": [\n                {\n                    \"person_id\": null,\n                    \"name\": \"久石让\",\n                    \"original_name\": \"久石讓\",\n                    \"image_profile_url\": \"https://image.theotherdb.org/original/w9X5eR24E9bWxylZ\",\n                    \"gender\": null,\n                    \"is_virtual\": null,\n                    \"is_adult\": null\n                }\n            ]\n        },\n        {\n            \"song_id\": 5893,\n            \"todb_music_song_id\": 7650,\n            \"name\": \"Innocent - 映画「天空の城ラピュタ」より\",\n            \"image_poster_url\": null,\n            \"tagline\": null,\n            \"has_media\": false,\n            \"is_adult\": null,\n            \"person_artists\": [\n                {\n                    \"person_id\": null,\n                    \"name\": \"久石让\",\n                    \"original_name\": \"久石讓\",\n                    \"image_profile_url\": \"https://image.theotherdb.org/original/w9X5eR24E9bWxylZ\",\n                    \"gender\": null,\n                    \"is_virtual\": null,\n                    \"is_adult\": null\n                }\n            ]\n        }\n    ]\n}"
+    }
+  ]
+}

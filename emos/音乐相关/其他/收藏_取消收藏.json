@@ -1,0 +1,102 @@
+{
+  "name": "收藏/取消收藏",
+  "id": "336c92c4-e80c-44e2-aa5b-44000d901b56",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "PUT",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/music/favorite?type=mp&value=1000",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "music",
+        "favorite"
+      ],
+      "query": [
+        {
+          "key": "type",
+          "value": "mp",
+          "description": "类型"
+        },
+        {
+          "key": "value",
+          "value": "1000"
+        }
+      ]
+    },
+    "description": "支持 `歌手` `音乐` `专辑`"
+  },
+  "response": [
+    {
+      "id": "a70e9184-3811-4fed-b933-03e2a09c35fe",
+      "name": "收藏/取消收藏",
+      "originalRequest": {
+        "method": "PUT",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/music/favorite?type=mp&value=1000",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "music",
+            "favorite"
+          ],
+          "query": [
+            {
+              "key": "type",
+              "value": "mp",
+              "description": "类型"
+            },
+            {
+              "key": "value",
+              "value": "1000"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.6"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Thu, 21 May 2026 16:43:55 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"is_favorite\": true\n}"
+    }
+  ]
+}

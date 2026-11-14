@@ -1,0 +1,91 @@
+{
+  "name": "查看中奖列表",
+  "id": "ba2e7fc8-ade9-498b-9e3f-2b2559ee2eca",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/lottery/win?lottery_id=4zwLEpq8P2r1",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "lottery",
+        "win"
+      ],
+      "query": [
+        {
+          "key": "lottery_id",
+          "value": "4zwLEpq8P2r1"
+        }
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "f9877df1-9d7c-42d5-ba1c-7fab8311febe",
+      "name": "查看中奖列表",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/lottery/win?lottery_id=4zwLEpq8P2r1",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "lottery",
+            "win"
+          ],
+          "query": [
+            {
+              "key": "lottery_id",
+              "value": "4zwLEpq8P2r1"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.3"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Tue, 03 Mar 2026 14:54:21 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"lottery_name\": \"大奖啊\",\n    \"lottery_description\": \"感谢xxx提供至此\",\n    \"time_start\": \"2026-03-03 15:50:20\",\n    \"time_end\": \"2026-03-04 14:20:32\",\n    \"amount\": 2,\n    \"number\": 2,\n    \"users\": [\n        {\n            \"user_id\": \"eOEOD2N94s\",\n            \"user_username\": \"jason\",\n            \"user_avatar\": null,\n            \"prize_name\": \"奖品1\",\n            \"prize_description\": \"兑奖请联系xxx\",\n            \"join_index\": 1,\n            \"join_at\": \"2026-03-03 22:40:07\",\n            \"prize_body\": null\n        },\n        {\n            \"user_id\": \"eWD3N7EX8s\",\n            \"user_username\": \"soa\",\n            \"user_avatar\": null,\n            \"prize_name\": \"奖品1\",\n            \"prize_description\": \"兑奖请联系xxx\",\n            \"join_index\": 2,\n            \"join_at\": \"2026-03-03 22:40:22\",\n            \"prize_body\": null\n        }\n    ]\n}"
+    }
+  ]
+}

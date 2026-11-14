@@ -1,0 +1,94 @@
+{
+  "name": "查看投票结果",
+  "id": "1a2d6243-53b8-4c7b-96f7-07c0734de741",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/telegram/vote/result?vote_id=4",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "telegram",
+        "vote",
+        "result"
+      ],
+      "query": [
+        {
+          "key": "vote_id",
+          "value": "4"
+        }
+      ]
+    },
+    "description": "只可以查看已结束的投票"
+  },
+  "response": [
+    {
+      "id": "f08cdb4f-91c2-447c-b7b5-04e016f70f38",
+      "name": "查看投票结果",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/telegram/vote/result?vote_id=4",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "telegram",
+            "vote",
+            "result"
+          ],
+          "query": [
+            {
+              "key": "vote_id",
+              "value": "4"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.4"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Thu, 09 Apr 2026 09:23:27 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"vote_id\": \"4\",\n    \"question\": \"Test\",\n    \"options\": [\n        \"Test\",\n        \"不Test\"\n    ],\n    \"time_start\": \"2026-04-05 03:58:43\",\n    \"time_end\": \"2026-04-05 03:59:43\",\n    \"users\": [\n        {\n            \"index\": 1,\n            \"option_index\": \"0\",\n            \"user_id\": \"e7E6K6OE4s\",\n            \"username\": \"elephant\",\n            \"avatar\": \"https://account.somebyte.org/files/account/2026/02/14/19/b54bc760-5b6f-4279-83e1-baec39a556bf.jpeg\",\n            \"telegram_id\": null\n        },\n        {\n            \"index\": 2,\n            \"option_index\": \"1\",\n            \"user_id\": \"eG90JRDERs\",\n            \"username\": \"qiuyue\",\n            \"avatar\": \"https://account.somebyte.org/files/account/2026/01/18/18/18c1234b-2244-4676-9194-19e890e6bbc9.jpg\",\n            \"telegram_id\": null\n        },\n        {\n            \"index\": 3,\n            \"option_index\": \"0\",\n            \"user_id\": \"eX356PPE0s\",\n            \"username\": \"kong\",\n            \"avatar\": null,\n            \"telegram_id\": null\n        },\n        {\n            \"index\": 4,\n            \"option_index\": \"0\",\n            \"user_id\": \"eK982YN9Ms\",\n            \"username\": \"eveod\",\n            \"avatar\": null,\n            \"telegram_id\": null\n        }\n    ]\n}"
+    }
+  ]
+}

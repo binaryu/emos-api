@@ -1,0 +1,137 @@
+{
+  "name": "获取资源列表",
+  "id": "858dc094-a225-4496-9ccd-9016a1585ac7",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/video/media/list?video_list_id=1000&video_season_id=&video_episode_id=&video_part_id&include_metadata=&include_delete",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "video",
+        "media",
+        "list"
+      ],
+      "query": [
+        {
+          "key": "video_list_id",
+          "value": "1000",
+          "description": "视频ID"
+        },
+        {
+          "key": "video_season_id",
+          "value": "",
+          "description": "季ID"
+        },
+        {
+          "key": "video_episode_id",
+          "value": "",
+          "description": "集ID"
+        },
+        {
+          "key": "video_part_id",
+          "value": null,
+          "description": "分段ID"
+        },
+        {
+          "key": "include_metadata",
+          "value": "",
+          "description": "包含元数据"
+        },
+        {
+          "key": "include_delete",
+          "value": null,
+          "description": "包含已删除的资源",
+          "type": "text"
+        }
+      ]
+    },
+    "description": "参数中 查什么穿什么"
+  },
+  "response": [
+    {
+      "id": "633cb657-4ef9-4bfb-a7a3-89b24c84b215",
+      "name": "获取资源列表",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/video/media/list?video_list_id=1&video_season_id=2&video_episode_id=&video_part_id",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "video",
+            "media",
+            "list"
+          ],
+          "query": [
+            {
+              "key": "video_list_id",
+              "value": "1",
+              "description": "视频ID"
+            },
+            {
+              "key": "video_season_id",
+              "value": "2",
+              "description": "季ID"
+            },
+            {
+              "key": "video_episode_id",
+              "value": "",
+              "description": "集ID"
+            },
+            {
+              "key": "video_part_id",
+              "value": null,
+              "description": "分段ID"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sun, 18 Jan 2026 15:46:07 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "[\n    {\n        \"season_id\": 1000,\n        \"episode_id\": 1001,\n        \"part_id\": null,\n        \"user_id\": \"eXD3VD3Y1s\",\n        \"media_id\": \"YLgw45W2Jk1V\",\n        \"media_name\": \" 上传\",\n        \"media_status\": \"complete\",\n        \"media_file_size\": 250817,\n        \"media_file_second\": null,\n        \"media_file_metadata\": null,\n        \"user_pseudonym\": \"张三\",\n        \"subtitle_count\": 0,\n        \"is_self_upload\": true,\n        \"created_at\": \"2026-01-18T15:42:34.000000Z\"\n        \"deleted_at\": null,\n        \"is_can_restore\": false\n    }\n]"
+    }
+  ]
+}

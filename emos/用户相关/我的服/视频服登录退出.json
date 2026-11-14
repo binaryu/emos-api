@@ -1,0 +1,98 @@
+{
+  "name": "视频服登录退出",
+  "id": "bf05a399-63ba-4e8b-9b24-cc44c08da302",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "POST",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\n    // 传null则退出所有设备\n    \"device_id\": null\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    },
+    "url": {
+      "raw": "{{url}}/api/user/server/videoLogout",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "user",
+        "server",
+        "videoLogout"
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "9c810186-bcc1-4e0f-a1ae-ecadc87e1740",
+      "name": "退出登录的设备",
+      "originalRequest": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    // 传null则退出所有设备\n    \"device_id\": null\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/emya/logout",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "emya",
+            "logout"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.4"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sun, 12 Apr 2026 18:22:46 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"logout_count\": 1\n}"
+    }
+  ]
+}

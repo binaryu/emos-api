@@ -1,0 +1,130 @@
+{
+  "name": "搜索获取目录树",
+  "id": "b3b0eca9-1b93-43c0-9856-6df9a80725ea",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/video/tree?type&title&tmdb_id=63247&todb_id&video_id",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "video",
+        "tree"
+      ],
+      "query": [
+        {
+          "key": "type",
+          "value": null,
+          "description": "类别"
+        },
+        {
+          "key": "title",
+          "value": null,
+          "description": "名称"
+        },
+        {
+          "key": "tmdb_id",
+          "value": "63247"
+        },
+        {
+          "key": "todb_id",
+          "value": null
+        },
+        {
+          "key": "video_id",
+          "value": null,
+          "description": "视频ID"
+        }
+      ]
+    },
+    "description": "# 视频类型 `type`\n\n- `tv` 电视\n- `movie` 电影\n"
+  },
+  "response": [
+    {
+      "id": "317461b6-6c17-46fa-800a-91e0913125b8",
+      "name": "搜索获取目录树",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/video/tree?type&title&tmdb_id=63247&todb_id&video_id",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "video",
+            "tree"
+          ],
+          "query": [
+            {
+              "key": "type",
+              "value": null,
+              "description": "类别"
+            },
+            {
+              "key": "title",
+              "value": null,
+              "description": "名称"
+            },
+            {
+              "key": "tmdb_id",
+              "value": "63247"
+            },
+            {
+              "key": "todb_id",
+              "value": null
+            },
+            {
+              "key": "video_id",
+              "value": null,
+              "description": "视频ID"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sun, 18 Jan 2026 06:56:01 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "[\n    {\n        \"video_type\": \"tv\",\n        \"item_type\": \"vl\",\n        \"item_id\": 1,\n        \"tmdb_id\": 63247,\n        \"todb_id\": 1000,\n        \"title\": \"西部世界\",\n        \"date_air\": \"2016-10-02\",\n        \"seasons\": [\n            {\n                \"item_type\": \"vs\",\n                \"item_id\": 4,\n                \"season_title\": \"新世界\",\n                \"season_number\": 3,\n                \"date_air\": \"2020-03-15\",\n                \"episodes\": [\n                    {\n                        \"item_type\": \"ve\",\n                        \"item_id\": 3,\n                        \"episode_title\": \"求主顾惜\",\n                        \"episode_number\": 1,\n                        \"date_air\": \"2020-03-15\"\n                    }\n                ]\n            },\n            {\n                \"item_type\": \"vs\",\n                \"item_id\": 5,\n                \"season_title\": \"选择\",\n                \"season_number\": 4,\n                \"date_air\": \"2022-06-26\",\n                \"episodes\": [\n                    {\n                        \"item_type\": \"ve\",\n                        \"item_id\": 39,\n                        \"episode_title\": \"将会\",\n                        \"episode_number\": 8,\n                        \"date_air\": \"2022-08-14\"\n                    }\n                ]\n            }\n        ]\n    }\n]"
+    }
+  ]
+}

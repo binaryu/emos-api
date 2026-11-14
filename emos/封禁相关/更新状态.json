@@ -1,0 +1,113 @@
+{
+  "name": "更新状态",
+  "id": "7368107b-ae27-4b2f-b890-53cc56dfda5b",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "PUT",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/ban/change?type=disable&user_id=e0E4MKO96s&reason=原因啊",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "ban",
+        "change"
+      ],
+      "query": [
+        {
+          "key": "type",
+          "value": "disable",
+          "description": "类型 disable 封禁 unblock 解禁"
+        },
+        {
+          "key": "user_id",
+          "value": "e0E4MKO96s",
+          "description": "用户ID"
+        },
+        {
+          "key": "reason",
+          "value": "原因啊",
+          "description": "封禁或解禁原因"
+        }
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "6e3dd9be-1ca8-45f7-9418-db4f45819044",
+      "name": "更新状态",
+      "originalRequest": {
+        "method": "PUT",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/ban/change?type=disable&user_id=e0E4MKO96s&reason=原因啊",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "ban",
+            "change"
+          ],
+          "query": [
+            {
+              "key": "type",
+              "value": "disable",
+              "description": "类型 disable 封禁 unblock 解禁"
+            },
+            {
+              "key": "user_id",
+              "value": "e0E4MKO96s",
+              "description": "用户ID"
+            },
+            {
+              "key": "reason",
+              "value": "原因啊",
+              "description": "封禁或解禁原因"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.5"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sun, 19 Apr 2026 07:48:49 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"carrot\": -1\n}"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "name": "获取基本信息",
+  "id": "dea7dd77-4082-4618-8365-3f45999bbb2c",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/upload/video/base?item_type=vl&item_id=3",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "upload",
+        "video",
+        "base"
+      ],
+      "query": [
+        {
+          "key": "item_type",
+          "value": "vl"
+        },
+        {
+          "key": "item_id",
+          "value": "3"
+        }
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "467e5331-37ec-4401-b0c0-4ed8f80dc54c",
+      "name": "获取基本信息",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/upload/video/base?item_type=vl&item_id=3",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "upload",
+            "video",
+            "base"
+          ],
+          "query": [
+            {
+              "key": "item_type",
+              "value": "vl"
+            },
+            {
+              "key": "item_id",
+              "value": "3"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sun, 18 Jan 2026 17:18:50 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"title\": \"教父\",\n    \"video_medias\": [\n        {\n            \"media_id\": \"rmVl4XA9wAKO\",\n            \"media_name\": \"张三 上传\",\n            \"media_file_size\": 250817,\n            \"user_pseudonym\": \"张三\",\n            \"is_self_upload\": true\n        }\n    ]\n}"
+    }
+  ]
+}

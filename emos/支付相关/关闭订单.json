@@ -1,0 +1,92 @@
+{
+  "name": "关闭订单",
+  "id": "5129459e-73c8-45b2-873c-db00dff6fa8c",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "PUT",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/pay/close?no=20260215153614-pay-eA2rq",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "pay",
+        "close"
+      ],
+      "query": [
+        {
+          "key": "no",
+          "value": "20260215153614-pay-eA2rq"
+        }
+      ]
+    },
+    "description": "只有首次会关闭成功"
+  },
+  "response": [
+    {
+      "id": "21819d26-1a9d-49c4-8ca3-1579e6aa7c24",
+      "name": "关闭订单",
+      "originalRequest": {
+        "method": "PUT",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/pay/close?no=20260215153614-pay-eA2rq",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "pay",
+            "close"
+          ],
+          "query": [
+            {
+              "key": "no",
+              "value": "20260215153614-pay-eA2rq"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sun, 15 Feb 2026 08:33:19 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"is_close\": false\n}"
+    }
+  ]
+}

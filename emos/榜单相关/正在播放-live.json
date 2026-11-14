@@ -1,0 +1,88 @@
+{
+  "name": "正在播放-live",
+  "id": "d684c587-d315-4cf7-b2c0-12483c8f74bf",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/rank/userLiveRecordPlaying",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "rank",
+        "userLiveRecordPlaying"
+      ]
+    },
+    "description": "数据为最近3分钟正在看的人\n\n- `provider_pseudonym` 资源提供者\n- `play_durations` 持续播放时长 秒"
+  },
+  "response": [
+    {
+      "id": "d6378c42-ea52-4ae0-ab89-f8215b56382e",
+      "name": "正在播放-live",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/rank/userLiveRecordPlaying",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "rank",
+            "userLiveRecordPlaying"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": "json",
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Wed, 11 Feb 2026 16:00:44 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "description": "",
+          "type": "text"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [
+        {
+          "expires": "Invalid Date",
+          "domain": "",
+          "path": ""
+        }
+      ],
+      "responseTime": null,
+      "body": "[\n    {\n        \"provider_pseudonym\": \"upload_a\",\n        \"username\": \"user_a\",\n        \"live_title\": \"CCTV3\",\n        \"play_durations\": 600,\n        \"ua\": \"Hills/1.4.7 (android; 12)\"\n    },\n    {\n        \"provider_pseudonym\": \"upload_b\",\n        \"username\": \"user_b\",\n        \"live_title\": \"CCTV6\",\n        \"play_durations\": 17,\n        \"ua\": \"SenPlayer/5.9.0\"\n    }\n]"
+    }
+  ]
+}

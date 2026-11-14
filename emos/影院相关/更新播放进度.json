@@ -1,0 +1,32 @@
+{
+  "name": "更新播放进度",
+  "id": "d62d1a15-52f5-42b6-8600-d586855670f4",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "POST",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\r\n    \"media_id\": \"30yp1642nj82\",\r\n    // 只能为int 1为0.1倍 10 为 1倍数 20 = 2倍数\r\n    \"play_speed\": 10,\r\n    // 当前播放时长 秒\r\n    \"play_seconds\": 0\r\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    },
+    "url": {
+      "raw": "{{url}}/api/reel/progress",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "reel",
+        "progress"
+      ]
+    }
+  },
+  "response": []
+}

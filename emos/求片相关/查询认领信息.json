@@ -1,0 +1,257 @@
+{
+  "name": "查询认领信息",
+  "id": "235d099e-491f-4795-abfd-0ec5dd763474",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\n    // 视频类型\n    \"video_type\": null,\n    // 排序字段 count_request 求片总数 seek_carrot 萝卜数 upload_expired_at 上传过期时间 updated_at 更新时间\n    \"sort_by\": \"updated_at\",\n    // 排序方式 asc desc\n    \"sort_order\": \"desc\",\n    // 状态 default 默认 upload 已认领 complete 完成 cancel 取消 forget 遗忘\n    \"status\": [\n        \"default\",\n        \"upload\"\n    ],\n    // 是否自己上传\n    \"upload_self\": false,\n    // 搜索标题 前缀匹配模式\n    \"video_title\": null\n}"
+    },
+    "url": {
+      "raw": "{{url}}/api/seek/query?seek_id=1",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "seek",
+        "query"
+      ],
+      "query": [
+        {
+          "key": "seek_id",
+          "value": "1",
+          "description": "求片ID"
+        }
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "8dd6ed0a-10d5-44d3-a133-c6db94dd31be",
+      "name": "可认领时",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    // 视频类型\n    \"video_type\": null,\n    // 排序字段 count_request 求片总数 seek_carrot 萝卜数 upload_expired_at 上传过期时间 updated_at 更新时间\n    \"sort_by\": \"updated_at\",\n    // 排序方式 asc desc\n    \"sort_order\": \"desc\",\n    // 状态 default 默认 upload 已认领 complete 完成 cancel 取消 forget 遗忘\n    \"status\": [\n        \"default\",\n        \"upload\"\n    ],\n    // 是否自己上传\n    \"upload_self\": false,\n    // 搜索标题 前缀匹配模式\n    \"video_title\": null\n}"
+        },
+        "url": {
+          "raw": "{{url}}/api/seek/query?seek_id=1",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "seek",
+            "query"
+          ],
+          "query": [
+            {
+              "key": "seek_id",
+              "value": "1",
+              "description": "求片ID"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": "json",
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Thu, 22 Jan 2026 06:56:51 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "description": "",
+          "type": "text"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [
+        {
+          "expires": "Invalid Date",
+          "domain": "",
+          "path": ""
+        }
+      ],
+      "responseTime": null,
+      "body": "{\n    \"seek_id\": 1,\n    // 状态\n    \"status\": \"default\",\n    // 认领用户名\n    \"upload_username\": null,\n    // 认领过期时间\n    \"upload_expired_at\": null,\n    // 是否可以认领\n    \"is_can_claim\": true,\n    // 点播总数\n    \"request_count\": 1,\n    // 悬赏萝卜\n    \"seek_carrot\": 70,\n    // 更新时间\n    \"updated_at\": \"2025-12-08T17:02:58.000000Z\"\n}"
+    },
+    {
+      "id": "c51f5176-6047-4d41-9631-b9d1326b7558",
+      "name": "已被认领时",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    // 视频类型\n    \"video_type\": null,\n    // 排序字段 count_request 求片总数 seek_carrot 萝卜数 upload_expired_at 上传过期时间 updated_at 更新时间\n    \"sort_by\": \"updated_at\",\n    // 排序方式 asc desc\n    \"sort_order\": \"desc\",\n    // 状态 default 默认 upload 已认领 complete 完成 cancel 取消 forget 遗忘\n    \"status\": [\n        \"default\",\n        \"upload\"\n    ],\n    // 是否自己上传\n    \"upload_self\": false,\n    // 搜索标题 前缀匹配模式\n    \"video_title\": null\n}"
+        },
+        "url": {
+          "raw": "{{url}}/api/seek/query?seek_id=1",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "seek",
+            "query"
+          ],
+          "query": [
+            {
+              "key": "seek_id",
+              "value": "1",
+              "description": "求片ID"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": "json",
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Thu, 22 Jan 2026 06:56:51 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "description": "",
+          "type": "text"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [
+        {
+          "expires": "Invalid Date",
+          "domain": "",
+          "path": ""
+        }
+      ],
+      "responseTime": null,
+      "body": "// 已被认领时 如果 status 为 upload 并且 is_can_claim 为 true 则是自己认领的\n{\n    \"seek_id\": 1,\n    \"status\": \"upload\",\n    \"upload_username\": \"test1\",\n    \"upload_expired_at\": \"2025-12-08T23:01:57.000000Z\",\n    \"is_can_claim\": false,\n    \"request_count\": 1,\n    \"seek_carrot\": 100,\n    \"updated_at\": \"2025-12-08T17:02:58.000000Z\"\n}"
+    },
+    {
+      "id": "f1e28095-729b-48f3-95f3-adb4cb2364aa",
+      "name": "已完成时",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    // 视频类型\n    \"video_type\": null,\n    // 排序字段 count_request 求片总数 seek_carrot 萝卜数 upload_expired_at 上传过期时间 updated_at 更新时间\n    \"sort_by\": \"updated_at\",\n    // 排序方式 asc desc\n    \"sort_order\": \"desc\",\n    // 状态 default 默认 upload 已认领 complete 完成 cancel 取消 forget 遗忘\n    \"status\": [\n        \"default\",\n        \"upload\"\n    ],\n    // 是否自己上传\n    \"upload_self\": false,\n    // 搜索标题 前缀匹配模式\n    \"video_title\": null\n}"
+        },
+        "url": {
+          "raw": "{{url}}/api/seek/query?seek_id=1",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "seek",
+            "query"
+          ],
+          "query": [
+            {
+              "key": "seek_id",
+              "value": "1",
+              "description": "求片ID"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": "json",
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Thu, 22 Jan 2026 06:56:51 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "description": "",
+          "type": "text"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [
+        {
+          "expires": "Invalid Date",
+          "domain": "",
+          "path": ""
+        }
+      ],
+      "responseTime": null,
+      "body": "{\n    \"seek_id\": 1,\n    \"status\": \"complete\",\n    \"upload_username\": \"test1\",\n    \"upload_expired_at\": null,\n    \"is_can_claim\": false,\n    \"request_count\": 1,\n    \"seek_carrot\": 0,\n    \"updated_at\": \"2025-12-08T17:02:58.000000Z\"\n}"
+    }
+  ]
+}

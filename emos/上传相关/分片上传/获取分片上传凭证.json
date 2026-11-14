@@ -1,0 +1,166 @@
+{
+  "name": "获取分片上传凭证",
+  "id": "fdb9e26c-738f-45b6-8ab9-21a9c15d01e2",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "POST",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\r\n    // 切片数量 1 - 1000 之间\r\n    \"number\": 10\r\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    },
+    "url": {
+      "raw": "{{url}}/api/upload/multipart/{{file_id}}/presign",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "upload",
+        "multipart",
+        "{{file_id}}",
+        "presign"
+      ]
+    },
+    "description": "只支持获取一小时内的文件上传凭证\n获取到的上传凭证有效期是1天\n不可重复获取\n\n\n\n"
+  },
+  "response": [
+    {
+      "id": "db3931b3-3022-46cf-a57d-e7097b88d1b1",
+      "name": "获取成功",
+      "originalRequest": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    // 切片数量 1 - 1000 之间\r\n    \"number\": 1\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/upload/multipart/{{file_id}}/presign",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "upload",
+            "multipart",
+            "{{file_id}}",
+            "presign"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": "",
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Fri, 24 Jul 2026 16:32:51 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [
+        {
+          "expires": "Invalid Date",
+          "domain": "",
+          "path": ""
+        }
+      ],
+      "responseTime": null,
+      "body": "[\n    {\n        \"number\": 1,\n        \"upload_url\": \"https://emos.local/xxxx\",\n        \"upload_data\": {}\n    }\n]"
+    },
+    {
+      "id": "aab18b19-104e-4600-98a5-c56c8e3f2b05",
+      "name": "重复获取等",
+      "originalRequest": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    // 切片数量 1 - 1000 之间\r\n    \"number\": 10\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/upload/multipart/{{file_id}}/presign",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "upload",
+            "multipart",
+            "{{file_id}}",
+            "presign"
+          ]
+        }
+      },
+      "status": "Not Found",
+      "code": 404,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Fri, 24 Jul 2026 16:36:32 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "text/html; charset=utf-8"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": null
+    }
+  ]
+}

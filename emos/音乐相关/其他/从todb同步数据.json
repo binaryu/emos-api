@@ -1,0 +1,104 @@
+{
+  "name": "从todb同步数据",
+  "id": "cf7489f3-4ca1-46b8-81de-3ccaaef3d4e8",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "PATCH",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/music/sync?type=mp&value=1001",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "music",
+        "sync"
+      ],
+      "query": [
+        {
+          "key": "type",
+          "value": "mp",
+          "description": "类型"
+        },
+        {
+          "key": "value",
+          "value": "1001",
+          "description": "对应的ID"
+        }
+      ]
+    },
+    "description": "同步专辑时会自动同步专辑下所属音乐\n\n建议以专辑的维度去同步"
+  },
+  "response": [
+    {
+      "id": "a5d87df5-f4a7-4c72-9805-3c65ac5508b4",
+      "name": "从todb同步数据",
+      "originalRequest": {
+        "method": "PATCH",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/music/sync?type=ma&value={{music_song_id}}",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "music",
+            "sync"
+          ],
+          "query": [
+            {
+              "key": "type",
+              "value": "ma",
+              "description": "类型"
+            },
+            {
+              "key": "value",
+              "value": "{{music_song_id}}",
+              "description": "对应的ID"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.6"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Thu, 21 May 2026 16:55:18 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"type\": \"ma\",\n    \"value\": \"1000\"\n}"
+    }
+  ]
+}

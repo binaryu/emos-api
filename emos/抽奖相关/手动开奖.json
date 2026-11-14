@@ -1,0 +1,29 @@
+{
+  "name": "手动开奖",
+  "id": "7f227d4f-5831-41e2-83da-af4b3c6e97c9",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "PUT",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/lottery/stop?lottery_id=4zwLEpq8P2r1",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "lottery",
+        "stop"
+      ],
+      "query": [
+        {
+          "key": "lottery_id",
+          "value": "4zwLEpq8P2r1"
+        }
+      ]
+    }
+  },
+  "response": []
+}

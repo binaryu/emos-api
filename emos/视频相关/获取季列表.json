@@ -1,0 +1,81 @@
+{
+  "name": "获取季列表",
+  "id": "be1194f8-785c-4652-82e4-215f0c37e4f6",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/video/{{video_id}}/season",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "video",
+        "{{video_id}}",
+        "season"
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "6249fe44-18b5-44de-99c7-5fa1a13d83eb",
+      "name": "获取季列表",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/video/{{video_id}}/season",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "video",
+            "{{video_id}}",
+            "season"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sun, 18 Jan 2026 11:27:49 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "[\n    {\n        \"item_id\": \"vl-1\",\n        \"season_id\": 1,\n        \"season_title\": \"特别篇\",\n        \"season_number\": 0,\n        \"season_description\": \"\",\n        \"video_image_poster\": \"https://image.theotherdb.org/w185/rdw47oRxp4RZMVmG\",\n        \"date_air\": \"2017-11-07\",\n        \"has_media\": false,\n        \"episodes_count\": 61\n    },\n    {\n        \"item_id\": \"vl-2\",\n        \"season_id\": 2,\n        \"season_title\": \"迷宫\",\n        \"season_number\": 1,\n        \"season_description\": \"《西部世界》的故事发生在未来，人们已经不再热衷于玩网络游戏，而是创造了高科技成人乐园，体验更加真实刺激的游戏。里面有不少机器人接待员，他们过着设定好的剧情生活。而游客呢，现实中不敢的胡作非为，在公园里都能无限制放纵，嫖妓、追凶甚至滥杀无辜。提供服务的机器人，也不是一般的机器人。他们不仅具有超高仿真外形，还有自身情感，而且能带给游客最真实的体验。比如，中弹以后会流血，受伤以后会痛苦地嗷叫。夜幕降临，所有机器人的记忆被清除，一切归零，第二天太阳升起，新一批游客入园。不过，在程序的失误以及程序员要求机器人更接近于人类思维和情感的情况下，机器人的自主意识和思维使他们开始怀疑这个世界的本质，进而觉醒并反抗人类.\",\n        \"video_image_poster\": \"https://image.theotherdb.org/w185/rdw47oRxQ4KZMVmG\",\n        \"date_air\": \"2016-10-02\",\n        \"has_media\": false,\n        \"episodes_count\": 10\n    },\n    {\n        \"item_id\": \"vl-3\",\n        \"season_id\": 3,\n        \"season_title\": \"门\",\n        \"season_number\": 2,\n        \"season_description\": \"欢迎回到西部世界，在那里木偶表演已经结束，新解放的\\\"东道主\\\"将来到人类。在第二季，多洛雷斯（埃文·雷切尔·伍德）负责，梅夫（安迪·牛顿）正在执行任务，黑衣人（埃德·哈里斯）回来了。混沌在关于人工意识的黎明、新生命形式的诞生和辛的进化的黑暗奥德赛中控制了局面。\",\n        \"video_image_poster\": \"https://image.theotherdb.org/w185/j2Y9Mqzdm6R3OoVg\",\n        \"date_air\": \"2018-04-22\",\n        \"has_media\": false,\n        \"episodes_count\": 10\n    },\n    {\n        \"item_id\": \"vl-4\",\n        \"season_id\": 4,\n        \"season_title\": \"新世界\",\n        \"season_number\": 3,\n        \"season_description\": \"紧接第二季的战争起义，德洛莉丝（Dolores）与新洛杉矶的凯勒（Caleb）建立了联系，并理解了接待员如何生存在这个真正的世界。 与此同时，梅芙（Maeve）在另一个以第二次世界大战为主题的提洛斯公园（Delos park）中找回了自我意识，该公园位于法西斯意大利...\",\n        \"video_image_poster\": \"https://image.theotherdb.org/w185/2rbk5yWpnORQgPLE\",\n        \"date_air\": \"2020-03-15\",\n        \"has_media\": false,\n        \"episodes_count\": 8\n    },\n    {\n        \"item_id\": \"vl-5\",\n        \"season_id\": 5,\n        \"season_title\": \"选择\",\n        \"season_number\": 4,\n        \"season_description\": \"这一季讲述的是在漫长的战争结束七年后——人类终于获得了自由，至少看起来是这样。梅芙和凯莱布开始怀疑黑尔和一个接待员版的黑衣人试图重新控制人类。与此同时，伯纳德从升华之境中归来。还有一个年轻的作家，克里斯蒂娜，开始质疑她的现实的本质。\",\n        \"video_image_poster\": \"https://image.theotherdb.org/w185/m1XaJpKvrMK3lx9Y\",\n        \"date_air\": \"2022-06-26\",\n        \"has_media\": false,\n        \"episodes_count\": 8\n    }\n]"
+    }
+  ]
+}

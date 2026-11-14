@@ -1,0 +1,99 @@
+{
+  "name": "创建投票",
+  "id": "9f799cb3-0d3a-4957-a3fd-31e3a3bed427",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "POST",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\n    // 问题名称 100字内\n    \"question\": \"问题啦啦\",\n    // 问题简介 200字内\n    \"description\": \"嘿嘿嘿\",\n    // 选项 2-12内\n    \"options\": [\n        \"帅\",\n        \"不帅\",\n        \"帅啊帅\"\n    ],\n    // 过期时间 最低60\n    \"seconds\": 120,\n    // 是否允许撤回\n    \"allows_revoting\": false,\n    // 是否投票结束后才公布答案\n    \"hide_results_until_closes\": true\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    },
+    "url": {
+      "raw": "{{url}}/api/telegram/vote/create",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "telegram",
+        "vote",
+        "create"
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "3c400b41-69a9-44b4-895d-977abec30188",
+      "name": "创建投票",
+      "originalRequest": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    // 问题名称 100字内\n    \"question\": \"问题啦啦\",\n    // 选项 2-12内\n    \"options\": [\n        \"帅\",\n        \"不帅\"\n    ],\n    // 过期时间 最低60\n    \"seconds\": 70\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/telegram/vote/create",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "telegram",
+            "vote",
+            "create"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.3"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Tue, 24 Feb 2026 08:27:43 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"vote_id\": 1,\n    \"time_end\": \"2026-02-24T08:28:52.971000Z\"\n}"
+    }
+  ]
+}

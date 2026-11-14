@@ -1,0 +1,101 @@
+{
+  "name": "重命名字幕",
+  "id": "65126091-1762-4aea-9e1e-441fb201e009",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "PUT",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/video/subtitle/rename?subtitle_id=Bpvx8YxPoVdQ&title=简中",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "video",
+        "subtitle",
+        "rename"
+      ],
+      "query": [
+        {
+          "key": "subtitle_id",
+          "value": "Bpvx8YxPoVdQ"
+        },
+        {
+          "key": "title",
+          "value": "简中"
+        }
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "90d4e59a-b156-4c79-bbed-174e8219da03",
+      "name": "重命名字幕",
+      "originalRequest": {
+        "method": "PUT",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/video/subtitle/rename?subtitle_id=Bpvx8YxPoVdQ&title=简中",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "video",
+            "subtitle",
+            "rename"
+          ],
+          "query": [
+            {
+              "key": "subtitle_id",
+              "value": "Bpvx8YxPoVdQ"
+            },
+            {
+              "key": "title",
+              "value": "简中"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sun, 18 Jan 2026 16:21:51 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"carrot\": 1\n}"
+    }
+  ]
+}

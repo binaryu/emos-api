@@ -1,0 +1,23 @@
+{
+  "name": "更改是否显示成人内容",
+  "id": "b6e6c857-91ed-4e60-8851-5cb96e563bd6",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "PUT",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/user/showAdult",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "user",
+        "showAdult"
+      ]
+    }
+  },
+  "response": []
+}

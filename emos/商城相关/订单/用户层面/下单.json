@@ -1,0 +1,101 @@
+{
+  "name": "下单",
+  "id": "b16ea842-0747-40a1-8763-28e565cd1b7c",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "POST",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\n    \"product_id\": 1000,\n    // 购买数量 1 - 230 之间\n    \"buy_number\": 2,\n    // 备注 100字内\n    \"remark\": null\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    },
+    "url": {
+      "raw": "{{url}}/api/shop/order/user/create",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "shop",
+        "order",
+        "user",
+        "create"
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "715985f2-a77c-4d02-b4fa-80ca091187b4",
+      "name": "下单",
+      "originalRequest": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"product_id\": 1000,\n    // 购买数量 1 - 230 之间\n    \"buy_number\": 2,\n    // 备注 100字内\n    \"remark\": null\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/shop/order/user/create",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "shop",
+            "order",
+            "user",
+            "create"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.4"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Mon, 30 Mar 2026 17:50:14 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"no\": \"20260331015014shopF0G3D\",\n    \"buy_number\": 2,\n    \"price\": 200,\n    \"expired\": \"2026-03-31 02:00:14\"\n}"
+    }
+  ]
+}

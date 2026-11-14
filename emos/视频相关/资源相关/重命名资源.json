@@ -1,0 +1,101 @@
+{
+  "name": "重命名资源",
+  "id": "a7702008-730c-47df-b173-7c5e801c13a3",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "PUT",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/video/media/rename?media_id=YLgw45W2Jk1V&name=4k HDR",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "video",
+        "media",
+        "rename"
+      ],
+      "query": [
+        {
+          "key": "media_id",
+          "value": "YLgw45W2Jk1V"
+        },
+        {
+          "key": "name",
+          "value": "4k HDR"
+        }
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "2152402c-f70e-4361-8950-b8731eabe20b",
+      "name": "重命名资源",
+      "originalRequest": {
+        "method": "PUT",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/video/media/rename?media_id=YLgw45W2Jk1V&name=4k HDR",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "video",
+            "media",
+            "rename"
+          ],
+          "query": [
+            {
+              "key": "media_id",
+              "value": "YLgw45W2Jk1V"
+            },
+            {
+              "key": "name",
+              "value": "4k HDR"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sun, 18 Jan 2026 15:49:52 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"carrot\": 1\n}"
+    }
+  ]
+}

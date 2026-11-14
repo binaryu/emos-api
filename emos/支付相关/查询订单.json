@@ -1,0 +1,92 @@
+{
+  "name": "查询订单",
+  "id": "7d299429-26b5-4fb4-8e3b-de300aa64556",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/pay/query?no=20260215153614-pay-eA2rq",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "pay",
+        "query"
+      ],
+      "query": [
+        {
+          "key": "no",
+          "value": "20260215153614-pay-eA2rq"
+        }
+      ]
+    },
+    "description": "订单从生成到最终状态时间为10分钟"
+  },
+  "response": [
+    {
+      "id": "87b5ea64-b350-463a-816d-d752e39f313a",
+      "name": "查询订单",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/pay/query?no=20260215153614-pay-eA2rq",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "pay",
+            "query"
+          ],
+          "query": [
+            {
+              "key": "no",
+              "value": "20260215153614-pay-eA2rq"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sun, 15 Feb 2026 08:23:58 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"no\": \"20260215153614-pay-eA2rq\",\n    \"pay_way\": \"web\",\n    \"pay_status\": \"default\",\n    \"price_order\": 1,\n    \"price_settle\": 2,\n    \"order_name\": \"充值啦啦啦\",\n    \"time_payed\": null,\n    \"notify_status\": \"default\"\n}"
+    }
+  ]
+}

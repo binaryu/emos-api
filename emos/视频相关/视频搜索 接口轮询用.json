@@ -1,0 +1,262 @@
+{
+  "name": "视频搜索 接口轮询用",
+  "id": "07ec4fd1-e747-4aad-a739-16cda4581888",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/video/search?last_id&tmdb_id=&todb_id&video_id=&type&title&with_genre=&sort_by&page&page_size",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "video",
+        "search"
+      ],
+      "query": [
+        {
+          "key": "last_id",
+          "value": null,
+          "description": "上条视频ID"
+        },
+        {
+          "key": "tmdb_id",
+          "value": ""
+        },
+        {
+          "key": "todb_id",
+          "value": null
+        },
+        {
+          "key": "video_id",
+          "value": ""
+        },
+        {
+          "key": "type",
+          "value": null,
+          "description": "视频类型 "
+        },
+        {
+          "key": "title",
+          "value": null
+        },
+        {
+          "key": "with_genre",
+          "value": "",
+          "description": "是否包含类型"
+        },
+        {
+          "key": "sort_by",
+          "value": null,
+          "description": "排序方式"
+        },
+        {
+          "key": "page",
+          "value": null
+        },
+        {
+          "key": "page_size",
+          "value": null
+        }
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "ae995d6a-2d29-497a-b336-c9129445d447",
+      "name": "视频搜索 接口轮询用",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/video/search?last_id&tmdb_id=&todb_id&video_id=&type&title&page&page_size",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "video",
+            "search"
+          ],
+          "query": [
+            {
+              "key": "last_id",
+              "value": null,
+              "description": "上条视频ID"
+            },
+            {
+              "key": "tmdb_id",
+              "value": ""
+            },
+            {
+              "key": "todb_id",
+              "value": null
+            },
+            {
+              "key": "video_id",
+              "value": ""
+            },
+            {
+              "key": "type",
+              "value": null,
+              "description": "视频类型 "
+            },
+            {
+              "key": "title",
+              "value": null
+            },
+            {
+              "key": "page",
+              "value": null
+            },
+            {
+              "key": "page_size",
+              "value": null
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Tue, 27 Jan 2026 17:02:44 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"page\": 1,\n    \"page_size\": 3,\n    \"total\": 6863,\n    \"items\": [\n        {\n            \"video_id\": 1007,\n            \"video_type\": \"tv\",\n            \"video_title\": \"斗破苍穹\",\n            \"todb_id\": 1007,\n            \"tmdb_id\": 79481\n        },\n        {\n            \"video_id\": 1008,\n            \"video_type\": \"tv\",\n            \"video_title\": \"斗破苍穹\",\n            \"todb_id\": 1008,\n            \"tmdb_id\": 81500\n        },\n        {\n            \"video_id\": 1009,\n            \"video_type\": \"tv\",\n            \"video_title\": \"斗破苍穹-动态漫画\",\n            \"todb_id\": 1009,\n            \"tmdb_id\": 206080\n        }\n    ]\n}"
+    },
+    {
+      "id": "f60ac279-b851-4a09-bca1-25df21c84348",
+      "name": "包含类型字段",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/video/search?last_id&tmdb_id=&todb_id&video_id=&type&title&with_genre=1&sort_by&page&page_size",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "video",
+            "search"
+          ],
+          "query": [
+            {
+              "key": "last_id",
+              "value": null,
+              "description": "上条视频ID"
+            },
+            {
+              "key": "tmdb_id",
+              "value": ""
+            },
+            {
+              "key": "todb_id",
+              "value": null
+            },
+            {
+              "key": "video_id",
+              "value": ""
+            },
+            {
+              "key": "type",
+              "value": null,
+              "description": "视频类型 "
+            },
+            {
+              "key": "title",
+              "value": null
+            },
+            {
+              "key": "with_genre",
+              "value": "1",
+              "description": "是否包含类型"
+            },
+            {
+              "key": "sort_by",
+              "value": null,
+              "description": "排序方式"
+            },
+            {
+              "key": "page",
+              "value": null
+            },
+            {
+              "key": "page_size",
+              "value": null
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Wed, 28 Jan 2026 07:46:13 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"page\": 1,\n    \"page_size\": 15,\n    \"total\": 6863,\n    \"items\": [\n        {\n            \"video_id\": 7862,\n            \"video_type\": \"movie\",\n            \"video_title\": \"智取威虎山\",\n            \"todb_id\": 7862,\n            \"tmdb_id\": 294992,\n            \"genres\": [\n                {\n                    \"id\": 16,\n                    \"name\": \"惊悚\"\n                },\n                {\n                    \"id\": 17,\n                    \"name\": \"战争\"\n                },\n                {\n                    \"id\": 12,\n                    \"name\": \"冒险\"\n                }\n            ]\n        },\n        {\n            \"video_id\": 7863,\n            \"video_type\": \"movie\",\n            \"video_title\": \"魔法老师\",\n            \"todb_id\": 7863,\n            \"tmdb_id\": 86828,\n            \"genres\": [\n                {\n                    \"id\": 8,\n                    \"name\": \"喜剧\"\n                },\n                {\n                    \"id\": 14,\n                    \"name\": \"科幻\"\n                }\n            ]\n        },\n        {\n            \"video_id\": 7860,\n            \"video_type\": \"movie\",\n            \"video_title\": \"星球大战5：帝国反击战\",\n            \"todb_id\": 7860,\n            \"tmdb_id\": 1891,\n            \"genres\": [\n                {\n                    \"id\": 12,\n                    \"name\": \"冒险\"\n                },\n                {\n                    \"id\": 11,\n                    \"name\": \"动作\"\n                },\n                {\n                    \"id\": 14,\n                    \"name\": \"科幻\"\n                }\n            ]\n        },\n        {\n            \"video_id\": 7861,\n            \"video_type\": \"movie\",\n            \"video_title\": \"人皮交易\",\n            \"todb_id\": 7861,\n            \"tmdb_id\": 327833,\n            \"genres\": [\n                {\n                    \"id\": 16,\n                    \"name\": \"惊悚\"\n                },\n                {\n                    \"id\": 11,\n                    \"name\": \"动作\"\n                },\n                {\n                    \"id\": 3,\n                    \"name\": \"动作冒险\"\n                },\n                {\n                    \"id\": 5,\n                    \"name\": \"冒险\"\n                }\n            ]\n        },\n        {\n            \"video_id\": 7857,\n            \"video_type\": \"movie\",\n            \"video_title\": \"太平间闹鬼事件\",\n            \"todb_id\": 7857,\n            \"tmdb_id\": 18781,\n            \"genres\": [\n                {\n                    \"id\": 16,\n                    \"name\": \"惊悚\"\n                },\n                {\n                    \"id\": 15,\n                    \"name\": \"恐怖\"\n                }\n            ]\n        },\n        {\n            \"video_id\": 7858,\n            \"video_type\": \"movie\",\n            \"video_title\": \"不亲密朋友\",\n            \"todb_id\": 7858,\n            \"tmdb_id\": 1093215,\n            \"genres\": [\n                {\n                    \"id\": 3,\n                    \"name\": \"动作冒险\"\n                },\n                {\n                    \"id\": 8,\n                    \"name\": \"喜剧\"\n                }\n            ]\n        },\n        {\n            \"video_id\": 7859,\n            \"video_type\": \"movie\",\n            \"video_title\": \"一声叹息\",\n            \"todb_id\": 7859,\n            \"tmdb_id\": 65417,\n            \"genres\": [\n                {\n                    \"id\": 3,\n                    \"name\": \"动作冒险\"\n                }\n            ]\n        },\n        {\n            \"video_id\": 7854,\n            \"video_type\": \"movie\",\n            \"video_title\": \"太平间闹鬼事件2：佐治亚鬼屋事件\",\n            \"todb_id\": 7854,\n            \"tmdb_id\": 150202,\n            \"genres\": [\n                {\n                    \"id\": 15,\n                    \"name\": \"恐怖\"\n                },\n                {\n                    \"id\": 3,\n                    \"name\": \"动作冒险\"\n                },\n                {\n                    \"id\": 16,\n                    \"name\": \"惊悚\"\n                }\n            ]\n        },\n        {\n            \"video_id\": 7855,\n            \"video_type\": \"movie\",\n            \"video_title\": \"首尔夏天\",\n            \"todb_id\": 7855,\n            \"tmdb_id\": 1556728,\n            \"genres\": [\n                {\n                    \"id\": 23,\n                    \"name\": \"纪录\"\n                }\n            ]\n        },\n        {\n            \"video_id\": 7856,\n            \"video_type\": \"movie\",\n            \"video_title\": \"生死谍变\",\n            \"todb_id\": 7856,\n            \"tmdb_id\": 10355,\n            \"genres\": [\n                {\n                    \"id\": 11,\n                    \"name\": \"动作\"\n                },\n                {\n                    \"id\": 12,\n                    \"name\": \"冒险\"\n                },\n                {\n                    \"id\": 3,\n                    \"name\": \"动作冒险\"\n                },\n                {\n                    \"id\": 16,\n                    \"name\": \"惊悚\"\n                }\n            ]\n        },\n        {\n            \"video_id\": 7852,\n            \"video_type\": \"movie\",\n            \"video_title\": \"醉乡民谣\",\n            \"todb_id\": 7852,\n            \"tmdb_id\": 86829,\n            \"genres\": [\n                {\n                    \"id\": 3,\n                    \"name\": \"动作冒险\"\n                },\n                {\n                    \"id\": 19,\n                    \"name\": \"音乐\"\n                }\n            ]\n        },\n        {\n            \"video_id\": 7853,\n            \"video_type\": \"movie\",\n            \"video_title\": \"人狼游戏：地狱\",\n            \"todb_id\": 7853,\n            \"tmdb_id\": 614919,\n            \"genres\": [\n                {\n                    \"id\": 15,\n                    \"name\": \"恐怖\"\n                },\n                {\n                    \"id\": 3,\n                    \"name\": \"动作冒险\"\n                },\n                {\n                    \"id\": 6,\n                    \"name\": \"悬疑\"\n                }\n            ]\n        },\n        {\n            \"video_id\": 7849,\n            \"video_type\": \"movie\",\n            \"video_title\": \"人狼游戏\",\n            \"todb_id\": 7849,\n            \"tmdb_id\": 348760,\n            \"genres\": [\n                {\n                    \"id\": 16,\n                    \"name\": \"惊悚\"\n                },\n                {\n                    \"id\": 15,\n                    \"name\": \"恐怖\"\n                }\n            ]\n        },\n        {\n            \"video_id\": 7850,\n            \"video_type\": \"movie\",\n            \"video_title\": \"星球大战6：绝地归来\",\n            \"todb_id\": 7850,\n            \"tmdb_id\": 1892,\n            \"genres\": [\n                {\n                    \"id\": 12,\n                    \"name\": \"冒险\"\n                },\n                {\n                    \"id\": 11,\n                    \"name\": \"动作\"\n                },\n                {\n                    \"id\": 14,\n                    \"name\": \"科幻\"\n                }\n            ]\n        },\n        {\n            \"video_id\": 7851,\n            \"video_type\": \"movie\",\n            \"video_title\": \"人狼游戏：野兽阵营\",\n            \"todb_id\": 7851,\n            \"tmdb_id\": 359636,\n            \"genres\": [\n                {\n                    \"id\": 16,\n                    \"name\": \"惊悚\"\n                },\n                {\n                    \"id\": 15,\n                    \"name\": \"恐怖\"\n                }\n            ]\n        }\n    ]\n}"
+    }
+  ]
+}

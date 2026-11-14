@@ -1,0 +1,37 @@
+{
+  "name": "随机影片",
+  "event": [
+    {
+      "listen": "test",
+      "script": {
+        "id": "978196f4-851f-4d3f-a715-bbf0532826e1",
+        "exec": [
+          "pm.environment.set('forge_reel_uuid', pm.response.json().forge_reel_uuid)"
+        ],
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {}
+      }
+    }
+  ],
+  "id": "b1e9ee2d-158e-480f-85f4-265a8c4f7a58",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/reel/rand",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "reel",
+        "rand"
+      ]
+    }
+  },
+  "response": []
+}

@@ -1,0 +1,90 @@
+{
+  "name": "重置永久登录密码",
+  "id": "563ae3ef-c62d-42e3-8046-df35ed9139e7",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "PUT",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/user/passwordReset?password=1212",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "user",
+        "passwordReset"
+      ],
+      "query": [
+        {
+          "key": "password",
+          "value": "1212",
+          "description": "新密码"
+        }
+      ]
+    },
+    "description": "相关服软件中的登录密码"
+  },
+  "response": [
+    {
+      "id": "ac37393c-289a-45d8-99a9-c0874e2fa59a",
+      "name": "重置永久登录密码",
+      "originalRequest": {
+        "method": "PUT",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/user/passwordReset?password=1212",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "user",
+            "passwordReset"
+          ],
+          "query": [
+            {
+              "key": "password",
+              "value": "1212",
+              "description": "新密码"
+            }
+          ]
+        }
+      },
+      "status": "No Content",
+      "code": 204,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.4.16"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Wed, 20 May 2026 10:28:27 GMT"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": null
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "name": "给用户发送邮件通知",
+  "id": "d0f3aa22-2970-4a29-85f6-3079dcc68c7f",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "POST",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\r\n    \"user_id\": \"ewd3n7ex8s\",\r\n    // 邮件主题 100字内\r\n    \"subject\": \"这是\",\r\n    // 邮件内容 6w字符内 格式为 text 或 html\r\n    \"body\": \"哈哈哈哈\"\r\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    },
+    "url": {
+      "raw": "{{url}}/api/pay/sendNotifyEmail",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "pay",
+        "sendNotifyEmail"
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "24210d62-98b2-4eff-a140-05982dc69f5c",
+      "name": "给用户发送邮件通知",
+      "originalRequest": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"user_id\": \"ewd3n7ex8s\",\r\n    // 邮件主题 100字内\r\n    \"subject\": \"这是\",\r\n    // 邮件内容 6w字符内 格式为 text 或 html\r\n    \"body\": \"哈哈哈哈\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/pay/sendNotifyEmail",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "pay",
+            "sendNotifyEmail"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": "",
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Tue, 14 Jul 2026 05:15:04 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [
+        {
+          "expires": "Invalid Date",
+          "domain": "",
+          "path": ""
+        }
+      ],
+      "responseTime": null,
+      "body": "{\n    \"carrot\": -10\n}"
+    }
+  ]
+}

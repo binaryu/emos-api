@@ -1,0 +1,94 @@
+{
+  "name": "线路列表",
+  "id": "0eeb861d-06ae-4582-8389-be2f058b6705",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/proxy/line?only_self",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "proxy",
+        "line"
+      ],
+      "query": [
+        {
+          "key": "only_self",
+          "value": null,
+          "description": "是否只查询自己添加的"
+        }
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "a4fe215b-5815-49ac-ac9c-0f043c2d1d88",
+      "name": "线路列表",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/proxy/line?is_self",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "proxy",
+            "line"
+          ],
+          "query": [
+            {
+              "key": "is_self",
+              "value": null,
+              "description": "是否只查询自己添加的",
+              "type": "text"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Tue, 20 Jan 2026 18:01:12 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "[\n    {\n        \"id\": 1000,\n        \"name\": \"@proxy\",\n        \"url\": \"http://proxy.local\",\n        \"tagline\": \"三网绕路\",\n        \"is_self\": true,\n        \"created_at\": \"2026-01-20T18:00:24.000000Z\"\n    }\n]"
+    }
+  ]
+}

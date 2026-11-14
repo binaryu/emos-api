@@ -1,0 +1,163 @@
+{
+  "name": "视频列表",
+  "id": "00c51643-ad6f-4128-a0f0-044e142d6e46",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/video/list?tmdb_id=&todb_id&video_id=&type&title&only_delete&with_media&page&page_size",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "video",
+        "list"
+      ],
+      "query": [
+        {
+          "key": "tmdb_id",
+          "value": ""
+        },
+        {
+          "key": "todb_id",
+          "value": null
+        },
+        {
+          "key": "video_id",
+          "value": ""
+        },
+        {
+          "key": "type",
+          "value": null,
+          "description": "视频类型"
+        },
+        {
+          "key": "title",
+          "value": null,
+          "description": "视频标题"
+        },
+        {
+          "key": "only_delete",
+          "value": null,
+          "description": "是否仅查询已删除"
+        },
+        {
+          "key": "with_media",
+          "value": null,
+          "description": "仅查询有视频的资源 true 是 flase否 null全部"
+        },
+        {
+          "key": "page",
+          "value": null
+        },
+        {
+          "key": "page_size",
+          "value": null
+        }
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "06b53c62-7e43-4cff-a36d-b3b02397d9c0",
+      "name": "电视",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/video/list?tmdb_id=&todb_id&video_id=1&type&title&only_delete&with_media&page&page_size",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "video",
+            "list"
+          ],
+          "query": [
+            {
+              "key": "tmdb_id",
+              "value": ""
+            },
+            {
+              "key": "todb_id",
+              "value": null
+            },
+            {
+              "key": "video_id",
+              "value": "1"
+            },
+            {
+              "key": "type",
+              "value": null,
+              "description": "视频类型"
+            },
+            {
+              "key": "title",
+              "value": null,
+              "description": "视频标题"
+            },
+            {
+              "key": "only_delete",
+              "value": null,
+              "description": "是否仅查询已删除"
+            },
+            {
+              "key": "with_media",
+              "value": null,
+              "description": "仅查询有视频的资源 true 是 flase否 null全部"
+            },
+            {
+              "key": "page",
+              "value": null
+            },
+            {
+              "key": "page_size",
+              "value": null
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Sun, 18 Jan 2026 15:41:26 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"page\": 1,\n    \"page_size\": 15,\n    \"total\": 1,\n    \"items\": [\n        {\n            \"item_id\": null,\n            \"todb_id\": 1000,\n            \"tmdb_id\": 63247,\n            \"tmdb_url\": \"https://www.themoviedb.org/tv/63247\",\n            \"video_id\": 1,\n            \"video_type\": \"tv\",\n            \"video_title\": \"西部世界\",\n            \"video_origin_title\": \"Westworld\",\n            \"video_description\": \"在遥远的未来，一座集“西部”“罗马”“中世纪”三大元素主题版块于一身的巨型高科技成人乐园建成，园中无数逼真的机器人角色，夜以继日地为游客提供杀戮与性欲的满足。在一次次的更新升级中，这座巨大机械乐园的后台系统渐渐失去了对机器人的控制，游客接连被机器人杀死，所有想逃离者都被锁定……本剧改编自 1973 年的同名科幻电影，故事探索了“人工智能获得自主意识”以及“未来世界的罪孽”的主题。\",\n            \"video_tagline\": \"\",\n            \"video_image_logo\": null,\n            \"video_image_poster\": \"https://image.theotherdb.org/w185/QZ94MERbYDzp2Jeg\",\n            \"video_image_backdrop\": \"https://image.theotherdb.org/w1280/dOmDowzLALRBkQAL\",\n            \"video_date_air\": \"2016-10-02\",\n            \"video_is_adult\": false,\n            \"seek_is_request\": false,\n            \"seek_id\": null,\n            \"request_count\": 0,\n            \"parts_count\": 0,\n            \"medias_count\": 1,\n            \"subtitles_count\": 0,\n            \"titles\": [],\n            \"genres\": [\n                {\n                    \"id\": 1,\n                    \"name\": \"Sci-Fi & Fantasy\"\n                },\n                {\n                    \"id\": 2,\n                    \"name\": \"西部\"\n                }\n            ],\n            \"is_delete\": false\n        }\n    ]\n}"
+    }
+  ]
+}

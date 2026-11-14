@@ -1,0 +1,101 @@
+{
+  "name": "更新片单内视频",
+  "id": "3873a6e4-7446-4155-a172-d4090c699f98",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "POST",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\n    // 排序 1-5000之间 越小约靠前 默认80 必填\n    \"sort\": 80,\n    // 备注 100字内\n    \"remark\": null\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    },
+    "url": {
+      "raw": "{{url}}/api/watch/{{watch_id}}/video/{{video_id}}",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "watch",
+        "{{watch_id}}",
+        "video",
+        "{{video_id}}"
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "587323eb-cabb-4884-bbc7-178f7f56362d",
+      "name": "更新片单内视频",
+      "originalRequest": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    // 排序 1-100之间 越小约靠前 默认80 必填\n    \"sort\": 80,\n    // 备注 100字内\n    \"remark\": null\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/watch/{{watch_id}}/video/{{video_id}}",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "watch",
+            "{{watch_id}}",
+            "video",
+            "{{video_id}}"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "PHP/8.5.2"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Mon, 19 Jan 2026 16:13:58 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"count\": 1\n}"
+    }
+  ]
+}

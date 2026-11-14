@@ -1,0 +1,29 @@
+{
+  "name": "客户端上传分片",
+  "id": "0574db78-fba8-4ee8-a7c7-f1a27e44ac2c",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "PUT",
+    "header": [],
+    "body": {
+      "mode": "file",
+      "file": {
+        "src": "/E:/puzzle/Pictures/test/avatar/face4.jpg"
+      }
+    },
+    "url": {
+      "raw": "https://emos.local/xxxx",
+      "protocol": "https",
+      "host": [
+        "emos",
+        "local"
+      ],
+      "path": [
+        "xxxx"
+      ]
+    }
+  },
+  "response": []
+}
