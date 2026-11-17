@@ -21535,6 +21535,82 @@
         }
       }
     },
+    "/api/proxy/line/serverTypes": {
+      "get": {
+        "summary": "服务器类型",
+        "operationId": "request_b0f6ad84_7ea2_498e_b6ed_49a2a6eea9ed",
+        "tags": [
+          "反代相关/线路相关"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "headers": {
+              "Host": {
+                "schema": {
+                  "type": "string"
+                },
+                "example": "127.0.0.1:8000"
+              },
+              "Connection": {
+                "schema": {
+                  "type": "string"
+                },
+                "example": "close"
+              },
+              "Cache-Control": {
+                "schema": {
+                  "type": "string"
+                },
+                "example": "no-cache, private"
+              },
+              "Date": {
+                "schema": {
+                  "type": "string"
+                },
+                "example": "Mon, 16 Nov 2026 14:16:28 GMT"
+              },
+              "Access-Control-Allow-Origin": {
+                "schema": {
+                  "type": "string"
+                },
+                "example": "*"
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "emby": {
+                      "type": "string"
+                    },
+                    "abs": {
+                      "type": "string"
+                    },
+                    "music": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "examples": {
+                  "example_1": {
+                    "summary": "服务器类型",
+                    "value": {
+                      "emby": "观影服",
+                      "abs": "听书服",
+                      "music": "音乐服"
+                    },
+                    "x-postman-raw": "{\n    \"emby\": \"观影服\",\n    \"abs\": \"听书服\",\n    \"music\": \"音乐服\"\n}"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/proxy/line": {
       "get": {
         "summary": "线路列表",
@@ -21569,12 +21645,6 @@
                 },
                 "example": "close"
               },
-              "X-Powered-By": {
-                "schema": {
-                  "type": "string"
-                },
-                "example": "PHP/8.5.2"
-              },
               "Cache-Control": {
                 "schema": {
                   "type": "string"
@@ -21585,7 +21655,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "example": "Tue, 20 Jan 2026 18:01:12 GMT"
+                "example": "Mon, 16 Nov 2026 14:11:24 GMT"
               },
               "Access-Control-Allow-Origin": {
                 "schema": {
@@ -21606,6 +21676,12 @@
                       },
                       "name": {
                         "type": "string"
+                      },
+                      "server_types": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
                       },
                       "url": {
                         "type": "string"
@@ -21629,13 +21705,16 @@
                       {
                         "id": 1000,
                         "name": "@proxy",
+                        "server_types": [
+                          "emby"
+                        ],
                         "url": "http://proxy.local",
                         "tagline": "三网绕路",
                         "is_self": true,
                         "created_at": "2026-01-20T18:00:24.000000Z"
                       }
                     ],
-                    "x-postman-raw": "[\n    {\n        \"id\": 1000,\n        \"name\": \"@proxy\",\n        \"url\": \"http://proxy.local\",\n        \"tagline\": \"三网绕路\",\n        \"is_self\": true,\n        \"created_at\": \"2026-01-20T18:00:24.000000Z\"\n    }\n]"
+                    "x-postman-raw": "[\n    {\n        \"id\": 1000,\n        \"name\": \"@proxy\",\n        \"server_types\": [\n            \"emby\"\n        ],\n        \"url\": \"http://proxy.local\",\n        \"tagline\": \"三网绕路\",\n        \"is_self\": true,\n        \"created_at\": \"2026-01-20T18:00:24.000000Z\"\n    }\n]"
                   }
                 }
               }
@@ -21723,6 +21802,12 @@
                   "name": {
                     "type": "string"
                   },
+                  "server_types": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
                   "url": {
                     "type": "string"
                   },
@@ -21733,10 +21818,14 @@
               },
               "example": {
                 "name": "@proxy",
+                "server_types": [
+                  "emby",
+                  "abs"
+                ],
                 "url": "http://proxy.local",
                 "tagline": "三网绕路"
               },
-              "x-postman-raw": "{\n    // 线路名称 建议为自己的id\n    \"name\": \"@proxy\",\n    // 线路地址 无须尾部斜杠\n    \"url\": \"http://proxy.local\",\n    // 线路一句话简介\n    \"tagline\": \"三网绕路\"\n}"
+              "x-postman-raw": "{\n    // 线路名称 建议为自己的id\n    \"name\": \"@proxy\",\n\t// 支持的服务器类型\n    \"server_types\": [\n        \"emby\",\n        \"abs\"\n    ],\n    // 线路地址 无须尾部斜杠\n    \"url\": \"http://proxy.local\",\n    // 线路一句话简介\n    \"tagline\": \"三网绕路\"\n}"
             }
           }
         }

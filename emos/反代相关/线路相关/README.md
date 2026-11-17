@@ -4,6 +4,7 @@
 
 | 请求 | 方法 | 路径 |
 | --- | --- | --- |
+| [服务器类型](<服务器类型.json>) | `GET` | `/api/proxy/line/serverTypes` |
 | [线路列表](<线路列表.json>) | `GET` | `/api/proxy/line` |
 | [添加线路](<添加线路.json>) | `POST` | `/api/proxy/line` |
 | [删除线路](<删除线路.json>) | `DELETE` | `/api/proxy/line` |

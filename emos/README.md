@@ -14,7 +14,7 @@ Apifox 导入：下载 [apifox.json](<apifox.json>)，在“项目设置 → 导
 > 上游集合：`api`（`6b2a25c4-59a6-4793-a958-01bbd27dec5c`）
 > 来源：https://www.postman.com/_api/collection/51442337-6b2a25c4-59a6-4793-a958-01bbd27dec5c?populate=true&format=2.1.0
 
-21 个模块 · 31 个子目录 · 191 个请求 · 204 个响应示例
+21 个模块 · 31 个子目录 · 192 个请求 · 205 个响应示例
 
 目录说明见各目录的 `README.md`；公共配置见 [集合信息.json](<集合信息.json>)。
 
@@ -241,14 +241,15 @@ Apifox 导入：下载 [apifox.json](<apifox.json>)，在“项目设置 → 导
 
 ## 反代相关
 
-目录 [反代相关/](<反代相关/>) · 3 个请求 · [README.md](<反代相关/README.md>)
+目录 [反代相关/](<反代相关/>) · 4 个请求 · [README.md](<反代相关/README.md>)
 
 ### 线路相关
 
-目录 [反代相关/线路相关/](<反代相关/线路相关/>) · 3 个请求 · [README.md](<反代相关/线路相关/README.md>)
+目录 [反代相关/线路相关/](<反代相关/线路相关/>) · 4 个请求 · [README.md](<反代相关/线路相关/README.md>)
 
 | 请求 | 方法 | 路径 |
 | --- | --- | --- |
+| [服务器类型](<反代相关/线路相关/服务器类型.json>) | `GET` | `/api/proxy/line/serverTypes` |
 | [线路列表](<反代相关/线路相关/线路列表.json>) | `GET` | `/api/proxy/line` |
 | [添加线路](<反代相关/线路相关/添加线路.json>) | `POST` | `/api/proxy/line` |
 | [删除线路](<反代相关/线路相关/删除线路.json>) | `DELETE` | `/api/proxy/line` |

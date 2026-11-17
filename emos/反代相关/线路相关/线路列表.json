@@ -22,19 +22,25 @@
           "key": "only_self",
           "value": null,
           "description": "是否只查询自己添加的"
+        },
+        {
+          "key": "server_types[]",
+          "value": "abs",
+          "description": "线路类型 空则查全部",
+          "disabled": true
         }
       ]
     }
   },
   "response": [
     {
-      "id": "a4fe215b-5815-49ac-ac9c-0f043c2d1d88",
+      "id": "7397789a-6d51-4d83-b404-d32dfdc70d87",
       "name": "线路列表",
       "originalRequest": {
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "{{url}}/api/proxy/line?is_self",
+          "raw": "{{url}}/api/proxy/line?only_self&server_types[]=abs",
           "host": [
             "{{url}}"
           ],
@@ -45,17 +51,21 @@
           ],
           "query": [
             {
-              "key": "is_self",
+              "key": "only_self",
               "value": null,
-              "description": "是否只查询自己添加的",
-              "type": "text"
+              "description": "是否只查询自己添加的"
+            },
+            {
+              "key": "server_types[]",
+              "value": "abs",
+              "description": "线路类型"
             }
           ]
         }
       },
       "status": "OK",
       "code": 200,
-      "_postman_previewlanguage": null,
+      "_postman_previewlanguage": "",
       "header": [
         {
           "key": "Host",
@@ -66,16 +76,12 @@
           "value": "close"
         },
         {
-          "key": "X-Powered-By",
-          "value": "PHP/8.5.2"
-        },
-        {
           "key": "Cache-Control",
           "value": "no-cache, private"
         },
         {
           "key": "Date",
-          "value": "Tue, 20 Jan 2026 18:01:12 GMT"
+          "value": "Mon, 16 Nov 2026 14:11:24 GMT"
         },
         {
           "key": "Content-Type",
@@ -86,9 +92,15 @@
           "value": "*"
         }
       ],
-      "cookie": [],
+      "cookie": [
+        {
+          "expires": "Invalid Date",
+          "domain": "",
+          "path": ""
+        }
+      ],
       "responseTime": null,
-      "body": "[\n    {\n        \"id\": 1000,\n        \"name\": \"@proxy\",\n        \"url\": \"http://proxy.local\",\n        \"tagline\": \"三网绕路\",\n        \"is_self\": true,\n        \"created_at\": \"2026-01-20T18:00:24.000000Z\"\n    }\n]"
+      "body": "[\n    {\n        \"id\": 1000,\n        \"name\": \"@proxy\",\n        \"server_types\": [\n            \"emby\"\n        ],\n        \"url\": \"http://proxy.local\",\n        \"tagline\": \"三网绕路\",\n        \"is_self\": true,\n        \"created_at\": \"2026-01-20T18:00:24.000000Z\"\n    }\n]"
     }
   ]
 }

@@ -1,0 +1,77 @@
+{
+  "name": "服务器类型",
+  "id": "b0f6ad84-7ea2-498e-b6ed-49a2a6eea9ed",
+  "protocolProfileBehavior": {
+    "disableBodyPruning": true
+  },
+  "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+      "raw": "{{url}}/api/proxy/line/serverTypes",
+      "host": [
+        "{{url}}"
+      ],
+      "path": [
+        "api",
+        "proxy",
+        "line",
+        "serverTypes"
+      ]
+    }
+  },
+  "response": [
+    {
+      "id": "aad834af-ac4a-435e-9d03-3228c8e17169",
+      "name": "服务器类型",
+      "originalRequest": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/api/proxy/line/serverTypes",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "proxy",
+            "line",
+            "serverTypes"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Host",
+          "value": "127.0.0.1:8000"
+        },
+        {
+          "key": "Connection",
+          "value": "close"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, private"
+        },
+        {
+          "key": "Date",
+          "value": "Mon, 16 Nov 2026 14:16:28 GMT"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookie": [],
+      "responseTime": null,
+      "body": "{\n    \"emby\": \"观影服\",\n    \"abs\": \"听书服\",\n    \"music\": \"音乐服\"\n}"
+    }
+  ]
+}

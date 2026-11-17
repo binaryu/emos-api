@@ -9,7 +9,7 @@
     "header": [],
     "body": {
       "mode": "raw",
-      "raw": "{\n    // 线路名称 建议为自己的id\n    \"name\": \"@proxy\",\n    // 线路地址 无须尾部斜杠\n    \"url\": \"http://proxy.local\",\n    // 线路一句话简介\n    \"tagline\": \"三网绕路\"\n}",
+      "raw": "{\n    // 线路名称 建议为自己的id\n    \"name\": \"@proxy\",\n\t// 支持的服务器类型\n    \"server_types\": [\n        \"emby\",\n        \"abs\"\n    ],\n    // 线路地址 无须尾部斜杠\n    \"url\": \"http://proxy.local\",\n    // 线路一句话简介\n    \"tagline\": \"三网绕路\"\n}",
       "options": {
         "raw": {
           "language": "json"
